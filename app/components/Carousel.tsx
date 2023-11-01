@@ -6,7 +6,7 @@ import Spotify from '../../public/images/spotify.png';
 import Threat from '../../public/images/threat.png';
 import Poof from '../../public/images/poof.png';
 
-function CaseStudy(props) {
+function CaseStudy(props: any) {
 	return (
 		<div className='group snap-center snap-always'>
 			<motion.div className='object-cover h-[55vh] w-[45vw] rounded overflow-hidden'>
