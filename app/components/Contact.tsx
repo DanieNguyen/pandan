@@ -25,7 +25,7 @@ export default function Contact() {
 				style={{ y: yt, opacity }}
 				className='text-white pt-[20vh] text-[96px] tracking-tighter leading-relaxed col-span-12'>
 				<motion.div className='mb-20'>
-					<h1>LET'S WORK TOGETHER</h1>
+					<h1>LET&apos;S WORK TOGETHER</h1>
 				</motion.div>
 				<div className='flex flex-col gap-8'>
 					<a
