@@ -16,24 +16,26 @@ export default function NavBar() {
 			<div className='col-span-2'>
 				<Link
 					href='#home'
-					className='font-semibold tracking-tight text-sm 2xl:text-xl'>
+					className='font-semibold tracking-tight text-sm 2xl:text-xl hover:text-[#767676]'>
 					DANIEL NGUYEN
 				</Link>
 			</div>
 			<div className='col-start-5 col-end-8 text-sm 2xl:text-xl font-medium tracking-tight'>
-				<Link href='#work' className='pr-16'>
+				<Link href='#work' className='pr-16 hover:text-[#767676]'>
 					WORK
 				</Link>
 				<Link
 					href='/images/DanielNResume.pdf'
 					target='_blank'
-					className='pr-16'>
+					className='pr-16 hover:text-[#767676]'>
 					RESUME
 				</Link>
-				<Link href='#contact' className='pr-16'>
+				<Link href='#contact' className='pr-16 hover:text-[#767676]'>
 					CONTACT
 				</Link>
-				<Link href=''>ABOUT</Link>
+				<Link href='' className='hover:text-[#767676]'>
+					ABOUT
+				</Link>
 			</div>
 			<div className='col-span-2 col-start-11 text-sm 2xl:text-xl'>
 				<div className='flex flex-row justify-end w-full mb-4'>
