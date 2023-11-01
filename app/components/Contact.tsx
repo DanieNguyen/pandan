@@ -16,51 +16,51 @@ export default function Contact() {
 		[0, 0, 1, 1]
 	);
 	return (
-		<motion.div
-			ref={ref}
-			style={{ y }}
-			id='contact'
-			className='relative h-[100vh] bg-black pr-8 pl-8'>
+		<div>
 			<motion.div
-				style={{ y: yt, opacity }}
-				className='text-white pt-[20vh] text-[96px] tracking-tighter leading-relaxed col-span-12'>
-				<motion.div className='mb-20'>
-					<h1>LET&apos;S WORK TOGETHER</h1>
+				ref={ref}
+				style={{ y }}
+				id='contact'
+				className='relative h-[100vh] bg-black pr-8 pl-8'>
+				<motion.div
+					style={{ y: yt, opacity }}
+					className='text-white pt-[20vh] text-[96px] tracking-tighter leading-relaxed col-span-12'>
+					<motion.div className='mb-20'>
+						<h1>LET&apos;S WORK TOGETHER</h1>
+					</motion.div>
+					<div className='flex flex-col gap-8'>
+						<a
+							className='group text-white text-4xl tracking-normal font-sans'
+							href='mailto:danyen125@gmail.com'>
+							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+								EMAIL &#x2197;
+							</span>
+						</a>
+						<a
+							className='group text-white text-4xl tracking-normal font-sans'
+							href='https://www.linkedin.com/in/pandang/'>
+							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+								LINKEDIN &#x2197;
+							</span>
+						</a>
+						<a
+							className='group text-white text-4xl tracking-normal font-sans'
+							href='https://dribbble.com/dangux'>
+							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+								DRIBBBLE &#x2197;
+							</span>
+						</a>
+						<a
+							className='group text-white text-4xl tracking-normal font-sans mb-2'
+							href='https://www.instagram.com/pandan.lion/'>
+							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+								INSTAGRAM &#x2197;
+							</span>
+						</a>
+					</div>
 				</motion.div>
-				<div className='flex flex-col gap-8'>
-					<a
-						className='group text-white text-4xl tracking-normal font-sans'
-						href='mailto:danyen125@gmail.com'>
-						<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-							EMAIL &#x2197;
-						</span>
-					</a>
-					<a
-						className='group text-white text-4xl tracking-normal font-sans'
-						href=''>
-						<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-							LINKEDIN &#x2197;
-						</span>
-					</a>
-					<a
-						className='group text-white text-4xl tracking-normal font-sans'
-						href=''>
-						<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-							DRIBBBLE &#x2197;
-						</span>
-					</a>
-					<a
-						className='group text-white text-4xl tracking-normal font-sans mb-2'
-						href=''>
-						<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-							INSTAGRAM &#x2197;
-						</span>
-					</a>
-				</div>
 			</motion.div>
-			<motion.div
-				style={{ y: yf }}
-				className='text-white grid grid-cols-12 gap-4 w-full border-t-[1px] py-4'>
+			<div className='z-100 bottom-0 bg-black text-white grid grid-cols-12 gap-4 w-screen border-t-[1px] py-4 px-8'>
 				<div className='col-span-2'>©PANDAN STUDIO</div>
 				<div className='col-start-4 col-span-4'>
 					DESIGNED & DEVELOPED BY DANIEL NGUYEN
@@ -68,7 +68,7 @@ export default function Contact() {
 				<div className='col-start-11 col-span-2 text-right'>
 					FONTS {'->'} INTER & SFITZIA
 				</div>
-			</motion.div>
-		</motion.div>
+			</div>
+		</div>
 	);
 }
