@@ -10,13 +10,18 @@ import { Analytics } from '@vercel/analytics/react';
 export default function Home() {
 	return (
 		<main className='bg-white' id='home'>
-			<NavBar></NavBar>
-			<ScrollBar></ScrollBar>
-			<Hero></Hero>
-			<Statement></Statement>
-			<Carousel></Carousel>
-			<Contact></Contact>
-			<Analytics></Analytics>
+			<div className='p-8 text-2xl md:hidden'>
+				Please view on web for now. Mobile coming soon.
+			</div>
+			<div className='hidden md:block'>
+				<NavBar></NavBar>
+				<ScrollBar></ScrollBar>
+				<Hero></Hero>
+				<Statement></Statement>
+				<Carousel></Carousel>
+				<Contact></Contact>
+				<Analytics></Analytics>
+			</div>
 		</main>
 	);
 }
