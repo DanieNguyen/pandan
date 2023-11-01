@@ -60,3 +60,7 @@ html {
 	--scroll-behavior: smooth !important;
 	scroll-behavior: smooth !important;
 }
+
+::selection {
+	background: #54f28c;
+}

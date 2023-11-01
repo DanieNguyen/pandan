@@ -29,27 +29,31 @@ export default function Contact() {
 						<h1>LET&apos;S WORK TOGETHER</h1>
 					</motion.div>
 					<div className='flex flex-col gap-[2vh] text-white text-[4vh] tracking-normal font-sans'>
-						<a className='group' href='mailto:danyen125@gmail.com'>
-							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+						<a
+							className='max-w-fit'
+							href='mailto:danyen125@gmail.com'>
+							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
 								EMAIL &#x2197;
 							</span>
 						</a>
 						<a
-							className='group'
+							className='max-w-fit'
 							href='https://www.linkedin.com/in/pandang/'>
-							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
 								LINKEDIN &#x2197;
 							</span>
 						</a>
-						<a className='group' href='https://dribbble.com/dangux'>
-							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+						<a
+							className='max-w-fit'
+							href='https://dribbble.com/dangux'>
+							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
 								DRIBBBLE &#x2197;
 							</span>
 						</a>
 						<a
-							className='group'
+							className='max-w-fit'
 							href='https://www.instagram.com/pandan.lion/'>
-							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
 								INSTAGRAM &#x2197;
 							</span>
 						</a>
