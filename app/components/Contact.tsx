@@ -61,7 +61,7 @@ export default function Contact() {
 				<div className='col-start-4 col-span-4'>
 					DESIGNED & DEVELOPED BY DANIEL NGUYEN
 				</div>
-				<div className='col-start-11 col-span-2 text-right'>
+				<div className='col-start-10 col-span-3 text-right'>
 					FONTS {'->'} INTER & SFITZIA
 				</div>
 			</div>
