@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Statement from './components/Statement';
 import Carousel from './components/Carousel';
 import Contact from './components/Contact';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
 	return (
@@ -15,6 +16,7 @@ export default function Home() {
 			<Statement></Statement>
 			<Carousel></Carousel>
 			<Contact></Contact>
+			<Analytics></Analytics>
 		</main>
 	);
 }
