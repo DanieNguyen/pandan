@@ -13,8 +13,9 @@ function CaseStudy(props: any) {
 				<Image
 					className='h-full w-full object-cover transition ease-out duration-1000 hover:scale-110'
 					src={props.url}
-					width={800}
-					height={500}
+					width={3200}
+					height={2000}
+					quality={100}
 					alt={props.project}></Image>
 			</motion.div>
 			<div className='hidden group-hover:flex flex-row mt-4 items-center justify-between'>
