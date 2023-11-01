@@ -16,6 +16,7 @@ function CaseStudy(props: any) {
 					width={3200}
 					height={2000}
 					quality={100}
+					placeholder='blur'
 					alt={props.project}></Image>
 			</motion.div>
 			<div className='hidden group-hover:flex flex-row mt-4 items-center justify-between'>
