@@ -9,7 +9,7 @@ import Poof from '../../public/images/poof.png';
 function CaseStudy(props: any) {
 	return (
 		<div className='group snap-center snap-always'>
-			<motion.div className='object-cover h-[55vh] w-[45vw] rounded overflow-hidden'>
+			<motion.div className='object-cover h-[50vh] w-[45vhs] rounded overflow-hidden'>
 				<Image
 					className='h-full w-full object-cover transition ease-out duration-1000 hover:scale-110'
 					src={props.url}
@@ -33,8 +33,8 @@ export default function Carousel() {
 		target: ref,
 		offset: ['start end', 'end start'],
 	});
-	const x = useTransform(scrollYProgress, [0, 1], ['60%', '-80%']);
-	const yd = useTransform(scrollYProgress, [0, 0.2, 1], ['80%', '0%', '0%']);
+	const x = useTransform(scrollYProgress, [0, 1], ['50%', '-80%']);
+	const yd = useTransform(scrollYProgress, [0, 0.2, 1], ['70%', '0%', '0%']);
 
 	const opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
 	return (

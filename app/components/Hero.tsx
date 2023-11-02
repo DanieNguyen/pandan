@@ -43,21 +43,21 @@ export default function Hero() {
 							duration: 1.4,
 							delay: 0.6,
 						}}
-						className='ml-3 w-[20vw] text-[2vh]'>
+						className='ml-3 w-[25vw] text-[2vh]'>
 						SENIOR PRODUCT DESIGNER PREVIOUSLY AT{' '}
 						<span className='font-semibold'>RUBRIK</span> &{' '}
 						<span className='font-semibold'>GARMIN</span>
 					</motion.div>
 				</motion.div>
 				<motion.div
-					initial={{ y: 200 }}
+					initial={{ y: 250 }}
 					animate={{ y: 0 }}
 					transition={{
 						ease: [0.6, -0.4, 0.01, 0.9],
 						duration: 1.2,
 					}}
 					style={{ x: xd, opacity }}
-					className='text-[20vh] text-white mix-blend-difference mt-8 leading-none font-medium tracking-tighter'>
+					className='text-[16vh] 2xl:text-[20vh] text-white mix-blend-difference mt-8 leading-none font-medium tracking-tighter'>
 					DANIEL
 				</motion.div>
 			</div>
@@ -73,20 +73,20 @@ export default function Hero() {
 							duration: 1.4,
 							delay: 0.6,
 						}}
-						className='w-[30vw] text-[2vh] text-right'>
+						className='w-[40vw] text-[2vh] text-right'>
 						DESIGNING EXPERIENCES TO MAKE DREAMS COME TRUE & LOOKING
 						FORWARD TO WORKING WITH YOU
 					</motion.div>
 				</motion.div>
 				<motion.div
-					initial={{ y: 200 }}
+					initial={{ y: 250 }}
 					animate={{ y: 0 }}
 					transition={{
 						ease: [0.6, -0.4, 0.01, 0.9],
 						duration: 1.2,
 					}}
 					style={{ x: xn, opacity }}
-					className='text-[20vh] text-white mix-blend-difference leading-none mt-8 font-medium tracking-tighter'>
+					className='text-[16vh] 2xl:text-[20vh] text-white mix-blend-difference leading-none mt-8 font-medium tracking-tighter'>
 					NGUYEN
 				</motion.div>
 			</div>

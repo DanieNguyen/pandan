@@ -37,7 +37,7 @@ export default function NavBar() {
 					ABOUT
 				</Link>
 			</div>
-			<div className='col-span-2 col-start-11 text-sm 2xl:text-xl'>
+			<div className='col-span-3 col-start-10 text-sm 2xl:text-xl text-right'>
 				<div className='flex flex-row justify-end w-full mb-4'>
 					<p className='pr-1'>SEATTLE /</p>
 					<Clock

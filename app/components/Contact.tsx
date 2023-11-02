@@ -62,7 +62,7 @@ export default function Contact() {
 			</motion.div>
 			<div className='bottom-0 bg-black text-white grid grid-cols-12 gap-4 w-screen border-t-[1px] py-4 px-8'>
 				<div className='col-span-2'>©PANDAN STUDIO</div>
-				<div className='col-start-4 col-span-4'>
+				<div className='col-start-4 col-span-6'>
 					DESIGNED & DEVELOPED BY DANIEL NGUYEN
 				</div>
 				<div className='col-start-10 col-span-3 text-right'>
