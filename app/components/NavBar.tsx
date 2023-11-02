@@ -16,11 +16,11 @@ export default function NavBar() {
 			<div className='col-span-2'>
 				<Link
 					href='#home'
-					className='font-semibold tracking-tight text-sm 2xl:text-xl hover:text-[#767676]'>
+					className='font-medium tracking-tight text-sm 2xl:text-xl hover:text-[#767676]'>
 					DANIEL NGUYEN
 				</Link>
 			</div>
-			<div className='col-start-5 col-end-8 text-sm 2xl:text-xl font-medium tracking-tight'>
+			<div className='col-start-5 col-end-8 text-sm 2xl:text-xl tracking-tight'>
 				<Link href='#work' className='pr-16 hover:text-[#767676]'>
 					WORK
 				</Link>
