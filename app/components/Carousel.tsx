@@ -9,9 +9,9 @@ import Poof from '../../public/images/poof.png';
 function CaseStudy(props: any) {
 	return (
 		<div className='group snap-center snap-always'>
-			<motion.div className='object-cover h-[50vh] w-[45vhs] rounded overflow-hidden'>
+			<motion.div className='object-cover h-[50vh] 2xl:h-[50vh] 2xl:w-[80vh] rounded overflow-hidden'>
 				<Image
-					className='h-full w-full object-cover transition ease-out duration-1000 hover:scale-110'
+					className='h-full w-full object-cover transition ease-out duration-1000 hover:scale-105'
 					src={props.url}
 					width={3200}
 					height={2000}
