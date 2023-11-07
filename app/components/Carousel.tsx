@@ -39,11 +39,14 @@ export default function Carousel() {
 	const opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
 	return (
 		<section>
-			<div ref={ref} id='work' className='relative h-[300vh] w-full'>
+			<div
+				ref={ref}
+				id='work'
+				className='relative h-[300vh] w-full text-black'>
 				<div className='sticky top-0 h-screen items-center overflow-hidden snap'>
 					<motion.div
 						style={{ y: yd, opacity }}
-						className='text-center text-[25vh] mt-[10vh] tracking-tighter mb-[-20vh]'>
+						className='text-center text-[25vh] mt-[10vh] tracking-tighter mb-[-20vh] text-black'>
 						WOR<span className='font-sfital ss-01'>K</span>
 					</motion.div>
 					<motion.div

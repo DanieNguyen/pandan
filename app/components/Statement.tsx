@@ -14,7 +14,7 @@ export default function Statement() {
 		[0, 1, 0, 0]
 	);
 	return (
-		<div className='h-[50vh] 2xl:h-[60vh]'>
+		<div className='h-[50vh] 2xl:h-[60vh] text-black'>
 			<motion.div
 				ref={ref}
 				style={{ y: yd, opacity }}
