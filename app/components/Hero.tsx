@@ -43,7 +43,7 @@ export default function Hero() {
 							duration: 1.4,
 							delay: 0.6,
 						}}
-						className='ml-3 w-[25vw] text-[2vh] text-black'>
+						className='ml-3 w-[20vw] text-[2vh] text-black'>
 						SENIOR PRODUCT DESIGNER PREVIOUSLY AT{' '}
 						<span className='font-semibold'>RUBRIK</span> &{' '}
 						<span className='font-semibold'>GARMIN</span>
@@ -73,7 +73,7 @@ export default function Hero() {
 							duration: 1.4,
 							delay: 0.6,
 						}}
-						className='w-[40vw] text-[2vh] text-right text-black'>
+						className='w-[30vw] text-[2vh] text-right text-black'>
 						DESIGNING EXPERIENCES TO MAKE DREAMS COME TRUE & LOOKING
 						FORWARD TO WORKING WITH YOU
 					</motion.div>
