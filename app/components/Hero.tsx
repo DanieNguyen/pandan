@@ -50,7 +50,7 @@ export default function Hero() {
 					</motion.div>
 				</motion.div>
 				<motion.div
-					initial={{ y: '100%' }}
+					initial={{ y: '120%' }}
 					animate={{ y: 0 }}
 					transition={{
 						ease: [0.6, -0.4, 0.01, 0.9],
@@ -79,7 +79,7 @@ export default function Hero() {
 					</motion.div>
 				</motion.div>
 				<motion.div
-					initial={{ y: '100%' }}
+					initial={{ y: '120%' }}
 					animate={{ y: 0 }}
 					transition={{
 						ease: [0.6, -0.4, 0.01, 0.9],
