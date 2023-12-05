@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { easeInOut, motion } from 'framer-motion';
 
-function MainGrid({ children }) {
+function MainGrid({ children }: any) {
 	return (
 		<div className='pt-8 px-8 grid grid-cols-12 gap-6 w-full mt-36 min-[1920px]:grid-cols-8 md:max-xl:grid-cols-10'>
 			{children}
@@ -45,7 +45,7 @@ function Text(props: any) {
 	);
 }
 
-function TextGrid({ children }) {
+function TextGrid({ children }: any) {
 	return (
 		<div className='mb-8 col-start-5 col-end-9 w-full min-[1920px]:col-start-4 min-[1920px]:col-end-6 md:max-xl:col-start-4 md:max-xl:col-end-8'>
 			{children}
@@ -53,7 +53,7 @@ function TextGrid({ children }) {
 	);
 }
 
-function ImageGrid({ children }) {
+function ImageGrid({ children }: any) {
 	return (
 		<div className='col-start-3 col-end-11 w-full min-[1920px]:col-start-2 min-[1920px]:col-end-8 md:max-xl:col-start-3 md:max-xl:col-end-9'>
 			{children}
@@ -76,7 +76,7 @@ function ImageWrap(props: any) {
 	);
 }
 
-function LeftCaption({ children }) {
+function LeftCaption({ children }: any) {
 	return (
 		<div className='col-start-1 col-end-3 font-sf place-self-end text-neutral-500 text-right min-[1920px]:col-start-1 min-[1920px]:col-end-2'>
 			{children}
@@ -84,7 +84,7 @@ function LeftCaption({ children }) {
 	);
 }
 
-function RightCaption({ children }) {
+function RightCaption({ children }: any) {
 	return (
 		<div className='col-start-11 col-end-13 font-sf place-self-end text-neutral-500 min-[1920px]:col-start-8 min-[1920px]:col-end-9 md:max-xl:col-start-9 md:max-xl:col-end-11'>
 			{children}

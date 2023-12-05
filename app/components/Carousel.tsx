@@ -61,13 +61,11 @@ export default function Carousel() {
 							url={Sonar}
 							link='/sonar'
 							company='RUBRIK 2022 / UX DESIGN'></CaseStudy>
-
 						<CaseStudy
 							project='Poof App'
 							url={Poof}
 							link='/sonar'
 							company='FREELANCE / UX DESIGN + DEV'></CaseStudy>
-
 						<CaseStudy
 							project='Spotify Podcasts'
 							url={Spotify}
