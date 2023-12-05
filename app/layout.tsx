@@ -2,7 +2,11 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({
+	subsets: ['latin-ext'],
+	display: 'swap',
+	variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
 	title: 'Pandan Studio',
@@ -15,8 +19,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en' className='scroll-smooth'>
-			<body className={inter.className}>{children}</body>
+		<html lang='en' className={`${inter.variable}`}>
+			<body className='scroll-smooth'>{children}</body>
 		</html>
 	);
 }

@@ -18,7 +18,7 @@ export default function Statement() {
 			<motion.div
 				ref={ref}
 				style={{ y: yd, opacity }}
-				className='relative top-24 flex flex-col text-[5vh] 2xl:text-[6vh] leading-relaxed'>
+				className='relative top-24 flex flex-col text-[5vh] xl:text-[6vh] leading-relaxed'>
 				<motion.div className='flex flex-row justify-center'>
 					<h1>A&nbsp;</h1>
 					<span className='font-sfital common-ligatures ss-01'>

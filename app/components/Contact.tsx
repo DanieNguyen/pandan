@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import { DiagonalArrow } from '../components/Arrow';
 
 export default function Contact() {
 	const ref = useRef(null);
@@ -33,28 +34,28 @@ export default function Contact() {
 							className='max-w-fit'
 							href='mailto:danyen125@gmail.com'>
 							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-								EMAIL &#x2197;
+								Email <DiagonalArrow></DiagonalArrow>
 							</span>
 						</a>
 						<a
 							className='max-w-fit'
 							href='https://www.linkedin.com/in/pandang/'>
 							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-								LINKEDIN &#x2197;
+								LINKEDIN <DiagonalArrow></DiagonalArrow>
 							</span>
 						</a>
 						<a
 							className='max-w-fit'
 							href='https://dribbble.com/dangux'>
 							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-								DRIBBBLE &#x2197;
+								DRIBBBLE <DiagonalArrow></DiagonalArrow>
 							</span>
 						</a>
 						<a
 							className='max-w-fit'
 							href='https://www.instagram.com/pandan.lion/'>
 							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-								INSTAGRAM &#x2197;
+								INSTAGRAM <DiagonalArrow></DiagonalArrow>
 							</span>
 						</a>
 					</div>
