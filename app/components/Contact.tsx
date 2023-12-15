@@ -34,7 +34,7 @@ export default function Contact() {
 							className='max-w-fit'
 							href='mailto:danyen125@gmail.com'>
 							<span className='bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-								Email <DiagonalArrow></DiagonalArrow>
+								EMAIL <DiagonalArrow></DiagonalArrow>
 							</span>
 						</a>
 						<a
