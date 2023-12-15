@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({
 	subsets: ['latin-ext'],
@@ -20,7 +21,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en' className={`${inter.variable}`}>
-			<body className='scroll-smooth'>{children}</body>
+			<body className='scroll-smooth'>
+				{children}
+				<SpeedInsights />
+			</body>
 		</html>
 	);
 }
