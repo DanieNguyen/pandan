@@ -1,7 +1,7 @@
 'use client'; // This is a client component 👈🏽
 import ScrollBar from '../components/ScrollBar';
 import NavBar from '../components/NavBar';
-import SonarDash from '../../public/images/sonar/sonarHero.png';
+import SonarDash from '../../public/images/sonar/hero.png';
 import OldDash from '../../public/images/sonar/prevDash.png';
 import Stats from '../../public/images/sonar/stats.png';
 import oldLayout from '../../public/images/sonar/oldLayout.png';
