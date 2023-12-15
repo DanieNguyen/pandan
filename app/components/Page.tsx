@@ -102,6 +102,7 @@ function LeftImage(props: any) {
 				height={2000}
 				quality={100}
 				placeholder='blur'
+				priority
 				alt={props.alt}></Image>
 		</div>
 	);
