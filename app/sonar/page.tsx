@@ -102,8 +102,8 @@ export default function Home() {
 						painpoints. We conducted interviews where we asked them
 						about their role and how they use SDM in addition to
 						their thoughts about the dashboard. We utilizied the
-						jobs-to-be-done framework to hone in on our users' key
-						actions and tasks.
+						jobs-to-be-done framework to hone in on our users&apos;
+						key actions and tasks.
 					</Text>
 					<h3 className='mt-8'>Key Findings</h3>
 					<ul className='list-disc text-neutral-500 font-light leading-7 list-inside'>
@@ -112,10 +112,12 @@ export default function Home() {
 							sensitive data
 						</li>
 						<li>
-							Users don't see value in half of the dashboard's
-							information
+							Users don&apos;t see value in half of the
+							dashboard's information
 						</li>
-						<li>Users don't think the dashboard is actionable</li>
+						<li>
+							Users don&apos;t think the dashboard is actionable
+						</li>
 					</ul>
 				</TextGrid>
 				<ImageGrid>
@@ -140,7 +142,7 @@ export default function Home() {
 						previous dashboard was outdated by 2-3 years and no one
 						could justify its purposes. So, I decided to give it a
 						fresh start and work based mainly off our research and
-						users' thoughts. I began with the foundation of the
+						users&apos; thoughts. I began with the foundation of the
 						dashboard: <Span>the layout.</Span>
 					</Text>
 				</TextGrid>
@@ -161,11 +163,11 @@ export default function Home() {
 						unlike the previous dashboard.
 					</Text>
 					<Text>
-						The next problem after the layout was addressing users'
-						confusion about the dashboard. One of the main points
-						brought up was the terminology.{' '}
+						The next problem after the layout was addressing
+						users&apos; confusion about the dashboard. One of the
+						main points brought up was the terminology.{' '}
 						<Span>
-							Users didn't understand what hits meant and the
+							Users didn&apos;t understand what hits meant and the
 							definitions for risk were not consistent.
 						</Span>{' '}
 						I worked with the PM and technical writing team to
@@ -177,11 +179,11 @@ export default function Home() {
 				</ImageGrid>
 				<TextGrid>
 					<Text>
-						After the terms were finalized, I referred to the users'
-						mental model and key tasks again. Our users care mostly
-						about files, then open access, then policies and
-						objects. I decided to reformat the dashboard to match
-						this mental modal.
+						After the terms were finalized, I referred to the
+						users&apos; mental model and key tasks again. Our users
+						care mostly about files, then open access, then policies
+						and objects. I decided to reformat the dashboard to
+						match this mental modal.
 					</Text>
 				</TextGrid>
 				<ImageGrid>
@@ -240,22 +242,23 @@ export default function Home() {
 					<Text title='Reflection'>
 						I had a great time working on this project. It was
 						exciting to lead this project and drive it to success.
-						I'm proud of convincing the team to strive for better UX
-						and being able to make it happen smoothly. Some of my
-						takeways:
+						I&apos;m proud of convincing the team to strive for
+						better UX and being able to make it happen smoothly.
+						Some of my takeways:
 					</Text>
 
 					<ul className='mt-8 list-disc text-neutral-500 font-light leading-7 list-outside'>
 						<li>
-							It's up to the designer to take ownership for great
-							UX. If I hadn't pushed for an improvement, then
-							nothing would have improved for our users.
+							It&apos;s up to the designer to take ownership for
+							great UX. If I hadn&apos;t pushed for an
+							improvement, then nothing would have improved for
+							our users.
 						</li>
 						<li>
 							I need to trust in myself. Despite not being able to
-							validate with users' at every step, I still need to
-							make the best decision I can with the information I
-							have.
+							validate with users&apos; at every step, I still
+							need to make the best decision I can with the
+							information I have.
 						</li>
 						<li>
 							Designng with intention is important. Every element
