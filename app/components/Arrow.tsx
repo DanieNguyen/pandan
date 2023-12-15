@@ -10,4 +10,12 @@ function RightArrow() {
 	return <span className='rotate-90 inline-block'>{'\u2191'}</span>;
 }
 
-export { DiagonalArrow, RightArrow, ReverseArrow };
+function UpArrow() {
+	return <span className='inline-block'>{'\u2191'}</span>;
+}
+
+function DownArrow() {
+	return <span className='inline-block'>{'\u2193'}</span>;
+}
+
+export { DiagonalArrow, RightArrow, ReverseArrow, UpArrow, DownArrow };

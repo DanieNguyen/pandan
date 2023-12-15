@@ -1,13 +1,21 @@
 'use client'; // This is a client component 👈🏽
 import ScrollBar from '../components/ScrollBar';
 import NavBar from '../components/NavBar';
-import SonarDash from '../../public/images/sonar/sonarhero.png';
-import OldDash from '../../public/images/sonar/olddash.png';
+import SonarDash from '../../public/images/sonar/sonarHero.png';
+import OldDash from '../../public/images/sonar/prevDash.png';
 import Stats from '../../public/images/sonar/stats.png';
-import Data from '../../public/images/sonar/DataMonitoring.png';
-import Rubrik from '../../public/images/sonar/Rubrik.png';
-import Jobs from '../../public/images/sonar/jobs.png';
-import { DiagonalArrow, ReverseArrow } from '../components/Arrow';
+import oldLayout from '../../public/images/sonar/oldLayout.png';
+import newLayout from '../../public/images/sonar/newLayout.png';
+import Data from '../../public/images/sonar/dataMonitoring.png';
+import Rubrik from '../../public/images/sonar/rubrik.png';
+import Jobs from '../../public/images/sonar/jobsDone.png';
+import Terms from '../../public/images/sonar/terms.png';
+import ih from '../../public/images/sonar/ih.png';
+import inspo from '../../public/images/sonar/visuals.png';
+import viz from '../../public/images/sonar/widgets.png';
+import final from '../../public/images/sonar/final.png';
+import { DiagonalArrow, ReverseArrow, DownArrow } from '../components/Arrow';
+import Top from '../components/Top';
 import {
 	MainGrid,
 	Hero,
@@ -19,7 +27,8 @@ import {
 	RightCaption,
 	LeftImage,
 	RightImage,
-	Problem,
+	Goal,
+	Span,
 } from '../components/Page';
 
 export default function Home() {
@@ -48,78 +57,66 @@ export default function Home() {
 
 					<p className='mt-8 font-medium text-black'>Timeline</p>
 					<p className='font-light'>Feb 2022 - April 2022</p>
+
+					<a
+						className='mt-8 block font-medium text-black'
+						href='#final'>
+						<DownArrow></DownArrow> Final Designs{' '}
+						<DownArrow></DownArrow>
+					</a>
 				</div>
 				<TextGrid>
 					<p className='font-inter font-light text-neutral-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight tracking-tighter'>
-						Redesigning the{' '}
-						<span className='text-black font-normal'>
-							Data Discovery
-						</span>{' '}
-						dashboard to help companies identify and summarize
-						sensitive data in their environment.{' '}
+						Redesigning the <Span>Sensitive Data Monitoring</Span>
+						dashboard to provide actionable insights{' '}
 					</p>
-					<Text title='Overview'>
-						While the data discovery platform helped our users
-						discover patterns and manage their sensitive data, the
-						main dashboard did not accurately summarize and show the
-						big picture of our users’ data. Users expressed
-						confusion towards the dashboard and its overall value.
-						We worked to resolve this confusion with a complete
-						redesign of the Data Discovery Dashboard.
+					<Text title='Context'>
+						Originally, the scope of the project was to migrate the
+						existing dashboard into our new design system, However,
+						I felt the dashboard could be improved since there were
+						some user complaints about the dashboard and its value.{' '}
+						<Span>
+							So, I persuaded the team to redesign the entire
+							dashboard.
+						</Span>{' '}
+						I assisted in research, led the design, and drove the
+						implementation strategy for this project.
 					</Text>
-					<Text title='The Product'>
-						The Data Discovery platform helps companies identify
-						sensitive data in their environment. With ransomware on
-						the rise, maintaining visibility of sensitive
-						information such as users’ credit cards is key to data
-						security. The platform also helps with compliance for
-						legal regulations such as the HIPAA and GDPR.
+					<Text title='What is Sensitive Data Monitoring?'>
+						Sensitive Data Monitoring (SDM) is a Rubrik application
+						that helps companies manage confidential ifnroamtion in
+						their data backups. For example, healthcare
+						organizations have critical data about their patients
+						and need to follow HIPAA regulations on how to handle
+						that data. SDM assists in identifying who has access to
+						the data, where the data lives, and how secure the data
+						is.
 					</Text>
 				</TextGrid>
 				<LeftImage src={Data} alt='Rubrik'></LeftImage>
 				<RightImage src={Rubrik} alt='Rubrik'></RightImage>
 				<TextGrid>
-					<Text title='Opportunity'>
-						The original scope of the project was to migrate the
-						existing Data Discovery Dashboard to the new design
-						system. However, given the past user complaints and
-						research findings, I pushed our team to redesign the
-						dashboard instead. With agreement from my PM and
-						Engineering counterparts, I drove the project from
-						end-to-end.
-					</Text>
 					<Text title='Research'>
-						A couple months prior to this project, our UX
-						researcher, PM, and I interviewed 7 users about the Data
-						Discovery platform to identify their mental modal and
-						jobs to be done in regards to data security. We also
-						received feedback from the sales team with direct user
-						complaints for the dashboard.
+						To begin the project, I collaborated with our user
+						research to identify our users' mental model and
+						painpoints. We conducted interviews where we asked them
+						about their role and how they use SDM in addition to
+						their thoughts about the dashboard. We utilizied the
+						jobs-to-be-done framework to hone in on our users' key
+						actions and tasks.
 					</Text>
-				</TextGrid>
-				<ImageGrid>
-					<Problem>
-						The existing dashboard lacks actionable insights for
-						users. There’s a lack of cohesion between data
-						visualizations and unclear terminology used.{' '}
-					</Problem>
-				</ImageGrid>
-				<TextGrid>
-					<Text title='Design'>
-						With the problem defined, I began my design process for
-						the dashboard and worked with the design team to iterate
-						and explore my thought processes. As we were on a tight
-						timeline, I defined three goals for the dashboard to
-						help myself focus.
-					</Text>
-					<Text title='Research'>
-						A couple months prior to this project, our UX
-						researcher, PM, and I interviewed 7 users about the Data
-						Discovery platform to identify their mental modal and
-						jobs to be done in regards to data security. We also
-						received feedback from the sales team with direct user
-						complaints for the dashboard.
-					</Text>
+					<h3 className='mt-8'>Key Findings</h3>
+					<ul className='list-disc text-neutral-500 font-light leading-7 list-inside'>
+						<li>
+							Users are focused on managing risk of their
+							sensitive data
+						</li>
+						<li>
+							Users don't see value in half of the dashboard's
+							information
+						</li>
+						<li>Users don't think the dashboard is actionable</li>
+					</ul>
 				</TextGrid>
 				<ImageGrid>
 					<ImageWrap src={Jobs} alt='Jobs to be done'></ImageWrap>
@@ -130,7 +127,144 @@ export default function Home() {
 						alt='Previous Dashboard'></ImageWrap>
 				</ImageGrid>
 				<ImageGrid>
-					<div className='flex justify-between mt-24'>
+					<Goal>
+						How can we make the dashboard more actionable and
+						insightful?{' '}
+					</Goal>
+				</ImageGrid>
+				<TextGrid>
+					<Text title='Design'>
+						With the findings and goal in mind, I began to work on
+						the designs. I chose to rebuild the dashboard from the
+						ground up after discussing it with the design team. The
+						previous dashboard was outdated by 2-3 years and no one
+						could justify its purposes. So, I decided to give it a
+						fresh start and work based mainly off our research and
+						users' thoughts. I began with the foundation of the
+						dashboard: <Span>the layout.</Span>
+					</Text>
+				</TextGrid>
+
+				<LeftImage
+					src={oldLayout}
+					alt='old dashboard layout'></LeftImage>
+				<RightImage
+					src={newLayout}
+					alt='new dashboard layout'></RightImage>
+				<TextGrid>
+					<Text>
+						I migrated to our new grid system and focused on
+						creating a modular dashboard for responsiveness. The new
+						layout allows for multiple widget sizes and positions,
+						optimizing its capabilities. It also will be easier to
+						make responsive since its widgets will be uniform,
+						unlike the previous dashboard.
+					</Text>
+					<Text>
+						The next problem after the layout was addressing users'
+						confusion about the dashboard. One of the main points
+						brought up was the terminology.{' '}
+						<Span>
+							Users didn't understand what hits meant and the
+							definitions for risk were not consistent.
+						</Span>{' '}
+						I worked with the PM and technical writing team to
+						redefine the terminology for our users.
+					</Text>
+				</TextGrid>
+				<ImageGrid>
+					<ImageWrap src={Terms} alt='terminology'></ImageWrap>
+				</ImageGrid>
+				<TextGrid>
+					<Text>
+						After the terms were finalized, I referred to the users'
+						mental model and key tasks again. Our users care mostly
+						about files, then open access, then policies and
+						objects. I decided to reformat the dashboard to match
+						this mental modal.
+					</Text>
+				</TextGrid>
+				<ImageGrid>
+					<ImageWrap src={ih} alt='Information Hierarchy'></ImageWrap>
+				</ImageGrid>
+				<TextGrid>
+					<Text>
+						With the basics of the dashboard set, I began working on
+						the data visualizations. I spent hours researching data
+						visualization and thought very carefully about how to
+						give the users actionable insights. I first compiled a
+						list of all the statistics/information our product can
+						show and then sought to combine the information into
+						different visualizations.
+					</Text>
+				</TextGrid>
+				<LeftImage src={Stats} alt='List of statistics'></LeftImage>
+				<RightImage src={inspo}></RightImage>
+				<TextGrid>
+					<Text>
+						Unfortunately user research was not possible due to the
+						timeline but I validated my widget explorations with my
+						design team, the PM, and the sales engineering team.
+						Since the sales engineering team works closely with
+						users, their feedback was super helpful and we finalized
+						on the widgets.{' '}
+					</Text>
+				</TextGrid>
+				<ImageGrid>
+					<ImageWrap src={viz} alt='Widget updates'></ImageWrap>
+				</ImageGrid>
+				<TextGrid>
+					<Text>
+						After the widgets were finalized, I combined them onto
+						the dashboard and worked with the engineering team to
+						implement the new dashboard.{' '}
+						<Span>
+							Below is the final product currently in production.
+							:)
+						</Span>
+					</Text>
+					<div id='final'></div>
+				</TextGrid>
+				<ImageGrid>
+					<ImageWrap src={final} alt='Final dashboard'></ImageWrap>
+				</ImageGrid>
+				<TextGrid>
+					<Text title='Impact'>
+						After the dashboard was released,{' '}
+						<Span>users complaints dropped to 0%</Span> and many
+						users gave compliments to the redesign. The sales
+						engineering team even reported that it helped draw in
+						new customers because of its great summary of their data
+						backups.
+					</Text>
+					<Text title='Reflection'>
+						I had a great time working on this project. It was
+						exciting to lead this project and drive it to success.
+						I'm proud of convincing the team to strive for better UX
+						and being able to make it happen smoothly. Some of my
+						takeways:
+					</Text>
+
+					<ul className='mt-8 list-disc text-neutral-500 font-light leading-7 list-outside'>
+						<li>
+							It's up to the designer to take ownership for great
+							UX. If I hadn't pushed for an improvement, then
+							nothing would have improved for our users.
+						</li>
+						<li>
+							I need to trust in myself. Despite not being able to
+							validate with users' at every step, I still need to
+							make the best decision I can with the information I
+							have.
+						</li>
+						<li>
+							Designng with intention is important. Every element
+							should matter on a screen.
+						</li>
+					</ul>
+				</TextGrid>
+				<ImageGrid>
+					<div className='flex justify-between mt-24 mb-24'>
 						<div className=''>
 							<p className='font-sfital2 text-xl mb-4 text-neutral-500 text-right'>
 								Previous
@@ -158,6 +292,7 @@ export default function Home() {
 					</div>
 				</ImageGrid>
 			</MainGrid>
+			<Top></Top>
 		</main>
 	);
 }
