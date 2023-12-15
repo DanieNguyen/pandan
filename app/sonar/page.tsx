@@ -98,7 +98,7 @@ export default function Home() {
 				<TextGrid>
 					<Text title='Research'>
 						To begin the project, I collaborated with our user
-						research to identify our users' mental model and
+						research to identify our users&apos; mental model and
 						painpoints. We conducted interviews where we asked them
 						about their role and how they use SDM in addition to
 						their thoughts about the dashboard. We utilizied the
@@ -113,7 +113,7 @@ export default function Home() {
 						</li>
 						<li>
 							Users don&apos;t see value in half of the
-							dashboard's information
+							dashboard&apos;s information
 						</li>
 						<li>
 							Users don&apos;t think the dashboard is actionable
@@ -222,7 +222,6 @@ export default function Home() {
 						implement the new dashboard.{' '}
 						<Span>
 							Below is the final product currently in production.
-							:)
 						</Span>
 					</Text>
 					<div id='final'></div>
