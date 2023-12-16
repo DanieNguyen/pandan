@@ -15,6 +15,7 @@ import Color from '../../public/images/poof/color.png';
 import logo from '../../public/images/poof/logo.png';
 import final from '../../public/images/poof/flows.png';
 import dark from '../../public/images/poof/dark.png';
+import close from '../../public/images/poof/close.png';
 import market from '../../public/images/poof/website.png';
 import { DiagonalArrow, ReverseArrow, DownArrow } from '../components/Arrow';
 import Top from '../components/Top';
@@ -237,6 +238,9 @@ export default function Home() {
 						other key flows.
 					</Text>
 				</TextGrid>
+				<ImageGrid>
+					<ImageWrap src={close} alt='close up'></ImageWrap>
+				</ImageGrid>
 				<ImageGrid>
 					<ImageWrap src={final} alt='Final Designs'></ImageWrap>
 				</ImageGrid>
