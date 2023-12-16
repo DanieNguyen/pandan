@@ -273,7 +273,7 @@ export default function Home() {
 								Previous
 							</p>
 							<a className='max-w-fit' href='/threat'>
-								<span className='bg-right-bottom bg-gradient-to-l from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
+								<span className='bg-right-bottom bg-gradient-to-l text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
 									<ReverseArrow></ReverseArrow> THREAT HUNTING
 								</span>
 							</a>
@@ -283,7 +283,7 @@ export default function Home() {
 								Next
 							</p>
 							<a className='max-w-fit' href='/poof'>
-								<span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
+								<span className='bg-left-bottom bg-gradient-to-r text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
 									POOF CASH <DiagonalArrow></DiagonalArrow>
 								</span>
 							</a>
