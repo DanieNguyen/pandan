@@ -127,11 +127,11 @@ export default function Home() {
 				</ImageGrid>
 				<TextGrid>
 					<Text>
-						Although we didn't win the hackathon, we were in the{' '}
-						<Span>Top 10.</Span> The founder raised funding and then
-						wanted to expand on his vision for Poof.Cash. I was also
-						eager to learn more since it was new domain space for me
-						to design for and take ownership of.
+						Although we didn&apos;t win the hackathon, we were in
+						the <Span>Top 10.</Span> The founder raised funding and
+						then wanted to expand on his vision for Poof.Cash. I was
+						also eager to learn more since it was new domain space
+						for me to design for and take ownership of.
 					</Text>
 				</TextGrid>
 				<ImageGrid>
