@@ -30,7 +30,6 @@ import {
 	Goal,
 	Span,
 } from '../components/Page';
-import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -217,7 +216,9 @@ export default function Home() {
 					<ImageWrap src={viz} alt='Widget updates'></ImageWrap>
 				</ImageGrid>
 				<TextGrid>
-					<Text>
+					<div id='final'></div>
+
+					<Text title='Final Designs'>
 						After the widgets were finalized, I combined them onto
 						the dashboard and worked with the engineering team to
 						implement the new dashboard.{' '}
@@ -225,7 +226,6 @@ export default function Home() {
 							Below is the final product currently in production.
 						</Span>
 					</Text>
-					<div id='final'></div>
 				</TextGrid>
 				<ImageGrid>
 					<ImageWrap src={final} alt='Final dashboard'></ImageWrap>

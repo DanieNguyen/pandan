@@ -121,7 +121,7 @@ function RightImage(props: any) {
 function Goal(props: any) {
 	return (
 		<div>
-			<h1 className='text-2xl font-light tracking-tight text-center mb-4 mt-24'>
+			<h1 className='text-2xl text-black font-light tracking-tight text-center mb-4 mt-24'>
 				{props.title}
 			</h1>
 			<div className='w-full text-center text-black text-5xl font-normal font-sfital2 leading-normal min-[1920px]:text-6xl min-[1920px]:leading-relaxed md:max-xl:text-4xl md:max-xl:leading-relaxed'>

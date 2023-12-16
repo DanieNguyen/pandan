@@ -56,7 +56,7 @@ export default function Home() {
 					<p className='font-light'>1 Sales Engineer</p>
 
 					<p className='mt-8 font-medium text-black'>Timeline</p>
-					<p className='font-light'>Feb 2022 - April 2022</p>
+					<p className='font-light'>April 2022 - Aug 2022</p>
 
 					<a
 						className='mt-8 block font-medium text-black'

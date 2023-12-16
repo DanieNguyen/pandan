@@ -227,6 +227,7 @@ export default function Home() {
 					<ImageWrap src={logo} alt='Logo'></ImageWrap>
 				</ImageGrid>
 				<TextGrid>
+					<div id='final'></div>
 					<Text title='Final App Designs'>
 						With the design improvements, new design system, and
 						branding, I wrapped up the app designs. The new designs
@@ -235,7 +236,6 @@ export default function Home() {
 						improved deposit and withdrawal flow plus some of the
 						other key flows.
 					</Text>
-					<div id='final'></div>
 				</TextGrid>
 				<ImageGrid>
 					<ImageWrap src={final} alt='Final Designs'></ImageWrap>

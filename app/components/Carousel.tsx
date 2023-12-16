@@ -14,8 +14,6 @@ function CaseStudy(props: any) {
 					<Image
 						className='h-full w-full object-cover transition ease-out duration-1000 hover:scale-105'
 						src={props.url}
-						width={3200}
-						height={2000}
 						quality={100}
 						placeholder='blur'
 						priority
