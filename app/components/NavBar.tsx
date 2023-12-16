@@ -33,7 +33,7 @@ export default function NavBar() {
 				<Link href='/#contact' className='pr-16 hover:text-[#767676]'>
 					CONTACT
 				</Link>
-				<Link href='' className='hover:text-[#767676]'>
+				<Link href='/#about' className='hover:text-[#767676]'>
 					ABOUT
 				</Link>
 			</div>

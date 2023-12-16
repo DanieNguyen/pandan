@@ -10,11 +10,13 @@ export default function Statement() {
 	const yd = useTransform(scrollYProgress, [0, 0.5, 1], ['100%', '0%', '0%']);
 	const opacity = useTransform(
 		scrollYProgress,
-		[0, 0.5, 0.7, 1],
+		[0, 0.7, 0.85, 1],
 		[0, 1, 0, 0]
 	);
 	return (
-		<div className='h-[50vh] 2xl:h-[60vh] text-black'>
+		<div
+			className='h-[50vh] 2xl:h-[60vh] text-black scroll-mt-44'
+			id='about'>
 			<motion.div
 				ref={ref}
 				style={{ y: yd, opacity }}

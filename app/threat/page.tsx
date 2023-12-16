@@ -30,7 +30,6 @@ import {
 	Goal,
 	Span,
 } from '../components/Page';
-import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -85,7 +84,7 @@ export default function Home() {
 					</Text>
 					<Text title='What is Sensitive Data Monitoring?'>
 						Sensitive Data Monitoring (SDM) is a Rubrik application
-						that helps companies manage confidential information in
+						that helps companies manage confidential ifnroamtion in
 						their data backups. For example, healthcare
 						organizations have critical data about their patients
 						and need to follow HIPAA regulations on how to handle
@@ -130,7 +129,7 @@ export default function Home() {
 						alt='Previous Dashboard'></ImageWrap>
 				</ImageGrid>
 				<ImageGrid>
-					<Goal title='Design Goal'>
+					<Goal>
 						How can we make the dashboard more actionable and
 						insightful?{' '}
 					</Goal>
@@ -272,7 +271,9 @@ export default function Home() {
 							<p className='font-sfital2 text-xl mb-4 text-neutral-500 text-right'>
 								Previous
 							</p>
-							<a className='max-w-fit' href='/threat'>
+							<a
+								className='max-w-fit'
+								href='https://www.linkedin.com/in/pandang/'>
 								<span className='bg-right-bottom bg-gradient-to-l from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
 									<ReverseArrow></ReverseArrow> THREAT HUNTING
 								</span>
@@ -282,7 +283,9 @@ export default function Home() {
 							<p className='font-sfital2 text-xl mb-4 text-neutral-500'>
 								Next
 							</p>
-							<a className='max-w-fit' href='/poof'>
+							<a
+								className='max-w-fit'
+								href='https://www.linkedin.com/in/pandang/'>
 								<span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
 									POOF CASH <DiagonalArrow></DiagonalArrow>
 								</span>

@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en' className={`${inter.variable}`}>
-			<body className='scroll-smooth'>
+			<body className='smooth-scroll'>
 				{children}
 				<SpeedInsights />
 			</body>

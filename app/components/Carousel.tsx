@@ -18,6 +18,7 @@ function CaseStudy(props: any) {
 						height={2000}
 						quality={100}
 						placeholder='blur'
+						priority
 						alt={props.project}></Image>
 				</motion.div>
 				<div className='hidden group-hover:flex flex-row mt-4 items-center justify-between'>
@@ -50,7 +51,7 @@ export default function Carousel() {
 				<div className='sticky top-0 h-screen items-center overflow-hidden snap'>
 					<motion.div
 						style={{ y: yd, opacity }}
-						className='text-center text-[25vh] mt-[10vh] tracking-tighter mb-[-20vh] text-black'>
+						className='text-center text-[25vh] mt-[8vh] tracking-tighter mb-[-20vh] text-black'>
 						WOR<span className='font-sfital ss-01'>K</span>
 					</motion.div>
 					<motion.div
@@ -64,18 +65,18 @@ export default function Carousel() {
 						<CaseStudy
 							project='Poof App'
 							url={Poof}
-							link='/sonar'
+							link='/poof'
 							company='FREELANCE / UX DESIGN + DEV'></CaseStudy>
 						<CaseStudy
 							project='Spotify Podcasts'
 							url={Spotify}
-							link='/sonar'
+							link='/spotify'
 							company='APPLIED 2020 / UX DESIGN'></CaseStudy>
 
 						<CaseStudy
 							project='Threat Hunts'
 							url={Threat}
-							link='/sonar'
+							link='/threat'
 							company='RUBRIK 2022 / UX DESIGN'></CaseStudy>
 					</motion.div>
 				</div>
