@@ -56,7 +56,7 @@ export default function Carousel() {
 						style={{ x }}
 						className='flex w-[4160px] flex-row gap-16 snap-y snap-mandatory'>
 						<CaseStudy
-							project='Sonar Dashboard'
+							project='Sensitive Data Dashboard'
 							url={Sonar}
 							link='/sonar'
 							company='RUBRIK 2022 / UX DESIGN'></CaseStudy>
