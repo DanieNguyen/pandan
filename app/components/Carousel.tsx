@@ -61,6 +61,11 @@ export default function Carousel() {
 							link='/sonar'
 							company='RUBRIK 2022 / UX DESIGN'></CaseStudy>
 						<CaseStudy
+							project='Threat Hunts'
+							url={Threat}
+							link='/threat'
+							company='RUBRIK 2022 / UX DESIGN'></CaseStudy>
+						<CaseStudy
 							project='Poof App'
 							url={Poof}
 							link='/poof'
@@ -70,12 +75,6 @@ export default function Carousel() {
 							url={Spotify}
 							link='/spotify'
 							company='APPLIED 2020 / UX DESIGN'></CaseStudy>
-
-						<CaseStudy
-							project='Threat Hunts'
-							url={Threat}
-							link='/threat'
-							company='RUBRIK 2022 / UX DESIGN'></CaseStudy>
 					</motion.div>
 				</div>
 			</div>
