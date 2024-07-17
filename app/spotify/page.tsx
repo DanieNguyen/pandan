@@ -34,7 +34,7 @@ import {
 	RightImage,
 	Goal,
 	Span,
-} from '../components/Page';
+} from '../components/Post';
 
 export default function Home() {
 	return (

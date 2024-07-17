@@ -8,17 +8,14 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
-			backgroundImage: {
-				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-conic':
-					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-			},
 			fontFamily: {
-				sans: ['var(--font-inter)', 'Inter', 'InterVariable'],
-				sf: ['sf', 'serif'],
-				sfbold: ['sfbold'],
-				sfital: ['sfital'],
-				sfital2: ['sfital2'],
+				sans: ['Neue Montreal', 'system-ui'],
+				serif: ['Editorial', 'ui-serif'],
+			},
+			cursor: {
+				zebra: 'url(/images/zebra.svg) 24 24, pointer',
+				rubrik: 'url(/images/rubrik.svg) 24 24, pointer',
+				poof: 'url(/images/poof.svg) 24 24, pointer',
 			},
 		},
 	},

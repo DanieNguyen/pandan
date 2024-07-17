@@ -3,48 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'sf';
-	src: url('../public/fonts/Sfizia-Regular.otf');
+	font-family: 'Neue Montreal';
+	font-style: normal;
+	src: url('../public/fonts/PPNeueMontreal-Regular.woff') format('woff'),
+		url('../public/fonts/PPNeueMontreal-Regular.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'sfbold';
-	src: url('../public/fonts/Sfizia-Bold.otf');
+	font-family: 'Editorial';
+	font-style: italic;
+	src: url('../public/fonts/PPEditorialNew-Italic.woff') format('woff'),
+		url('../public/fonts/PPEditorialNew-Italic.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'sfital';
-	src: url('../public/fonts/Sfizia-RegularItalic.otf');
-}
-
-@font-face {
-	font-family: 'sfital2';
-	src: url('../public/fonts/Sfizia-RegularItalicNo.2.otf');
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-	}
-}
-
-body {
-	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
-}
-
-html {
-	--scroll-behavior: smooth !important;
-	scroll-behavior: smooth !important;
-}
-
-::selection {
-	background: #54f28c;
+	font-family: 'Editorial';
+	font-style: normal;
+	src: url('../public/fonts/PPEditorialNew-Regular.woff') format('woff'),
+		url('../public/fonts/PPEditorialNew-Regular.woff') format('woff2');
 }

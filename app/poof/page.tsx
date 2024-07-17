@@ -32,7 +32,7 @@ import {
 	RightImage,
 	Goal,
 	Span,
-} from '../components/Page';
+} from '../components/Post';
 import Link from 'next/link';
 
 export default function Home() {

@@ -1,17 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-
-const inter = Inter({
-	subsets: ['latin-ext'],
-	display: 'swap',
-	variable: '--font-inter',
-});
 
 export const metadata: Metadata = {
-	title: 'Pandan Studio',
-	description: 'Design by Daniel Nguyen',
+	title: 'Daniel Nguyen',
+	description: 'Designer',
 };
 
 export default function RootLayout({
@@ -20,11 +12,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en' className={`${inter.variable}`}>
-			<body className='smooth-scroll'>
-				{children}
-				<SpeedInsights />
-			</body>
+		<html lang='en' className='font-sans'>
+			<body>{children}</body>
 		</html>
 	);
 }

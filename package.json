@@ -1,32 +1,32 @@
 {
-  "name": "pandan",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@vercel/analytics": "^1.1.1",
-    "@vercel/speed-insights": "^1.0.2",
-    "framer-motion": "^10.16.4",
-    "next": "^13.5.5",
-    "react": "^18.2.0",
-    "react-dom": "latest",
-    "react-live-clock": "^6.1.16",
-    "tailwindcss-opentype": "^1.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "autoprefixer": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
-    "typescript": "latest"
-  }
+	"name": "pandan",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@vercel/analytics": "^1.1.1",
+		"@vercel/speed-insights": "^1.0.2",
+		"framer-motion": "^10.16.4",
+		"next": "^14.2.5",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-live-clock": "^6.1.16",
+		"tailwindcss-opentype": "^1.1.0"
+	},
+	"devDependencies": {
+		"@types/node": "latest",
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"autoprefixer": "latest",
+		"eslint": "latest",
+		"eslint-config-next": "^14.2.5",
+		"postcss": "latest",
+		"tailwindcss": "latest",
+		"typescript": "latest"
+	}
 }
