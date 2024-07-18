@@ -86,6 +86,8 @@ export default function Page() {
 							src='/images/zboom.svg'
 							width={880}
 							height={1000}
+							priority
+							placeholder='blur'
 							alt='Laptop showing Crdit Boost landing page'
 						/>
 					</div>
@@ -103,6 +105,8 @@ export default function Page() {
 								src='/images/sonar.svg'
 								width={880}
 								height={1000}
+								priority
+								placeholder='blur'
 								alt='Laptop showing Crdit Boost landing page'
 							/>
 						</Link>
@@ -120,6 +124,8 @@ export default function Page() {
 							src='/images/zpay.svg'
 							width={880}
 							height={1000}
+							priority
+							placeholder='blur'
 							alt='Laptop showing Crdit Boost landing page'
 						/>
 					</div>
@@ -129,6 +135,7 @@ export default function Page() {
 								src='/images/poofhome.svg'
 								width={880}
 								height={1000}
+								placeholder='blur'
 								alt='Laptop showing Crdit Boost landing page'
 							/>
 						</Link>
@@ -139,6 +146,7 @@ export default function Page() {
 								src='/images/spothero.svg'
 								width={880}
 								height={1000}
+								placeholder='blur'
 								alt='Laptop showing Crdit Boost landing page'
 							/>
 						</Link>
@@ -149,6 +157,7 @@ export default function Page() {
 								src='/images/threat.svg'
 								width={880}
 								height={1000}
+								placeholder='blur'
 								alt='Laptop showing Crdit Boost landing page'
 							/>
 						</Link>
