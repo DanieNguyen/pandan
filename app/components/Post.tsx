@@ -3,7 +3,7 @@ import { easeInOut, motion } from 'framer-motion';
 
 function MainGrid({ children }: any) {
 	return (
-		<div className='pt-8 px-8 grid grid-cols-12 gap-6 w-full mt-36 min-[1920px]:grid-cols-8 md:max-xl:grid-cols-10'>
+		<div className='p-16 grid grid-cols-12 gap-6 w-full mt-36 min-[1920px]:grid-cols-8 md:max-xl:grid-cols-10'>
 			{children}
 		</div>
 	);
