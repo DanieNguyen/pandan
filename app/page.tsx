@@ -78,8 +78,8 @@ export default function Page() {
 							initial={{ y: 0 }}
 							animate={{ y: '-100%' }}
 							transition={{
-								delay: 1.4,
-								duration: 0.8,
+								delay: 1.6,
+								duration: 0.6,
 							}}
 							className='bg-[#d8cdc2] w-full h-full absolute z-10'></motion.div>
 						<Image
@@ -87,7 +87,6 @@ export default function Page() {
 							width={880}
 							height={1000}
 							priority
-							placeholder='blur'
 							alt='Laptop showing Crdit Boost landing page'
 						/>
 					</div>
@@ -97,7 +96,7 @@ export default function Page() {
 							animate={{ y: '-100%' }}
 							transition={{
 								delay: 1.8,
-								duration: 0.8,
+								duration: 0.6,
 							}}
 							className='bg-[#00B28B] w-full h-full absolute z-10'></motion.div>
 						<Link href='/sonar'>
@@ -106,7 +105,6 @@ export default function Page() {
 								width={880}
 								height={1000}
 								priority
-								placeholder='blur'
 								alt='Laptop showing Crdit Boost landing page'
 							/>
 						</Link>
@@ -116,8 +114,8 @@ export default function Page() {
 							initial={{ y: 0 }}
 							animate={{ y: '-100%' }}
 							transition={{
-								delay: 2.2,
-								duration: 0.8,
+								delay: 2,
+								duration: 0.6,
 							}}
 							className='bg-[#574CFA] w-full h-full absolute z-10'></motion.div>{' '}
 						<Image
@@ -125,39 +123,58 @@ export default function Page() {
 							width={880}
 							height={1000}
 							priority
-							placeholder='blur'
 							alt='Laptop showing Crdit Boost landing page'
 						/>
 					</div>
-					<div className=''>
+					<div className='relative overflow-hidden rounded'>
 						<Link href='/poof'>
+							<motion.div
+								initial={{ y: 0 }}
+								whileInView={{ y: '-100%' }}
+								transition={{
+									duration: 0.6,
+								}}
+								className='bg-[#ECE6FE] w-full h-full absolute z-10'></motion.div>{' '}
 							<Image
 								src='/images/poofhome.svg'
 								width={880}
 								height={1000}
-								placeholder='blur'
 								alt='Laptop showing Crdit Boost landing page'
 							/>
 						</Link>
 					</div>
-					<div className=''>
-						<Link href='/spotify'>
-							<Image
-								src='/images/spothero.svg'
-								width={880}
-								height={1000}
-								placeholder='blur'
-								alt='Laptop showing Crdit Boost landing page'
-							/>
-						</Link>
-					</div>
-					<div className=''>
+					<div className='relative overflow-hidden rounded'>
 						<Link href='/threat'>
+							<motion.div
+								initial={{ y: 0 }}
+								whileInView={{ y: '-100%' }}
+								transition={{
+									delay: 0.2,
+									duration: 0.6,
+								}}
+								className='bg-[#1DA9DD] w-full h-full absolute z-10'></motion.div>{' '}
 							<Image
 								src='/images/threat.svg'
 								width={880}
 								height={1000}
-								placeholder='blur'
+								alt='Laptop showing Crdit Boost landing page'
+							/>
+						</Link>
+					</div>
+					<div className='relative overflow-hidden rounded'>
+						<Link href='/spotify'>
+							<motion.div
+								initial={{ y: 0 }}
+								whileInView={{ y: '-100%' }}
+								transition={{
+									delay: 0.4,
+									duration: 0.6,
+								}}
+								className='bg-[#1ED760] w-full h-full absolute z-10'></motion.div>{' '}
+							<Image
+								src='/images/spothero.svg'
+								width={880}
+								height={1000}
 								alt='Laptop showing Crdit Boost landing page'
 							/>
 						</Link>
