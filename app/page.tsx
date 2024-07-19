@@ -50,11 +50,11 @@ const Page = () => {
 	}, []);
 
 	return (
-		<main className='text-white bg-stone-950'>
+		<main className='text-white bg-stone-900'>
 			<NavBar></NavBar>
 			<div className='main-content'>
 				<div className='mx-16'>
-					<div className='w-3/4 mt-52 leading-[64px]'>
+					<div className='mac:w-4/5 w-full mt-44 leading-[64px]'>
 						<span className='text-white text-5xl'>
 							Currently helping people save money at
 						</span>
@@ -92,76 +92,168 @@ const Page = () => {
 				</div>
 			</div>
 			<div className='mx-16'>
-				<div className='work-title text-white mt-32 mb-8 text-3xl font-sans leading-loose'>
+				<div className='work-title text-white mt-36 mb-8 text-3xl font-sans leading-loose'>
 					Work
 				</div>
-				<div className='grid grid-cols-3 gap-8'>
+				<div className='grid grid-cols-3 gap-8 pb-24'>
 					<div className='relative overflow-hidden rounded work-item'>
 						<div className='bg-[#d8cdc2] w-full h-full absolute z-10 work-item-bg'></div>
 						<Image
-							src='/images/zboom.svg'
+							src='/images/homepage/zboom.jpg'
 							width={880}
 							height={1000}
 							priority
 							alt='Laptop showing Credit Boost landing page'
 						/>
+						<div className='my-6 w-full'>
+							<div className='flex items-end justify-start gap-2'>
+								<div className='text-2xl font-normal'>
+									The Zebra
+								</div>
+								<div className='text-2xl'>|</div>
+								<div className='text-[22px] font-normal font-serif italic leading-tight'>
+									Credit Boost
+								</div>
+							</div>
+
+							<div className='text-xl mt-1 text-stone-300'>
+								Launching a financial subscription from 0 to 1
+							</div>
+						</div>
 					</div>
 					<div className='relative overflow-hidden rounded work-item'>
 						<div className='bg-[#00B28B] w-full h-full absolute z-10 work-item-bg'></div>
 						<Link href='/sonar'>
 							<Image
-								src='/images/sonar.svg'
+								src='/images/homepage/sonar.svg'
 								width={880}
 								height={1000}
 								priority
-								alt='Laptop showing Credit Boost landing page'
+								alt='Data Discovery Dashboard'
 							/>
 						</Link>
+						<div className='my-6 w-full'>
+							<div className='flex items-end justify-start gap-2'>
+								<div className='text-2xl font-normal'>
+									Rubrik
+								</div>
+								<div className='text-2xl'>|</div>
+								<div className='text-[22px] font-normal font-serif italic leading-tight'>
+									Data Discovery App
+								</div>
+							</div>
+
+							<div className='text-xl mt-1 text-stone-300'>
+								Revamping a data security feature to drive user
+								growth
+							</div>
+						</div>
 					</div>
 					<div className='relative overflow-hidden rounded work-item'>
 						<div className='bg-[#574CFA] w-full h-full absolute z-10 work-item-bg'></div>
 						<Image
-							src='/images/zpay.svg'
+							src='/images/homepage/zpay.png'
 							width={880}
 							height={1000}
 							priority
-							alt='Laptop showing Credit Boost landing page'
+							alt='Phone payments'
 						/>
+						<div className='my-6 w-full'>
+							<div className='flex items-end justify-start gap-2'>
+								<div className='text-2xl font-normal'>
+									The Zebra
+								</div>
+								<div className='text-2xl'>|</div>
+								<div className='text-[22px] font-normal font-serif italic leading-tight'>
+									Payment and Checkout{' '}
+								</div>
+							</div>
+
+							<div className='text-xl mt-1 text-stone-300'>
+								Easing customer worries when buying insurance
+							</div>
+						</div>
 					</div>
 					<div className='relative overflow-hidden rounded'>
 						<div className='bg-[#ECE6FE] w-full h-full absolute z-10 work-item-2nd'></div>
 						<Link href='/poof'>
 							<Image
-								src='/images/poofhome.svg'
+								src='/images/homepage/poofhome.png'
 								width={880}
 								height={1000}
-								alt='Laptop showing Credit Boost landing page'
+								alt='Poof Website and App'
 							/>
 						</Link>
+						<div className='my-6 w-full'>
+							<div className='flex items-end justify-start gap-2'>
+								<div className='text-2xl font-normal'>
+									Poof.cash
+								</div>
+								<div className='text-2xl'>|</div>
+								<div className='text-[22px] font-normal font-serif italic leading-tight'>
+									Web3 Crypto Wallet{' '}
+								</div>
+							</div>
+
+							<div className='text-xl mt-1 text-stone-300'>
+								Building a secure wallet from scratch{' '}
+							</div>
+						</div>
 					</div>
 					<div className='relative overflow-hidden rounded'>
 						<div className='bg-[#1DA9DD] w-full h-full absolute z-10 work-item-2nd'></div>
 						<Link href='/threat'>
 							<Image
-								src='/images/threat.svg'
+								src='/images/homepage/threat.png'
 								width={880}
 								height={1000}
-								alt='Laptop showing Credit Boost landing page'
+								alt='Threat Hunting designs'
 							/>
 						</Link>
+						<div className='my-6 w-full'>
+							<div className='flex items-end justify-start gap-2'>
+								<div className='text-2xl font-normal'>
+									Rubrik{' '}
+								</div>
+								<div className='text-2xl'>|</div>
+								<div className='text-[22px] font-normal font-serif italic leading-tight'>
+									Threat Hunting{' '}
+								</div>
+							</div>
+
+							<div className='text-xl mt-1 text-stone-300'>
+								Innovating data storage with a new security
+								feature
+							</div>
+						</div>
 					</div>
 					<div className='relative overflow-hidden rounded'>
 						<div className='bg-[#1ED760] w-full h-full absolute z-10 work-item-2nd'></div>
 						<Link href='/spotify'>
 							<Image
-								src='/images/spothero.svg'
+								src='/images/homepage/spotify.png'
 								width={880}
 								height={1000}
-								alt='Laptop showing Credit Boost landing page'
+								alt='Spotify featured podcasts project'
 							/>
 						</Link>
+						<div className='my-6 w-full'>
+							<div className='flex items-end justify-start gap-2'>
+								<div className='text-2xl font-normal'>
+									Spotify Podcasts
+								</div>
+								<div className='text-2xl'>|</div>
+								<div className='text-[22px] font-normal font-serif italic leading-tight'>
+									Redesign
+								</div>
+							</div>
+
+							<div className='text-xl mt-1 text-stone-300'>
+								Helping listeners discover and try out new
+								podcasts
+							</div>
+						</div>
 					</div>
-					<div className='box'>fdsjkfshkj</div>
 				</div>
 			</div>
 		</main>

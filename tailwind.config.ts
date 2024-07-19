@@ -13,9 +13,13 @@ const config: Config = {
 				serif: ['Editorial', 'ui-serif'],
 			},
 			cursor: {
-				zebra: 'url(/images/zebra.svg) 24 24, pointer',
-				rubrik: 'url(/images/rubrik.svg) 24 24, pointer',
-				poof: 'url(/images/poof.svg) 24 24, pointer',
+				zebra: 'url(/images/homepage/zebra.svg) 24 24, pointer',
+				rubrik: 'url(/images/homepage/rubrik.svg) 24 24, pointer',
+				poof: 'url(/images/homepage/poof.svg) 24 24, pointer',
+			},
+
+			screens: {
+				mac: '1360px',
 			},
 		},
 	},
