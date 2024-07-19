@@ -35,7 +35,7 @@ export default function Home() {
 				Please view on web for now. Mobile coming soon.
 			</div>
 			<div className='hidden md:block'>
-				<NavBar></NavBar>
+				<NavBar />
 				<ScrollBar></ScrollBar>
 			</div>
 			<Hero src={threat} alt='Threat Hero'></Hero>

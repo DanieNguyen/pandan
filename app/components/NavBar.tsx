@@ -1,19 +1,26 @@
-import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import Link from 'next/link';
+import { gsap } from 'gsap';
 
-export default function NavBar() {
-	return (
-		<motion.div
-			initial={{ y: '-25%', opacity: 0 }}
-			animate={{ y: '0%', opacity: 100 }}
-			transition={{
+const NavBar = () => {
+	useEffect(() => {
+		gsap.fromTo(
+			'.navbar',
+			{ y: '-25%', opacity: 0 },
+			{
+				y: '0%',
+				opacity: 1,
 				delay: 0.4,
-				ease: [0.6, -0.4, 0.01, 0.9],
 				duration: 0.4,
-			}}
-			className='flex justify-between m-16'>
+				ease: 'power1.out',
+			}
+		);
+	}, []);
+
+	return (
+		<div className='navbar flex justify-between p-16'>
 			<div className='text-xl leading-normal'>
-				<Link href='/' className='hover:text-blue-600'>
+				<Link href='/' passHref className='hover:text-blue-600'>
 					Daniel Nguyen
 				</Link>
 			</div>
@@ -22,15 +29,25 @@ export default function NavBar() {
 					<a
 						href='/images/resume.pdf'
 						className='hover:text-blue-600'
-						target='_blank'>
+						target='_blank'
+						rel='noopener noreferrer'>
 						Resume
 					</a>
 				</div>
-				<div className='text-base leading-normal'>About</div>
+				<div className='text-base leading-normal'>
+					<Link
+						href='/about'
+						passHref
+						className='hover:text-blue-600'>
+						About
+					</Link>
+				</div>
 				<div className='text-base leading-normal hover:text-blue-600'>
 					<a href='mailto:danyen125@gmail.com'>Contact</a>
 				</div>
 			</div>
-		</motion.div>
+		</div>
 	);
-}
+};
+
+export default NavBar;
