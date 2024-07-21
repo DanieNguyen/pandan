@@ -2,6 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import type { Viewport } from 'next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 export const viewport: Viewport = {
 	width: 'device-width',
@@ -21,6 +23,8 @@ export default function RootLayout({
 	return (
 		<html lang='en' className='font-sans bg-white'>
 			<body>{children}</body>
+			<SpeedInsights></SpeedInsights>
+			<Analytics></Analytics>
 		</html>
 	);
 }
