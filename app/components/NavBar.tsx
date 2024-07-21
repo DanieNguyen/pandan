@@ -43,7 +43,7 @@ const NavBar = () => {
 					</Link>
 				</div>
 				<div className='text-base leading-normal hover:text-blue-600'>
-					<a href='mailto:danyen125@gmail.com'>Contact</a>
+					<Link href='#contact'>Contact</Link>
 				</div>
 			</div>
 		</div>

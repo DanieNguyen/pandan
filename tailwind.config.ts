@@ -17,7 +17,6 @@ const config: Config = {
 				rubrik: 'url(/images/homepage/rubrik.svg) 24 24, pointer',
 				poof: 'url(/images/homepage/poof.svg) 24 24, pointer',
 			},
-
 			screens: {
 				mac: '1360px',
 			},

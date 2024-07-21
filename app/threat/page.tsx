@@ -38,7 +38,10 @@ export default function Home() {
 				<NavBar />
 				<ScrollBar></ScrollBar>
 			</div>
-			<Hero src={threat} alt='Threat Hero'></Hero>
+			<Hero
+				src={threat}
+				alt='Threat Hero'
+				headline='Threat Hunting'></Hero>
 			<MainGrid>
 				<div className='col-start-3 col-end-5 text-sm text-neutral-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
 					<p className='font-medium text-black'>Role</p>

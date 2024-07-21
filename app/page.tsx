@@ -1,14 +1,89 @@
 'use client';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import NavBar from './components/NavBar';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Contact from './components/Contact';
+
+// Image data with tags, background colors, and class types
+const images = [
+	{
+		src: '/images/homepage/zboom.jpg',
+		tags: ['consumer', 'mobile', 'web'],
+		bgColor: '#d8cdc2',
+		classType: 'work-item-bg',
+		alt: 'Laptop showing Credit Boost landing page',
+		title: 'The Zebra',
+		description: 'Credit Boost',
+		subtitle: 'Launching a financial subscription from 0 to 1',
+		link: '/',
+	},
+	{
+		src: '/images/homepage/sonar.svg',
+		tags: ['enterprise', 'web'],
+		bgColor: '#00B28B',
+		classType: 'work-item-bg',
+		alt: 'Data Discovery Dashboard',
+		title: 'Rubrik',
+		description: 'Data Discovery App',
+		subtitle: 'Revamping a data security feature to drive user growth',
+		link: '/sonar',
+	},
+	{
+		src: '/images/homepage/zpay.png',
+		tags: ['consumer', 'mobile', 'web'],
+		bgColor: '#574CFA',
+		classType: 'work-item-bg',
+		alt: 'Phone payments',
+		title: 'The Zebra',
+		description: 'Payment and Checkout',
+		subtitle: 'Easing customer worries when buying insurance',
+		link: '/',
+	},
+	{
+		src: '/images/homepage/poofhome.png',
+		tags: ['consumer', 'mobile', 'web'],
+		bgColor: '#ECE6FE',
+		classType: 'work-item-2nd',
+		alt: 'Poof Website and App',
+		title: 'Poof.cash',
+		description: 'Web3 Crypto Wallet',
+		subtitle: 'Building a secure wallet from scratch',
+		link: '/poof',
+	},
+	{
+		src: '/images/homepage/threat.png',
+		tags: ['enterprise', 'web'],
+		bgColor: '#1DA9DD',
+		classType: 'work-item-2nd',
+		alt: 'Threat Hunting designs',
+		title: 'Rubrik',
+		description: 'Threat Hunting',
+		subtitle: 'Innovating data storage with a new security feature',
+		link: '/threat',
+	},
+	{
+		src: '/images/homepage/spotify.png',
+		tags: ['consumer', 'mobile'],
+		bgColor: '#1ED760',
+		classType: 'work-item-2nd',
+		alt: 'Spotify featured podcasts project',
+		title: 'Spotify Podcasts',
+		description: 'Redesign',
+		subtitle: 'Helping listeners discover and try out new podcasts',
+		link: '/spotify',
+	},
+];
 
 const Page = () => {
+	const [filter, setFilter] = useState('all');
+	const [hideBackground, setHideBackground] = useState(false);
+
 	useEffect(() => {
 		gsap.registerPlugin(ScrollTrigger);
+
 		gsap.fromTo(
 			'.main-content',
 			{ y: '10%', opacity: 0 },
@@ -19,6 +94,18 @@ const Page = () => {
 			'.work-title',
 			{ opacity: 0 },
 			{ opacity: 1, delay: 0.8, duration: 0.6, ease: 'power1.out' }
+		);
+
+		gsap.fromTo(
+			'.button',
+			{ opacity: 0 },
+			{
+				opacity: 1,
+				delay: 1,
+				duration: 0.4,
+				ease: 'power1.out',
+				stagger: 0.1,
+			}
 		);
 
 		gsap.fromTo(
@@ -41,7 +128,10 @@ const Page = () => {
 		});
 
 		gsap.to('.work-item-2nd', {
-			scrollTrigger: '.work-item-2nd',
+			scrollTrigger: {
+				trigger: '.work-item-2nd',
+				start: 'top bottom',
+			},
 			y: '-100%',
 			duration: 0.6,
 			ease: 'power1.out',
@@ -49,43 +139,54 @@ const Page = () => {
 		});
 	}, []);
 
+	const handleFilterChange = (newFilter) => {
+		setFilter(newFilter);
+		setHideBackground(true);
+	};
+
+	const filteredImages =
+		filter === 'all'
+			? images
+			: images.filter((image) => image.tags.includes(filter));
+
 	return (
 		<main className='text-white bg-stone-900'>
-			<NavBar></NavBar>
+			<NavBar />
 			<div className='main-content'>
 				<div className='mx-16'>
-					<div className='mac:w-4/5 w-full mt-44 leading-[64px]'>
+					<div className='mac:w-3/4 w-full mt-44 leading-[64px]'>
 						<span className='text-white text-5xl'>
 							Currently helping people save money at
 						</span>
 						<span className='text-[#574CFA] text-[44px] font-serif italic'>
-							{' '}
 							<a
 								href='https://www.thezebra.com'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='cursor-zebra'>
-								The Zebra.
-							</a>{' '}
+								{' '}
+								The Zebra.{' '}
+							</a>
 						</span>
 						<span className='text-white text-5xl'>
 							Previously crafting data security tools at
 						</span>
 						<span className='bg-gradient-to-r from-[#00B28B] via-[#00A9BD] to-[#00A3DF] text-transparent bg-clip-text text-[44px] font-serif italic'>
-							{' '}
 							<a
 								href='https://www.rubrik.com'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='cursor-rubrik'>
+								{' '}
 								Rubrik
-							</a>{' '}
+							</a>
 						</span>
 						<br />
 						<span className='text-white text-5xl'>
-							and a Web3 crypto app at{' '}
+							and a Web3 crypto app at
 						</span>
 						<span className='text-[#5352FC] text-[44px] font-serif italic hover:cursor-poof'>
+							{' '}
 							Poof.Cash.
 						</span>
 					</div>
@@ -95,167 +196,89 @@ const Page = () => {
 				<div className='work-title text-white mt-36 mb-8 text-3xl font-sans leading-loose'>
 					Work
 				</div>
+				<div className='flex space-x-4 mb-8'>
+					<button
+						onClick={() => handleFilterChange('all')}
+						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 ${
+							filter === 'all' ? 'bg-blue-600' : 'bg-stone-900'
+						}`}>
+						All
+					</button>
+					<button
+						onClick={() => handleFilterChange('consumer')}
+						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 ${
+							filter === 'consumer'
+								? 'bg-blue-600'
+								: 'bg-stone-900'
+						}`}>
+						Consumer
+					</button>
+					<button
+						onClick={() => handleFilterChange('enterprise')}
+						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 ${
+							filter === 'enterprise'
+								? 'bg-blue-600'
+								: 'bg-stone-900'
+						}`}>
+						Enterprise
+					</button>
+					<button
+						onClick={() => handleFilterChange('web')}
+						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 ${
+							filter === 'web' ? 'bg-blue-600' : 'bg-stone-900'
+						}`}>
+						Website
+					</button>
+					<button
+						onClick={() => handleFilterChange('mobile')}
+						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 ${
+							filter === 'mobile' ? 'bg-blue-600' : 'bg-stone-900'
+						}`}>
+						Mobile
+					</button>
+				</div>
 				<div className='grid grid-cols-3 gap-8 pb-24'>
-					<div className='relative overflow-hidden rounded work-item'>
-						<div className='bg-[#d8cdc2] w-full h-full absolute z-10 work-item-bg'></div>
-						<Image
-							src='/images/homepage/zboom.jpg'
-							width={880}
-							height={1000}
-							priority
-							alt='Laptop showing Credit Boost landing page'
-						/>
-						<div className='my-6 w-full'>
-							<div className='flex items-end justify-start gap-2'>
-								<div className='text-2xl font-normal'>
-									The Zebra
-								</div>
-								<div className='text-2xl'>|</div>
-								<div className='text-[22px] font-normal font-serif italic leading-tight'>
-									Credit Boost
-								</div>
+					{filteredImages.map((image, index) => (
+						<div key={index}>
+							<div className='relative overflow-hidden rounded work-item'>
+								<div
+									className={`w-full h-full absolute z-10 ${image.classType}`}
+									style={{
+										backgroundColor: image.bgColor,
+										display: hideBackground
+											? 'none'
+											: 'block', // Hide background when a filter is applied
+									}}></div>
+								<Link href={image.link}>
+									<Image
+										src={image.src}
+										width={880}
+										height={1000}
+										priority
+										alt={image.alt}
+										className='hover:scale-110 ease-out duration-1000'
+									/>
+								</Link>
 							</div>
-
-							<div className='text-xl mt-1 text-stone-300'>
-								Launching a financial subscription from 0 to 1
+							<div className='my-6 w-full'>
+								<div className='flex items-end justify-start gap-2'>
+									<div className='text-2xl font-normal'>
+										{image.title}
+									</div>
+									<div className='text-2xl'>|</div>
+									<div className='text-[22px] font-normal font-serif italic leading-tight'>
+										{image.description}
+									</div>
+								</div>
+								<div className='text-xl mt-1 text-stone-300'>
+									{image.subtitle}
+								</div>
 							</div>
 						</div>
-					</div>
-					<div className='relative overflow-hidden rounded work-item'>
-						<div className='bg-[#00B28B] w-full h-full absolute z-10 work-item-bg'></div>
-						<Link href='/sonar'>
-							<Image
-								src='/images/homepage/sonar.svg'
-								width={880}
-								height={1000}
-								priority
-								alt='Data Discovery Dashboard'
-							/>
-						</Link>
-						<div className='my-6 w-full'>
-							<div className='flex items-end justify-start gap-2'>
-								<div className='text-2xl font-normal'>
-									Rubrik
-								</div>
-								<div className='text-2xl'>|</div>
-								<div className='text-[22px] font-normal font-serif italic leading-tight'>
-									Data Discovery App
-								</div>
-							</div>
-
-							<div className='text-xl mt-1 text-stone-300'>
-								Revamping a data security feature to drive user
-								growth
-							</div>
-						</div>
-					</div>
-					<div className='relative overflow-hidden rounded work-item'>
-						<div className='bg-[#574CFA] w-full h-full absolute z-10 work-item-bg'></div>
-						<Image
-							src='/images/homepage/zpay.png'
-							width={880}
-							height={1000}
-							priority
-							alt='Phone payments'
-						/>
-						<div className='my-6 w-full'>
-							<div className='flex items-end justify-start gap-2'>
-								<div className='text-2xl font-normal'>
-									The Zebra
-								</div>
-								<div className='text-2xl'>|</div>
-								<div className='text-[22px] font-normal font-serif italic leading-tight'>
-									Payment and Checkout{' '}
-								</div>
-							</div>
-
-							<div className='text-xl mt-1 text-stone-300'>
-								Easing customer worries when buying insurance
-							</div>
-						</div>
-					</div>
-					<div className='relative overflow-hidden rounded'>
-						<div className='bg-[#ECE6FE] w-full h-full absolute z-10 work-item-2nd'></div>
-						<Link href='/poof'>
-							<Image
-								src='/images/homepage/poofhome.png'
-								width={880}
-								height={1000}
-								alt='Poof Website and App'
-							/>
-						</Link>
-						<div className='my-6 w-full'>
-							<div className='flex items-end justify-start gap-2'>
-								<div className='text-2xl font-normal'>
-									Poof.cash
-								</div>
-								<div className='text-2xl'>|</div>
-								<div className='text-[22px] font-normal font-serif italic leading-tight'>
-									Web3 Crypto Wallet{' '}
-								</div>
-							</div>
-
-							<div className='text-xl mt-1 text-stone-300'>
-								Building a secure wallet from scratch{' '}
-							</div>
-						</div>
-					</div>
-					<div className='relative overflow-hidden rounded'>
-						<div className='bg-[#1DA9DD] w-full h-full absolute z-10 work-item-2nd'></div>
-						<Link href='/threat'>
-							<Image
-								src='/images/homepage/threat.png'
-								width={880}
-								height={1000}
-								alt='Threat Hunting designs'
-							/>
-						</Link>
-						<div className='my-6 w-full'>
-							<div className='flex items-end justify-start gap-2'>
-								<div className='text-2xl font-normal'>
-									Rubrik{' '}
-								</div>
-								<div className='text-2xl'>|</div>
-								<div className='text-[22px] font-normal font-serif italic leading-tight'>
-									Threat Hunting{' '}
-								</div>
-							</div>
-
-							<div className='text-xl mt-1 text-stone-300'>
-								Innovating data storage with a new security
-								feature
-							</div>
-						</div>
-					</div>
-					<div className='relative overflow-hidden rounded'>
-						<div className='bg-[#1ED760] w-full h-full absolute z-10 work-item-2nd'></div>
-						<Link href='/spotify'>
-							<Image
-								src='/images/homepage/spotify.png'
-								width={880}
-								height={1000}
-								alt='Spotify featured podcasts project'
-							/>
-						</Link>
-						<div className='my-6 w-full'>
-							<div className='flex items-end justify-start gap-2'>
-								<div className='text-2xl font-normal'>
-									Spotify Podcasts
-								</div>
-								<div className='text-2xl'>|</div>
-								<div className='text-[22px] font-normal font-serif italic leading-tight'>
-									Redesign
-								</div>
-							</div>
-
-							<div className='text-xl mt-1 text-stone-300'>
-								Helping listeners discover and try out new
-								podcasts
-							</div>
-						</div>
-					</div>
+					))}
 				</div>
 			</div>
+			<Contact></Contact>
 		</main>
 	);
 };

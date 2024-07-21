@@ -1,10 +1,10 @@
 import { useRef } from 'react';
 import { easeIn, motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
-import Sonar from '../../public/images/sonar.png';
-import Spotify from '../../public/images/spotify.png';
-import Threat from '../../public/images/threat.png';
-import Poof from '../../public/images/poof.png';
+import Sonar from '../../public/images/oldhome/sonar.png';
+import Spotify from '../../public/images/oldhome/spotify.png';
+import Threat from '../../public/images/oldhome/threat.png';
+import Poof from '../../public/images/oldhome/poof.png';
 
 function CaseStudy(props: any) {
 	return (

@@ -12,16 +12,15 @@ function MainGrid({ children }: any) {
 function Hero(props: any) {
 	return (
 		<motion.div
-			initial={{ y: '25%', opacity: 0 }}
+			initial={{ y: '10%', opacity: 0 }}
 			animate={{ y: '0%', opacity: 100 }}
 			transition={{
-				delay: 0.2,
-				ease: [0.6, 0.4, 0.2, 0.1],
-				duration: 1,
+				duration: 0.6,
 			}}
-			className='mt-24 mx-16 bg-zinc-100'>
+			className='mt-8 mx-16'>
+			<h1 className='text-7xl mb-6'>{props.headline}</h1>
 			<Image
-				className='h-full w-full object-contain'
+				className='h-full w-full object-contain bg-zinc-100'
 				src={props.src}
 				quality={100}
 				placeholder='blur'
@@ -37,7 +36,7 @@ function Text(props: any) {
 			<p className='font-sf text-2xl mt-16 mb-6 text-black min-[1920px]:text-[28px]'>
 				{props.title}
 			</p>
-			<p className='text-neutral-500 leading-7 text-justify tracking-tight font-light min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
+			<p className='text-neutral-500 leading-7 text-justify font-light min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
 				{props.children}
 			</p>
 		</div>
@@ -121,7 +120,7 @@ function RightImage(props: any) {
 function Goal(props: any) {
 	return (
 		<div>
-			<h1 className='text-2xl text-black font-light tracking-tight text-center mb-4 mt-24'>
+			<h1 className='text-2xl text-black font-light text-center mb-4 mt-24'>
 				{props.title}
 			</h1>
 			<div className='w-full text-center text-black text-5xl font-normal font-sfital2 leading-normal min-[1920px]:text-6xl min-[1920px]:leading-relaxed md:max-xl:text-4xl md:max-xl:leading-relaxed'>
