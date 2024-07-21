@@ -19,16 +19,16 @@ const Contact = () => {
 
 	return (
 		<div>
-			<div id='contact' className='relative h-[90vh] px-16'>
-				<div className='text-white pt-20 text-6xl leading-relaxed start'>
-					<div className='pb-32'>
+			<div id='contact' className='relative px-12'>
+				<div className='text-white pt-12 text-6xl leading-relaxed start'>
+					<div className='pb-24'>
 						<span>Let&apos;s work</span>
 						<span className='font-serif italic'> together</span>
 						<p className='text-2xl trig'>
 							We can round some rectangles
 						</p>
 					</div>
-					<div className='flex flex-col gap-[2vh] text-white text-[4vh] font-sans'>
+					<div className='flex flex-col gap-8 text-white text-4xl font-sans mb-28'>
 						<a
 							className='max-w-fit'
 							href='mailto:danyen125@gmail.com'>
@@ -60,7 +60,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<div className='bottom-0 text-white w-screen border-t-[1px] py-4 px-16 flex flex-row justify-between'>
+			<div className='bottom-0 text-white w-screen border-t-[1px] py-4 px-12 flex flex-row justify-between'>
 				<div className=''>
 					designed and developed by daniel with tears
 				</div>

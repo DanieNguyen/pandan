@@ -153,8 +153,8 @@ const Page = () => {
 		<main className='text-white bg-stone-900'>
 			<NavBar />
 			<div className='main-content'>
-				<div className='mx-16'>
-					<div className='mac:w-3/4 w-full mt-44 leading-[64px]'>
+				<div className='mx-12'>
+					<div className='mac:w-3/4 w-full mt-36 leading-[64px]'>
 						<span className='text-white text-5xl'>
 							Currently helping people save money at
 						</span>
@@ -192,8 +192,8 @@ const Page = () => {
 					</div>
 				</div>
 			</div>
-			<div className='mx-16'>
-				<div className='work-title text-white mt-36 mb-8 text-3xl font-sans leading-loose'>
+			<div className='mx-12'>
+				<div className='work-title text-white mt-32 mb-4 text-2xl font-sans leading-loose'>
 					Work
 				</div>
 				<div className='flex space-x-4 mb-8'>
@@ -237,7 +237,7 @@ const Page = () => {
 						Mobile
 					</button>
 				</div>
-				<div className='grid grid-cols-3 gap-8 pb-24'>
+				<div className='grid grid-cols-3 gap-8 pb-20'>
 					{filteredImages.map((image, index) => (
 						<div key={index}>
 							<div className='relative overflow-hidden rounded work-item'>
@@ -270,7 +270,7 @@ const Page = () => {
 										{image.description}
 									</div>
 								</div>
-								<div className='text-xl mt-1 text-stone-300'>
+								<div className='text mt-1 text-stone-400'>
 									{image.subtitle}
 								</div>
 							</div>
