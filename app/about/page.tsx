@@ -19,9 +19,9 @@ const Page = () => {
 	}, []);
 
 	return (
-		<main className='text-white h-[100vh] bg-stone-900'>
+		<main className='text-white bg-stone-900 pb-24 h-[100vh]'>
 			<NavBar />
-			<div className='m-24 flex justify-center main-content'>
+			<div className='flex justify-center main-content pt-12 mx-12'>
 				<div className='mr-32 2xl:mr-64'>
 					<h1 className='font-serif italic text-4xl 2xl:text-6xl'>
 						hey there~

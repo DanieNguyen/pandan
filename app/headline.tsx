@@ -2,7 +2,7 @@ export default function Headline() {
 	return (
 		<div className='main-content'>
 			<div className='mx-12'>
-				<div className='12:w-3/4 lg:w-5/6 xl:w-3/4 2xl:w-3/5 w-full mt-36 2xl:mt-64 leading-[64px]'>
+				<div className='w-full mt-36 2xl:mt-64 lg:leading-[48px] xl:leading-[64px]'>
 					<span className='text-white lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						Currently helping people save money at
 					</span>
@@ -16,6 +16,7 @@ export default function Headline() {
 							The Zebra.{' '}
 						</span>
 					</a>
+					<br></br>
 					<span className='text-white lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						Previously crafting data security tools at
 					</span>
