@@ -155,20 +155,20 @@ const Page = () => {
 			<NavBar />
 			<Headline></Headline>
 			<div className='mx-12'>
-				<div className='work-title text-white mt-32 mb-4 text-2xl font-sans leading-loose'>
+				<div className='work-title text-white mt-32 2xl:mt-64 mb-4 text-2xl 2xl:text-4xl font-sans leading-loose'>
 					Work
 				</div>
 				<div className='flex space-x-4 mb-8'>
 					<button
 						onClick={() => handleFilterChange('all')}
-						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 ${
+						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 active:bg-blue-600 active:border-blue-600 focus:bg-blue-600 focus:border-blue-600 ${
 							filter === 'all' ? 'bg-blue-600' : 'bg-stone-900'
 						}`}>
 						All
 					</button>
 					<button
 						onClick={() => handleFilterChange('consumer')}
-						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 ${
+						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 active:bg-blue-600 active:border-blue-600 focus:bg-blue-600 focus:border-blue-600 ${
 							filter === 'consumer'
 								? 'bg-blue-600'
 								: 'bg-stone-900'
@@ -177,7 +177,7 @@ const Page = () => {
 					</button>
 					<button
 						onClick={() => handleFilterChange('enterprise')}
-						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 ${
+						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 active:bg-blue-600 active:border-blue-600 focus:bg-blue-600 focus:border-blue-600 ${
 							filter === 'enterprise'
 								? 'bg-blue-600'
 								: 'bg-stone-900'
@@ -186,14 +186,14 @@ const Page = () => {
 					</button>
 					<button
 						onClick={() => handleFilterChange('web')}
-						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 ${
+						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 active:bg-blue-600 active:border-blue-600 focus:bg-blue-600 focus:border-blue-600 ${
 							filter === 'web' ? 'bg-blue-600' : 'bg-stone-900'
 						}`}>
 						Website
 					</button>
 					<button
 						onClick={() => handleFilterChange('mobile')}
-						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 ${
+						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 active:bg-blue-600 active:border-blue-600 focus:bg-blue-600 focus:border-blue-600 ${
 							filter === 'mobile' ? 'bg-blue-600' : 'bg-stone-900'
 						}`}>
 						Mobile
@@ -224,15 +224,17 @@ const Page = () => {
 							</div>
 							<div className='my-6 w-full'>
 								<div className='flex items-end justify-start gap-2'>
-									<div className='text-2xl font-normal'>
+									<div className='12:text-xl lg:text xl:text-2xl 2xl:text-3xl font-normal'>
 										{image.title}
 									</div>
-									<div className='text-2xl'>|</div>
-									<div className='text-[22px] font-normal font-serif italic leading-tight'>
+									<div className='12:text-xl lg:text xl:text-2xl 2xl:text-3xl'>
+										|
+									</div>
+									<div className='12:text-[18px] lg:text xl:text-[22px] 2xl:text-[26px] font-normal font-serif italic leading-tight'>
 										{image.description}
 									</div>
 								</div>
-								<div className='text mt-1 text-stone-400'>
+								<div className='text 2xl:text-xl mt-1 text-stone-400'>
 									{image.subtitle}
 								</div>
 							</div>

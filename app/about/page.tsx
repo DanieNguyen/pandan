@@ -22,8 +22,10 @@ const Page = () => {
 		<main className='text-white h-[100vh] bg-stone-900'>
 			<NavBar />
 			<div className='m-24 flex justify-center main-content'>
-				<div className='mr-32'>
-					<h1 className='font-serif italic text-4xl'>hey there~</h1>
+				<div className='mr-32 2xl:mr-64'>
+					<h1 className='font-serif italic text-4xl 2xl:text-6xl'>
+						hey there~
+					</h1>
 					<p className='mt-4 text-xl'>
 						I'm Daniel, a product designer based in Seattle, WA.{' '}
 						<br></br>I've been working for 4 years on consumer and
@@ -51,10 +53,10 @@ const Page = () => {
 				</div>
 				<Image
 					src={About}
-					width={340}
-					height={400}
+					width={360}
+					height={500}
 					alt='me'
-					className='rounded'></Image>
+					className='rounded object-contain'></Image>
 			</div>
 		</main>
 	);

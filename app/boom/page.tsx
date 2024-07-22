@@ -40,16 +40,17 @@ export default function Home() {
 			<MainGrid>
 				<div className='col-start-3 col-end-5 text-sm text-neutral-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
 					<p className='font-medium text-black'>Role</p>
+					<p className='font-light'>Visual Design</p>
+					<p className='font-light'>Responsive Design</p>
 					<p className='font-light'>Sign-up and Waitlist</p>
 					<p className='font-light'>Landing Pages</p>
+					<p className='font-light'>Brand Partnership</p>
 					<p className='font-light'>User Research</p>
 					<p className='font-light'>A/B Testing</p>
-					<p className='font-light'>Ideation</p>
 					<p className='mt-8 font-medium text-black'>Team</p>
 					<p className='font-light'>1 Product Manager</p>
 					<p className='font-light'>2 Front-End Engineers</p>
 					<p className='font-light'>4 Backend-End Engineers</p>
-
 					<p className='mt-8 font-medium text-black'>Timeline</p>
 					<p className='font-light'>June 2024 - Aug 2024</p>
 				</div>

@@ -40,7 +40,7 @@ export default function Home() {
 				<div className='col-start-3 col-end-5 text-sm text-neutral-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
 					<p className='font-medium text-black'>Role</p>
 					<p className='font-light'>Competitive Analysis</p>
-					<p className='font-light'>Website and Mobile</p>
+					<p className='font-light'>Responsive Design</p>
 					<p className='font-light'>User Research</p>
 					<p className='font-light'>A/B Testing</p>
 					<p className='font-light'>Iterative Designs</p>

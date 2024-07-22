@@ -18,7 +18,9 @@ const config: Config = {
 				poof: 'url(/images/homepage/poof.svg) 24 24, pointer',
 			},
 			screens: {
-				mac: '1360px',
+				xl: '1400px',
+				'12': '1280px',
+				'2xl': '1700px',
 			},
 		},
 	},

@@ -17,7 +17,7 @@ function Hero(props: any) {
 			transition={{
 				duration: 0.6,
 			}}
-			className='mt-8 mx-12'>
+			className='mt-32 mx-12'>
 			<h1 className='text-7xl mb-6'>{props.headline}</h1>
 			<Image
 				className='h-full w-full object-contain bg-zinc-100'
