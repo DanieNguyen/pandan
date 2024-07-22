@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Contact from './components/Contact';
+import Headline from './headline';
 
 // Image data with tags, background colors, and class types
 const images = [
@@ -152,46 +153,7 @@ const Page = () => {
 	return (
 		<main className='text-white bg-stone-900'>
 			<NavBar />
-			<div className='main-content'>
-				<div className='mx-12'>
-					<div className='mac:w-3/4 w-full mt-36 leading-[64px]'>
-						<span className='text-white text-5xl'>
-							Currently helping people save money at
-						</span>
-						<span className='text-[#574CFA] text-[44px] font-serif italic'>
-							<a
-								href='https://www.thezebra.com'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='cursor-zebra'>
-								{' '}
-								The Zebra.{' '}
-							</a>
-						</span>
-						<span className='text-white text-5xl'>
-							Previously crafting data security tools at
-						</span>
-						<span className='bg-gradient-to-r from-[#00B28B] via-[#00A9BD] to-[#00A3DF] text-transparent bg-clip-text text-[44px] font-serif italic'>
-							<a
-								href='https://www.rubrik.com'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='cursor-rubrik'>
-								{' '}
-								Rubrik
-							</a>
-						</span>
-						<br />
-						<span className='text-white text-5xl'>
-							and a Web3 crypto app at
-						</span>
-						<span className='text-[#5352FC] text-[44px] font-serif italic hover:cursor-poof'>
-							{' '}
-							Poof.Cash.
-						</span>
-					</div>
-				</div>
-			</div>
+			<Headline></Headline>
 			<div className='mx-12'>
 				<div className='work-title text-white mt-32 mb-4 text-2xl font-sans leading-loose'>
 					Work
