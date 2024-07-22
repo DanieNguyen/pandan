@@ -27,14 +27,14 @@ const Page = () => {
 						hey there~
 					</h1>
 					<p className='mt-4 text-xl'>
-						I'm Daniel, a product designer based in Seattle, WA.{' '}
-						<br></br>I've been working for 4 years on consumer and
-						enterprise projects<br></br> ranging from 0 to 1 product
-						launches and redesigning key user flows.
+						I&apos;m Daniel, a product designer based in Seattle,
+						WA. <br></br>I&apos;ve been working for 4 years on
+						consumer and enterprise projects<br></br> ranging from 0
+						to 1 product launches and redesigning key user flows.
 					</p>
 					<p className='mt-4 text-xl'>
-						I'm looking to work where I can make a big impact on
-						meaningful <br></br>products and grow alongside my
+						I&apos;m looking to work where I can make a big impact
+						on meaningful <br></br>products and grow alongside my
 						coworkers.
 					</p>
 					<h3 className='font-serif italic text-2xl mt-12'>

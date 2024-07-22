@@ -60,12 +60,13 @@ export default function Home() {
 						<Span>people build their credit</Span>
 					</p>
 					<Text title='Case study coming soon'>
-						At the Zebra, I'm currently working on a new product to
-						help our users build credit. We are launching the
-						product in early fall 2024. As the sole designer, I have
-						been leading our design efforts in marketing, education,
-						onboarding, and testing out different versions to see
-						how we can optimize sign-ups and have smooth onboarding.
+						At the Zebra, I&apos;m currently working on a new
+						product to help our users build credit. We are launching
+						the product in early fall 2024. As the sole designer, I
+						have been leading our design efforts in marketing,
+						education, onboarding, and testing out different
+						versions to see how we can optimize sign-ups and have
+						smooth onboarding.
 					</Text>
 				</TextGrid>
 				<ImageGrid>
