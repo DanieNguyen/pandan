@@ -27,7 +27,7 @@ const NavBar = () => {
 			<div className='justify-start items-center gap-16 flex'>
 				<div className='text-base leading-normal'>
 					<a
-						href='/images/resume.pdf'
+						href='/images/Daniel-Res.pdf'
 						className='hover:text-blue-600'
 						target='_blank'
 						rel='noopener noreferrer'>
