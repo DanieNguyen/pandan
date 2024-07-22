@@ -19,7 +19,7 @@ const images = [
 		title: 'The Zebra',
 		description: 'Credit Boost',
 		subtitle: 'Launching a financial subscription from 0 to 1',
-		link: '/',
+		link: '/boom',
 	},
 	{
 		src: '/images/homepage/sonar.svg',
@@ -41,7 +41,7 @@ const images = [
 		title: 'The Zebra',
 		description: 'Payment and Checkout',
 		subtitle: 'Easing customer worries when buying insurance',
-		link: '/',
+		link: '/pay',
 	},
 	{
 		src: '/images/homepage/poofhome.png',

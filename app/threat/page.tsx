@@ -234,9 +234,9 @@ export default function Home() {
 							<p className='font-sfital2 text-xl mb-4 text-neutral-500 text-right'>
 								Previous
 							</p>
-							<a className='max-w-fit' href='/sonar'>
+							<a className='max-w-fit' href='/poof'>
 								<span className='bg-right-bottom bg-gradient-to-l text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
-									<ReverseArrow></ReverseArrow> SONAR
+									<ReverseArrow></ReverseArrow> POOF.CASH
 								</span>
 							</a>
 						</div>
@@ -244,9 +244,9 @@ export default function Home() {
 							<p className='font-sfital2 text-xl mb-4 text-neutral-500'>
 								Next
 							</p>
-							<a className='max-w-fit' href='/poof'>
+							<a className='max-w-fit' href='/spotify'>
 								<span className='bg-left-bottom bg-gradient-to-r text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
-									POOF.CASH <DiagonalArrow></DiagonalArrow>
+									SPOTIFY <DiagonalArrow></DiagonalArrow>
 								</span>
 							</a>
 						</div>

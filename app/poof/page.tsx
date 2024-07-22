@@ -68,7 +68,7 @@ export default function Home() {
 					</a>
 				</div>
 				<TextGrid>
-					<p className='font-inter font-light text-neutral-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight tracking-tighter'>
+					<p className='text-neutral-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
 						Working as the <Span>founding designer</Span>
 						at a tiny <Span>cryptocurrency wallet</Span>startup{' '}
 					</p>
@@ -309,9 +309,10 @@ export default function Home() {
 							<p className='font-sfital2 text-xl mb-4 text-neutral-500 text-right'>
 								Previous
 							</p>
-							<a className='max-w-fit' href='/threat'>
-								<span className='bg-right-bottom bg-gradient-to-l text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
-									<ReverseArrow></ReverseArrow> THREAT HUNTING
+							<a className='max-w-fit' href='/pay'>
+								<span className='bg-right-bottom bg-gradient-to-l text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl'>
+									<ReverseArrow></ReverseArrow> THE ZEBRA
+									CHECKOUT
 								</span>
 							</a>
 						</div>
@@ -319,9 +320,10 @@ export default function Home() {
 							<p className='font-sfital2 text-xl mb-4 text-neutral-500'>
 								Next
 							</p>
-							<a className='max-w-fit' href='/spotify'>
-								<span className='bg-left-bottom bg-gradient-to-r text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
-									SPOTIFY <DiagonalArrow></DiagonalArrow>
+							<a className='max-w-fit' href='/threat'>
+								<span className='bg-left-bottom bg-gradient-to-r text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl'>
+									THREAT HUNTING{' '}
+									<DiagonalArrow></DiagonalArrow>
 								</span>
 							</a>
 						</div>

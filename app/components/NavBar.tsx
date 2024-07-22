@@ -43,7 +43,7 @@ const NavBar = () => {
 					</Link>
 				</div>
 				<div className='text-base leading-normal hover:text-blue-600'>
-					<Link href='#contact'>Contact</Link>
+					<Link href='/#contact'>Contact</Link>
 				</div>
 			</div>
 		</div>

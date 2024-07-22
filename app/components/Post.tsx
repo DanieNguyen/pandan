@@ -17,7 +17,7 @@ function Hero(props: any) {
 			transition={{
 				duration: 0.6,
 			}}
-			className='mt-8 mx-16'>
+			className='mt-8 mx-12'>
 			<h1 className='text-7xl mb-6'>{props.headline}</h1>
 			<Image
 				className='h-full w-full object-contain bg-zinc-100'
@@ -33,10 +33,10 @@ function Hero(props: any) {
 function Text(props: any) {
 	return (
 		<div>
-			<p className='font-sf text-2xl mt-16 mb-6 text-black min-[1920px]:text-[28px]'>
+			<p className='text-2xl mt-16 mb-6 text-black min-[1920px]:text-[28px]'>
 				{props.title}
 			</p>
-			<p className='text-neutral-500 leading-7 text-justify font-light min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
+			<p className='text-neutral-500 leading-7 text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
 				{props.children}
 			</p>
 		</div>
@@ -83,7 +83,7 @@ function LeftCaption({ children }: any) {
 
 function RightCaption({ children }: any) {
 	return (
-		<div className='col-start-11 col-end-13 font-sf place-self-end text-neutral-500 min-[1920px]:col-start-8 min-[1920px]:col-end-9 md:max-xl:col-start-9 md:max-xl:col-end-11'>
+		<div className='col-start-11 col-end-13 place-self-end text-neutral-500 min-[1920px]:col-start-8 min-[1920px]:col-end-9 md:max-xl:col-start-9 md:max-xl:col-end-11'>
 			{children}
 		</div>
 	);
@@ -120,7 +120,7 @@ function RightImage(props: any) {
 function Goal(props: any) {
 	return (
 		<div>
-			<h1 className='text-2xl text-black font-light text-center mb-4 mt-24'>
+			<h1 className='text-2xl text-black text-center mb-4 mt-24'>
 				{props.title}
 			</h1>
 			<div className='w-full text-center text-black text-5xl font-normal font-sfital2 leading-normal min-[1920px]:text-6xl min-[1920px]:leading-relaxed md:max-xl:text-4xl md:max-xl:leading-relaxed'>
