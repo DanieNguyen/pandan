@@ -108,13 +108,13 @@ export default function Home() {
 				<TextGrid>
 					<Text title='Research'>
 						To kick off the project, I collaborated closely with our
-						UX Researcher to deeply understand our users' mental
-						models and pain points. Through extensive 60 minute
-						interviews, we gained insights into how users interacted
-						with the SDM dashboard and their specific challenges in
-						their roles. We then created a Jobs-to-be-Done framework
-						to determine the ideal user flow. The key findings were
-						clear:{' '}
+						UX Researcher to deeply understand our users&apos;
+						mental models and pain points. Through extensive 60
+						minute interviews, we gained insights into how users
+						interacted with the SDM dashboard and their specific
+						challenges in their roles. We then created a
+						Jobs-to-be-Done framework to determine the ideal user
+						flow. The key findings were clear:{' '}
 						<span className='text-black'>
 							users focused on managing sensitive data risks found
 							the existing dashboard information irrelevant and
@@ -172,7 +172,7 @@ export default function Home() {
 							<span className='text-black'>Solution: </span>I
 							migrated to a new modular grid system, enabling
 							flexible widget sizes and positions, which greatly
-							improved the dashboard's responsiveness and
+							improved the dashboard&apos;s responsiveness and
 							adaptability.
 						</p>
 					</div>
@@ -184,9 +184,9 @@ export default function Home() {
 							<span className='text-black'>
 								Initial Challenge:{' '}
 							</span>
-							Users found terms like "hits" confusing and
-							inconsistent since they were not industry standard
-							terms.
+							Users found terms like &apos;hits&apos; confusing
+							and inconsistent since they were not industry
+							standard terms.
 						</p>
 						<p>
 							<span className='text-black'>Solution: </span>
@@ -209,14 +209,14 @@ export default function Home() {
 							<span className='text-black'>
 								Initial Challenge:{' '}
 							</span>
-							The dashboard did not align with users' priorities.
-							Since users had to manage an entire company's
-							sensitive data, having files as the first
-							visualization did not give a broad picture.
+							The dashboard did not align with users&apos;
+							priorities. Since users had to manage an entire
+							company&apos;s sensitive data, having files as the
+							first visualization did not give a broad picture.
 						</p>
 						<p>
 							<span className='text-black'>Solution: </span>
-							By focusing on the users' mental model, I
+							By focusing on the users&apos; mental model, I
 							reformatted the dashboard to prioritize key tasks
 							and information such as files, open access,
 							policies, and objects.
@@ -300,9 +300,10 @@ export default function Home() {
 							UX.
 						</li>
 						<li>
-							<span className='text-black'>Trust:</span> It's
-							essential to trust one's design instincts,
-							especially when usability testing isn't feasible.
+							<span className='text-black'>Trust:</span> It&apos;s
+							essential to trust one&apos;s design instincts,
+							especially when usability testing isn&apos;t
+							feasible.
 						</li>
 						<li>
 							<span className='text-black'>Intention:</span> Every
