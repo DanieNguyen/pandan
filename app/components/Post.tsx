@@ -36,7 +36,7 @@ function Text(props: any) {
 			<p className='text-2xl mt-16 mb-6 text-black min-[1920px]:text-[28px]'>
 				{props.title}
 			</p>
-			<p className='text-neutral-500 leading-7 text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
+			<p className='text-stone-500 leading-7 text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
 				{props.children}
 			</p>
 		</div>
@@ -75,7 +75,7 @@ function ImageWrap(props: any) {
 
 function LeftCaption({ children }: any) {
 	return (
-		<div className='col-start-1 col-end-3 font-sf place-self-end text-neutral-500 text-right min-[1920px]:col-start-1 min-[1920px]:col-end-2'>
+		<div className='col-start-1 col-end-3 font-sf place-self-end text-stone-500 text-right min-[1920px]:col-start-1 min-[1920px]:col-end-2'>
 			{children}
 		</div>
 	);
@@ -83,7 +83,7 @@ function LeftCaption({ children }: any) {
 
 function RightCaption({ children }: any) {
 	return (
-		<div className='col-start-11 col-end-13 place-self-end text-neutral-500 min-[1920px]:col-start-8 min-[1920px]:col-end-9 md:max-xl:col-start-9 md:max-xl:col-end-11'>
+		<div className='col-start-11 col-end-13 place-self-end text-stone-500 min-[1920px]:col-start-8 min-[1920px]:col-end-9 md:max-xl:col-start-9 md:max-xl:col-end-11'>
 			{children}
 		</div>
 	);

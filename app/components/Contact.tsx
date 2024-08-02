@@ -52,7 +52,8 @@ const Contact = () => {
 						</a>
 						<a
 							className='max-w-fit'
-							href='https://www.instagram.com/pandan.lion/'>
+							href='https://www.instagram.com/pandan.lion/'
+							target='_blank'>
 							<span className='font-serif italic bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
 								Instagram <DiagonalArrow></DiagonalArrow>
 							</span>

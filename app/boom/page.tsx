@@ -38,7 +38,7 @@ export default function Home() {
 				alt='Boompay Hero'
 				headline='Credit Boost'></Hero>
 			<MainGrid>
-				<div className='col-start-3 col-end-5 text-sm text-neutral-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
+				<div className='col-start-3 col-end-5 text-sm text-stone-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
 					<p className='font-medium text-black'>Role</p>
 					<p className='font-light'>Visual Design</p>
 					<p className='font-light'>Responsive Design</p>
@@ -55,11 +55,11 @@ export default function Home() {
 					<p className='font-light'>June 2024 - Aug 2024</p>
 				</div>
 				<TextGrid>
-					<p className='text-neutral-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
+					<p className='text-stone-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
 						Launching a new product to help{' '}
 						<Span>people build their credit</Span>
 					</p>
-					<Text title='Case study coming soon'>
+					<Text title='Case study coming soon!'>
 						At the Zebra, I&apos;m currently working on a new
 						product to help our users build credit. We are launching
 						the product in early fall 2024. As the sole designer, I
@@ -100,7 +100,7 @@ export default function Home() {
 				<ImageGrid>
 					<div className='flex justify-between mt-24 mb-24'>
 						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500 text-right'>
+							<p className='font-sfital2 text-xl mb-4 text-stone-500 text-right'>
 								Previous
 							</p>
 							<a className='max-w-fit' href='/spotify'>
@@ -110,7 +110,7 @@ export default function Home() {
 							</a>
 						</div>
 						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500'>
+							<p className='font-sfital2 text-xl mb-4 text-stone-500'>
 								Next
 							</p>
 							<a className='max-w-fit' href='/sonar'>

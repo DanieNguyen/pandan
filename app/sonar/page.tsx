@@ -46,11 +46,12 @@ export default function Home() {
 				alt='Sonar Hero'
 				headline='Sensitive Data Discovery'></Hero>
 			<MainGrid>
-				<div className='col-start-3 col-end-5 text-sm text-neutral-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
+				<div className='col-start-3 col-end-5 text-sm text-stone-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
 					<p className='font-medium text-black'>Role</p>
 					<p className='font-light'>Dashboard Redesign</p>
 					<p className='font-light'>User Research</p>
 					<p className='font-light'>Data Visualization</p>
+					<p className='font-light'>Design System</p>
 					<p className='font-light'>Responsive Design</p>
 					<p className='mt-8 font-medium text-black'>Team</p>
 					<p className='font-light'>1 Product Manager</p>
@@ -69,59 +70,57 @@ export default function Home() {
 					</a>
 				</div>
 				<TextGrid>
-					<p className='text-neutral-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
+					<p className='text-stone-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
 						Redesigning the <Span>Sensitive Data Monitoring</Span>
 						dashboard to provide actionable insights{' '}
 					</p>
 					<Text title='Context'>
-						Originally, the scope of the project was to migrate the
-						existing dashboard into our new design system, However,
-						I felt the dashboard could be improved since there were
-						some user complaints about the dashboard and its value.{' '}
-						<Span>
-							So, I persuaded the team to redesign the entire
-							dashboard.
-						</Span>{' '}
-						I assisted in research, led the design, and drove the
-						implementation strategy for this project.
+						In February, our design team migrated from an older
+						design system to our new system and I was tasked to
+						migrate our Data Security product flows. However, the
+						Sensitive Data Monitoring {'(SDM)'} dashboard needed
+						more than a migration to a new design system—it required
+						a complete redesign to better address user needs and
+						enhance its overall value.
+						<br></br>
+						<br></br>
+						<p>
+							Taking note of past user complaints, I took the
+							initiative to lead this redesign, collaborating with
+							cross-functional teams to deliver a more actionable
+							and insightful dashboard. I conducted user research,
+							led the design iterations, and drove the
+							implementation strategy for this project.
+						</p>
 					</Text>
 					<Text title='What is Sensitive Data Monitoring?'>
-						Sensitive Data Monitoring (SDM) is a Rubrik application
-						that helps companies manage confidential information in
-						their data backups. For example, healthcare
-						organizations have critical data about their patients
-						and need to follow HIPAA regulations on how to handle
-						that data. SDM assists in identifying who has access to
-						the data, where the data lives, and how secure the data
-						is.
+						Sensitive Data Monitoring is a Rubrik application that
+						helps companies manage confidential information in their
+						data backups. For example, healthcare organizations have
+						critical data about their patients and need to follow
+						HIPAA regulations on how to handle that data. SDM
+						assists in identifying who has access to the data, where
+						the data lives, and how secure the data is.
 					</Text>
 				</TextGrid>
 				<LeftImage src={Data} alt='Rubrik'></LeftImage>
 				<RightImage src={Rubrik} alt='Rubrik'></RightImage>
 				<TextGrid>
 					<Text title='Research'>
-						To begin the project, I collaborated with our user
-						research to identify our users&apos; mental model and
-						painpoints. We conducted interviews where we asked them
-						about their role and how they use SDM in addition to
-						their thoughts about the dashboard. We utilizied the
-						jobs-to-be-done framework to hone in on our users&apos;
-						key actions and tasks.
+						To kick off the project, I collaborated closely with our
+						UX Researcher to deeply understand our users' mental
+						models and pain points. Through extensive 60 minute
+						interviews, we gained insights into how users interacted
+						with the SDM dashboard and their specific challenges in
+						their roles. We then created a Jobs-to-be-Done framework
+						to determine the ideal user flow. The key findings were
+						clear:{' '}
+						<span className='text-black'>
+							users focused on managing sensitive data risks found
+							the existing dashboard information irrelevant and
+							non-actionable.
+						</span>
 					</Text>
-					<h3 className='mt-8'>Key Findings</h3>
-					<ul className='list-disc text-neutral-500 font-light leading-7 list-inside'>
-						<li>
-							Users are focused on managing risk of their
-							sensitive data
-						</li>
-						<li>
-							Users don&apos;t see value in half of the
-							dashboard&apos;s information
-						</li>
-						<li>
-							Users don&apos;t think the dashboard is actionable
-						</li>
-					</ul>
 				</TextGrid>
 				<ImageGrid>
 					<ImageWrap src={Jobs} alt='Jobs to be done'></ImageWrap>
@@ -139,14 +138,15 @@ export default function Home() {
 				</ImageGrid>
 				<TextGrid>
 					<Text title='Design'>
-						With the findings and goal in mind, I began to work on
-						the designs. I chose to rebuild the dashboard from the
-						ground up after discussing it with the design team. The
-						previous dashboard was outdated by 2-3 years and no one
-						could justify its purposes. So, I decided to give it a
-						fresh start and work based mainly off our research and
-						users&apos; thoughts. I began with the foundation of the
-						dashboard: <Span>the layout.</Span>
+						Our primary design goals centered on making the
+						dashboard more actionable, insightful, and
+						user-friendly. We chose to rebuild the dashboard from
+						the ground up after discussing it with the design team.
+						The previous dashboard was outdated by 2-3 years and no
+						one could justify its rationale. This involved a
+						complete overhaul of the layout, terminology,
+						information hierarchy, and data visualizations to align
+						with user needs and enhance the overall user experience.
 					</Text>
 				</TextGrid>
 
@@ -157,64 +157,102 @@ export default function Home() {
 					src={newLayout}
 					alt='new dashboard layout'></RightImage>
 				<TextGrid>
-					<Text>
-						I migrated to our new grid system and focused on
-						creating a modular dashboard for responsiveness. The new
-						layout allows for multiple widget sizes and positions,
-						optimizing its capabilities. It also will be easier to
-						make responsive since its widgets will be uniform,
-						unlike the previous dashboard.
-					</Text>
-					<Text>
-						The next problem after the layout was addressing
-						users&apos; confusion about the dashboard. One of the
-						main points brought up was the terminology.{' '}
-						<Span>
-							Users didn&apos;t understand what hits meant and the
-							definitions for risk were not consistent.
-						</Span>{' '}
-						I worked with the PM and technical writing team to
-						redefine the terminology for our users.
-					</Text>
+					<div className='text-stone-500 text-lg'>
+						<h1 className='text-black text-xl font-bold mb-4 mt-8'>
+							Layout Redesign
+						</h1>
+						<p className='mb-4'>
+							<span className='text-black'>
+								Initial Challenge:{' '}
+							</span>
+							The old dashboard layout was outdated and not
+							optimized for responsiveness.
+						</p>
+						<p>
+							<span className='text-black'>Solution: </span>I
+							migrated to a new modular grid system, enabling
+							flexible widget sizes and positions, which greatly
+							improved the dashboard's responsiveness and
+							adaptability.
+						</p>
+					</div>
+					<div className='text-stone-500 text-lg'>
+						<h1 className='text-black text-xl font-bold mb-4 mt-8'>
+							Terminology Clarification
+						</h1>
+						<p className='mb-4'>
+							<span className='text-black'>
+								Initial Challenge:{' '}
+							</span>
+							Users found terms like "hits" confusing and
+							inconsistent since they were not industry standard
+							terms.
+						</p>
+						<p>
+							<span className='text-black'>Solution: </span>
+							Collaborating with the PM and technical writing
+							team, we redefined key terms to ensure clarity and
+							consistency, making the dashboard more
+							user-friendly.
+						</p>
+					</div>
 				</TextGrid>
 				<ImageGrid>
 					<ImageWrap src={Terms} alt='terminology'></ImageWrap>
 				</ImageGrid>
 				<TextGrid>
-					<Text>
-						After the terms were finalized, I referred to the
-						users&apos; mental model and key tasks again. Our users
-						care mostly about files, then open access, then policies
-						and objects. I decided to reformat the dashboard to
-						match this mental modal.
-					</Text>
+					<div className='text-stone-500 text-lg'>
+						<h1 className='text-black text-xl font-bold mb-4 mt-8'>
+							Information Hierarchy
+						</h1>
+						<p className='mb-4'>
+							<span className='text-black'>
+								Initial Challenge:{' '}
+							</span>
+							The dashboard did not align with users' priorities.
+							Since users had to manage an entire company's
+							sensitive data, having files as the first
+							visualization did not give a broad picture.
+						</p>
+						<p>
+							<span className='text-black'>Solution: </span>
+							By focusing on the users' mental model, I
+							reformatted the dashboard to prioritize key tasks
+							and information such as files, open access,
+							policies, and objects.
+						</p>
+					</div>
 				</TextGrid>
 				<ImageGrid>
 					<ImageWrap src={ih} alt='Information Hierarchy'></ImageWrap>
 				</ImageGrid>
 				<TextGrid>
-					<Text>
-						With the basics of the dashboard set, I began working on
-						the data visualizations. I spent hours researching data
-						visualization and thought very carefully about how to
-						give the users actionable insights. I first compiled a
-						list of all the statistics/information our product can
-						show and then sought to combine the information into
-						different visualizations.
-					</Text>
+					<div className='text-stone-500 text-lg'>
+						<h1 className='text-black text-xl font-bold mb-4 mt-8'>
+							Data Visualizations{' '}
+						</h1>
+						<p className='mb-4'>
+							<span className='text-black'>
+								Initial Challenge:{' '}
+							</span>
+							The existing visualizations failed to provide
+							actionable insights. Users went straight to the
+							other sections of the SDM app to fulfill their
+							needs.
+						</p>
+						<p>
+							<span className='text-black'>Solution: </span>I
+							meticulously researched and developed new
+							visualizations that combined relevant statistics
+							into coherent, actionable insights. Despite time
+							constraints, I validated these designs with the
+							design team, PM, and sales engineers, leveraging
+							their close user interactions for valuable feedback.
+						</p>
+					</div>
 				</TextGrid>
 				<LeftImage src={Stats} alt='List of statistics'></LeftImage>
 				<RightImage src={inspo}></RightImage>
-				<TextGrid>
-					<Text>
-						Unfortunately user research was not possible due to the
-						timeline but I validated my widget explorations with my
-						design team, the PM, and the sales engineering team.
-						Since the sales engineering team works closely with
-						users, their feedback was super helpful and we finalized
-						on the widgets.{' '}
-					</Text>
-				</TextGrid>
 				<ImageGrid>
 					<ImageWrap src={viz} alt='Widget updates'></ImageWrap>
 				</ImageGrid>
@@ -222,9 +260,11 @@ export default function Home() {
 					<div id='final'></div>
 
 					<Text title='Final Designs'>
-						After the widgets were finalized, I combined them onto
-						the dashboard and worked with the engineering team to
-						implement the new dashboard.{' '}
+						The final design combined a responsive, modular layout
+						with clear terminology and insightful data
+						visualizations. I worked with the engineering team
+						ensured seamless implementation, resulting in a polished
+						final product.{' '}
 						<Span>
 							Below is the final product currently in production.
 						</Span>
@@ -235,44 +275,46 @@ export default function Home() {
 				</ImageGrid>
 				<TextGrid>
 					<Text title='Impact'>
-						After the dashboard was released,{' '}
-						<Span>users complaints dropped to 0%</Span> and many
-						users gave compliments to the redesign. The sales
-						engineering team even reported that it helped draw in
-						new customers because of its great summary of their data
-						backups.
+						The redesigned dashboard received overwhelmingly
+						positive feedback.{' '}
+						<span className='text-black'>
+							User complaints dropped to zero,
+						</span>{' '}
+						and users praised the improved usability and insights.
+						The sales engineering team noted that the new dashboard
+						played a significant role in attracting new customers
+						due to its effective summary of data backups,{' '}
+						<span className='text-black'>
+							providing a $10M+ revenue boost.
+						</span>
 					</Text>
 					<Text title='Reflection'>
-						I had a great time working on this project. It was
-						exciting to lead this project and drive it to success.
-						I&apos;m proud of convincing the team to strive for
-						better UX and being able to make it happen smoothly.
-						Some of my takeways:
+						Leading the SDM dashboard redesign was a rewarding
+						experience, teaching me several key lessons:
 					</Text>
 
-					<ul className='mt-8 list-disc text-neutral-500 font-light leading-7 list-outside'>
+					<ul className='mt-8 list-disc text-stone-500 font-light text-lg leading-7 list-outside'>
 						<li>
-							It&apos;s up to the designer to take ownership for
-							great UX. If I hadn&apos;t pushed for an
-							improvement, then nothing would have improved for
-							our users.
+							<span className='text-black'>Ownership:</span>{' '}
+							Designers must take initiative to push for better
+							UX.
 						</li>
 						<li>
-							I need to trust in myself. Despite not being able to
-							validate with users&apos; at every step, I still
-							need to make the best decision I can with the
-							information I have.
+							<span className='text-black'>Trust:</span> It's
+							essential to trust one's design instincts,
+							especially when usability testing isn't feasible.
 						</li>
 						<li>
-							Designng with intention is important. Every element
-							should matter on a screen.
+							<span className='text-black'>Intention:</span> Every
+							design element must serve a clear purpose,
+							contributing to the overall user experience.
 						</li>
 					</ul>
 				</TextGrid>
 				<ImageGrid>
 					<div className='flex justify-between mt-24 mb-24'>
 						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500 text-right'>
+							<p className='font-sfital2 text-xl mb-4 text-stone-500 text-right'>
 								Previous
 							</p>
 							<a className='max-w-fit' href='/boom'>
@@ -282,7 +324,7 @@ export default function Home() {
 							</a>
 						</div>
 						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500'>
+							<p className='font-sfital2 text-xl mb-4 text-stone-500'>
 								Next
 							</p>
 							<a className='max-w-fit' href='/pay'>
