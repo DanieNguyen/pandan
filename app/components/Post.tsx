@@ -33,12 +33,12 @@ function Hero(props: any) {
 function Text(props: any) {
 	return (
 		<div>
-			<p className='text-2xl mt-16 mb-6 text-black min-[1920px]:text-[28px]'>
+			<div className='text-2xl mt-16 mb-6 text-black min-[1920px]:text-[28px]'>
 				{props.title}
-			</p>
-			<p className='text-stone-500 leading-7 text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
+			</div>
+			<div className='text-stone-500 leading-7 text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
 				{props.children}
-			</p>
+			</div>
 		</div>
 	);
 }

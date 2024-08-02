@@ -140,7 +140,7 @@ const Page = () => {
 		});
 	}, []);
 
-	const handleFilterChange = (newFilter) => {
+	const handleFilterChange = (newFilter: any) => {
 		setFilter(newFilter);
 		setHideBackground(true);
 	};
@@ -217,7 +217,7 @@ const Page = () => {
 										width={880}
 										height={1000}
 										alt={image.alt}
-										loading='lazy'
+										priority
 										className='hover:scale-110 ease-out duration-1000'
 									/>
 								</Link>

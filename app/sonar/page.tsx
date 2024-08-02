@@ -252,7 +252,7 @@ export default function Home() {
 					</div>
 				</TextGrid>
 				<LeftImage src={Stats} alt='List of statistics'></LeftImage>
-				<RightImage src={inspo}></RightImage>
+				<RightImage src={inspo} alt='Inspiration'></RightImage>
 				<ImageGrid>
 					<ImageWrap src={viz} alt='Widget updates'></ImageWrap>
 				</ImageGrid>
