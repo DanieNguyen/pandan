@@ -216,8 +216,8 @@ const Page = () => {
 										src={image.src}
 										width={880}
 										height={1000}
-										priority
 										alt={image.alt}
+										loading='lazy'
 										className='hover:scale-110 ease-out duration-1000'
 									/>
 								</Link>
