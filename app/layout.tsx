@@ -23,10 +23,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en' className='font-sans bg-white'>
-			<body>{children}</body>
-			<SpeedInsights></SpeedInsights>
-			<Analytics></Analytics>
+		<html lang='en' className='font-sans'>
+			<body>
+				{children}
+				<SpeedInsights></SpeedInsights>
+				<Analytics></Analytics>
+			</body>
 		</html>
 	);
 }

@@ -19,7 +19,7 @@ const Page = () => {
 	}, []);
 
 	return (
-		<main className='text-white bg-stone-900 pb-24 h-[100vh]'>
+		<main className='dark:text-white dark:bg-stone-900 text-stone-900 bg-white pb-24 h-[100vh]'>
 			<NavBar />
 			<div className='flex justify-center main-content pt-12 mx-12'>
 				<div className='mr-32 2xl:mr-64'>
@@ -48,7 +48,6 @@ const Page = () => {
 						<li>sports - trade rumors, memes, and all</li>
 						<li>foodie spots</li>
 						<li>Tiktok trends</li>
-						<li>silly random questions I find online</li>
 					</ol>
 				</div>
 				<Image

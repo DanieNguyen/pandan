@@ -33,10 +33,10 @@ function Hero(props: any) {
 function Text(props: any) {
 	return (
 		<div>
-			<div className='text-2xl mt-16 mb-6 text-black min-[1920px]:text-[28px]'>
+			<div className='text-2xl mt-16 mb-6 text-black dark:text-white min-[1920px]:text-[28px]'>
 				{props.title}
 			</div>
-			<div className='text-stone-500 leading-7 text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
+			<div className='text-stone-500 dark:text-stone-300 leading-7 text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
 				{props.children}
 			</div>
 		</div>
@@ -120,10 +120,10 @@ function RightImage(props: any) {
 function Goal(props: any) {
 	return (
 		<div>
-			<h1 className='text-2xl text-black text-center mb-4 mt-24'>
+			<h1 className='text-2xl text-black dark:text-white text-center mb-4 mt-24'>
 				{props.title}
 			</h1>
-			<div className='w-full text-center text-black text-5xl font-normal font-sfital2 leading-normal min-[1920px]:text-6xl min-[1920px]:leading-relaxed md:max-xl:text-4xl md:max-xl:leading-relaxed'>
+			<div className='w-full text-center text-black dark:text-white text-5xl font-normal font-sfital2 leading-normal min-[1920px]:text-6xl min-[1920px]:leading-relaxed md:max-xl:text-4xl md:max-xl:leading-relaxed'>
 				{props.children}
 			</div>
 		</div>
@@ -131,7 +131,12 @@ function Goal(props: any) {
 }
 
 function Span(props: any) {
-	return <span className='text-black font-normal'> {props.children} </span>;
+	return (
+		<span className='text-black dark:text-white font-normal'>
+			{' '}
+			{props.children}{' '}
+		</span>
+	);
 }
 export {
 	MainGrid,
