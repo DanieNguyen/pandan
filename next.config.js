@@ -1,6 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-	distDir: 'build',
-};
+// next.config.js
+const withImages = require('next-images');
 
-module.exports = nextConfig;
+module.exports = withImages({
+	reactStrictMode: true,
+	images: {
+		domains: ['pandan.studio', 'www.pandan.studio'], // Add any external domains if necessary
+	},
+});
