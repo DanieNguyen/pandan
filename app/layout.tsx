@@ -24,9 +24,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en' className='font-sans bg-white'>
-			<body>{children}</body>
-			<SpeedInsights></SpeedInsights>
-			<Analytics></Analytics>
+			<body>
+				{children}
+				<SpeedInsights></SpeedInsights>
+				<Analytics></Analytics>
+			</body>
 		</html>
 	);
 }
