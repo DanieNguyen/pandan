@@ -32,7 +32,7 @@ export default function Top() {
 			variants={ScrollToTopContainerVariants}
 			animate={controls}
 			initial='hide'
-			className='w-12 h-12 fixed bottom-12 right-12 z-40 text-3xl flex justify-center items-center bg-white rounded shadow-md border border-gray-300 hover:text-black text-gray-400 hover:shadow-lg cursor-pointer'
+			className='w-12 h-12 fixed bottom-12 right-12 z-40 text-3xl flex justify-center items-center bg-white dark:bg-stone-900 rounded shadow-md border dark:hover:bg-stone-700 border-gray-300 hover:text-black dark:hover:text-white dark:text-stone-100 text-gray-400 hover:shadow-lg cursor-pointer'
 			onClick={scrollToTop}>
 			<UpArrow></UpArrow>
 		</motion.button>

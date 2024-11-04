@@ -32,12 +32,12 @@ import {
 	RightImage,
 	Goal,
 	Span,
-} from '../components/Post';
+} from '../components/CaseStudy';
 import Link from 'next/link';
 
 export default function Home() {
 	return (
-		<main className='bg-white' id='home'>
+		<main className='' id='home'>
 			<div className='p-8 text-2xl md:hidden'>
 				Please view on web for now. Mobile coming soon.
 			</div>

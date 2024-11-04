@@ -23,7 +23,9 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en' className='font-sans bg-white'>
+		<html
+			lang='en'
+			className='font-sans dark:text-white dark:bg-stone-900 text-stone-900 bg-white'>
 			<body>
 				{children}
 				<SpeedInsights></SpeedInsights>

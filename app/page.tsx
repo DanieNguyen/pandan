@@ -7,6 +7,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Contact from './components/Contact';
 import Headline from './headline';
+import FilterButton from './components/FilterButton';
 
 // Image data with tags, background colors, and class types
 const images = [
@@ -151,7 +152,7 @@ const Page = () => {
 			: images.filter((image) => image.tags.includes(filter));
 
 	return (
-		<main className='dark:text-white dark:bg-stone-900 text-stone-900 bg-white'>
+		<main className='e'>
 			<NavBar />
 			<Headline></Headline>
 			<div className='mx-12'>
@@ -159,86 +160,36 @@ const Page = () => {
 					Work
 				</div>
 				<div className='flex space-x-4 mb-8'>
-					<button
-						onClick={() => handleFilterChange('all')}
-						className={`px-3 py-1 rounded-3xl border button
-							bg-white 
-							hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600
-							focus:border-blue-600 focus:text-blue-600
-							dark:text-white 
-							dark:border-stone-500  
-							dark:hover:bg-stone-700 
-							dark:focus:bg-blue-600 dark:focus:text-white ${
-								filter === 'all'
-									? 'border-blue-600 text-blue-600 dark:bg-blue-600 dark:border-blue-600'
-									: 'border-stone-300 text-stone-600 dark:bg-stone-900'
-							}`}>
-						All
-					</button>
-					<button
-						onClick={() => handleFilterChange('consumer')}
-						className={`px-3 py-1 rounded-3xl border button
-							bg-white 
-							hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600
-							focus:border-blue-600 focus:text-blue-600
-							dark:text-white 
-							dark:border-stone-500  
-							dark:hover:bg-stone-700 
-							dark:focus:bg-blue-600 dark:focus:text-white ${
-								filter === 'consumer'
-									? 'border-blue-600 text-blue-600 dark:bg-blue-600 dark:border-blue-600'
-									: 'border-stone-300 text-stone-600 dark:bg-stone-900'
-							}`}>
-						Consumer
-					</button>
-					<button
-						onClick={() => handleFilterChange('enterprise')}
-						className={`px-3 py-1 rounded-3xl border button
-							bg-white 
-							hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600
-							focus:border-blue-600 focus:text-blue-600
-							dark:text-white 
-							dark:border-stone-500  
-							dark:hover:bg-stone-700 
-							dark:focus:bg-blue-600 dark:focus:text-white ${
-								filter === 'enterprise'
-									? 'border-blue-600 text-blue-600 dark:bg-blue-600 dark:border-blue-600'
-									: 'border-stone-300 text-stone-600 dark:bg-stone-900'
-							}`}>
-						Enterprise
-					</button>
-					<button
-						onClick={() => handleFilterChange('web')}
-						className={`px-3 py-1 rounded-3xl border button
-							bg-white 
-							hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600
-							focus:border-blue-600 focus:text-blue-600
-							dark:text-white 
-							dark:border-stone-500  
-							dark:hover:bg-stone-700 
-							dark:focus:bg-blue-600 dark:focus:text-white ${
-								filter === 'web'
-									? 'border-blue-600 text-blue-600 dark:bg-blue-600 dark:border-blue-600'
-									: 'border-stone-300 text-stone-600 dark:bg-stone-900'
-							}`}>
-						Website
-					</button>
-					<button
-						onClick={() => handleFilterChange('mobile')}
-						className={`px-3 py-1 rounded-3xl border button
-							bg-white 
-							hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600
-							focus:border-blue-600 focus:text-blue-600
-							dark:text-white 
-							dark:border-stone-500  
-							dark:hover:bg-stone-700 
-							dark:focus:bg-blue-600 dark:focus:text-white ${
-								filter === 'mobile'
-									? 'border-blue-600 text-blue-600 dark:bg-blue-600 dark:border-blue-600'
-									: 'border-stone-300 text-stone-600 dark:bg-stone-900'
-							}`}>
-						Mobile
-					</button>
+					<FilterButton
+						handleFilterChange={handleFilterChange}
+						filter='all'
+						currentFilter={filter}
+						label='All'
+					/>
+					<FilterButton
+						handleFilterChange={handleFilterChange}
+						filter='consumer'
+						currentFilter={filter}
+						label='Consumer'
+					/>
+					<FilterButton
+						handleFilterChange={handleFilterChange}
+						filter='enterprise'
+						currentFilter={filter}
+						label='Enterprise'
+					/>
+					<FilterButton
+						handleFilterChange={handleFilterChange}
+						filter='web'
+						currentFilter={filter}
+						label='Web'
+					/>
+					<FilterButton
+						handleFilterChange={handleFilterChange}
+						filter='mobile'
+						currentFilter={filter}
+						label='Mobile'
+					/>
 				</div>
 				<div className='grid grid-cols-3 gap-8 pb-20'>
 					{filteredImages.map((image, index) => (

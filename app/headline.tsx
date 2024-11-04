@@ -1,9 +1,9 @@
 export default function Headline() {
 	return (
-		<div className='main-content'>
+		<div className='main-content text-stone-900 dark:text-white'>
 			<div className='mx-12'>
 				<div className='w-full mt-36 2xl:mt-64 lg:leading-[48px] xl:leading-[64px]'>
-					<span className='text-white lg:text-4xl xl:text-5xl 2xl:text-6xl'>
+					<span className='lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						Currently helping people save money at
 					</span>
 					<a
@@ -17,7 +17,7 @@ export default function Headline() {
 						</span>
 					</a>
 					<br></br>
-					<span className='text-stone-850 dark:text-white lg:text-4xl xl:text-5xl 2xl:text-6xl'>
+					<span className='lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						Previously crafting data security tools at
 					</span>
 					<a
@@ -31,7 +31,7 @@ export default function Headline() {
 						</span>
 					</a>
 					<br></br>
-					<span className='text-white lg:text-4xl xl:text-5xl 2xl:text-6xl'>
+					<span className='lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						and a Web3 crypto app at
 					</span>
 					<span className='text-[#5352FC] lg:text-[32px] xl:text-[44px] 2xl:text-[56px] font-serif italic hover:cursor-poof'>

@@ -15,6 +15,7 @@ import inspo from '../../public/images/sonar/visuals.png';
 import viz from '../../public/images/sonar/widgets.png';
 import final from '../../public/images/sonar/final.png';
 import { DiagonalArrow, ReverseArrow, DownArrow } from '../components/Arrow';
+import ProjectNav from '../components/ProjectNav';
 import Top from '../components/Top';
 import {
 	MainGrid,
@@ -29,11 +30,11 @@ import {
 	RightImage,
 	Goal,
 	Span,
-} from '../components/Post';
+} from '../components/CaseStudy';
 
 export default function Home() {
 	return (
-		<main className='bg-white' id='home'>
+		<main className='' id='home'>
 			<div className='p-8 text-2xl md:hidden'>
 				Please view on web for now. Mobile coming soon.
 			</div>
@@ -46,31 +47,37 @@ export default function Home() {
 				alt='Sonar Hero'
 				headline='Sensitive Data Discovery'></Hero>
 			<MainGrid>
-				<div className='col-start-3 col-end-5 text-sm text-stone-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
-					<p className='font-medium text-black'>Role</p>
+				<div className='col-start-3 col-end-5 text-sm text-stone-500 dark:text-stone-300 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
+					<p className='font-medium text-black dark:text-white'>
+						Role
+					</p>
 					<p className='font-light'>Dashboard Redesign</p>
 					<p className='font-light'>User Research</p>
 					<p className='font-light'>Data Visualization</p>
 					<p className='font-light'>Design System</p>
 					<p className='font-light'>Responsive Design</p>
-					<p className='mt-8 font-medium text-black'>Team</p>
+					<p className='mt-8 font-medium text-black dark:text-white'>
+						Team
+					</p>
 					<p className='font-light'>1 Product Manager</p>
 					<p className='font-light'>2 Frontend Engineers</p>
 					<p className='font-light'>1 UX Researcher</p>
 					<p className='font-light'>1 Sales Engineer</p>
 
-					<p className='mt-8 font-medium text-black'>Timeline</p>
+					<p className='mt-8 font-medium text-black dark:text-white'>
+						Timeline
+					</p>
 					<p className='font-light'>Feb 2022 - April 2022</p>
 
 					<a
-						className='mt-8 block font-medium text-black'
+						className='mt-8 block font-medium text-black dark:text-white'
 						href='#final'>
 						<DownArrow></DownArrow> Final Designs{' '}
 						<DownArrow></DownArrow>
 					</a>
 				</div>
 				<TextGrid>
-					<p className='text-stone-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
+					<p className='text-stone-500 dark:text-stone-300 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
 						Redesigning the <Span>Sensitive Data Monitoring</Span>
 						dashboard to provide actionable insights{' '}
 					</p>
@@ -115,7 +122,7 @@ export default function Home() {
 						challenges in their roles. We then created a
 						Jobs-to-be-Done framework to determine the ideal user
 						flow. The key findings were clear:{' '}
-						<span className='text-black'>
+						<span className='text-black dark:text-white'>
 							users focused on managing sensitive data risks found
 							the existing dashboard information irrelevant and
 							non-actionable.
@@ -157,31 +164,33 @@ export default function Home() {
 					src={newLayout}
 					alt='new dashboard layout'></RightImage>
 				<TextGrid>
-					<div className='text-stone-500 text-lg'>
-						<h1 className='text-black text-xl font-bold mb-4 mt-8'>
+					<div className='text-stone-500 dark:text-stone-300 text-lg'>
+						<h1 className='text-black dark:text-white text-xl font-bold mb-4 mt-8'>
 							Layout Redesign
 						</h1>
 						<p className='mb-4'>
-							<span className='text-black'>
+							<span className='text-black dark:text-white'>
 								Initial Challenge:{' '}
 							</span>
 							The old dashboard layout was outdated and not
 							optimized for responsiveness.
 						</p>
 						<p>
-							<span className='text-black'>Solution: </span>I
-							migrated to a new modular grid system, enabling
+							<span className='text-black dark:text-white'>
+								Solution:{' '}
+							</span>
+							I migrated to a new modular grid system, enabling
 							flexible widget sizes and positions, which greatly
 							improved the dashboard&apos;s responsiveness and
 							adaptability.
 						</p>
 					</div>
-					<div className='text-stone-500 text-lg'>
-						<h1 className='text-black text-xl font-bold mb-4 mt-8'>
+					<div className='text-stone-500 dark:text-stone-300 text-lg'>
+						<h1 className='text-black dark:text-white text-xl font-bold mb-4 mt-8'>
 							Terminology Clarification
 						</h1>
 						<p className='mb-4'>
-							<span className='text-black'>
+							<span className='text-black dark:text-white'>
 								Initial Challenge:{' '}
 							</span>
 							Users found terms like &apos;hits&apos; confusing
@@ -189,7 +198,9 @@ export default function Home() {
 							standard terms.
 						</p>
 						<p>
-							<span className='text-black'>Solution: </span>
+							<span className='text-black dark:text-white'>
+								Solution:{' '}
+							</span>
 							Collaborating with the PM and technical writing
 							team, we redefined key terms to ensure clarity and
 							consistency, making the dashboard more
@@ -201,12 +212,12 @@ export default function Home() {
 					<ImageWrap src={Terms} alt='terminology'></ImageWrap>
 				</ImageGrid>
 				<TextGrid>
-					<div className='text-stone-500 text-lg'>
-						<h1 className='text-black text-xl font-bold mb-4 mt-8'>
+					<div className='text-stone-500 dark:text-stone-300  text-lg'>
+						<h1 className='text-black dark:text-white text-xl font-bold mb-4 mt-8'>
 							Information Hierarchy
 						</h1>
 						<p className='mb-4'>
-							<span className='text-black'>
+							<span className='text-black dark:text-white'>
 								Initial Challenge:{' '}
 							</span>
 							The dashboard did not align with users&apos;
@@ -215,7 +226,9 @@ export default function Home() {
 							first visualization did not give a broad picture.
 						</p>
 						<p>
-							<span className='text-black'>Solution: </span>
+							<span className='text-black dark:text-white'>
+								Solution:{' '}
+							</span>
 							By focusing on the users&apos; mental model, I
 							reformatted the dashboard to prioritize key tasks
 							and information such as files, open access,
@@ -227,12 +240,12 @@ export default function Home() {
 					<ImageWrap src={ih} alt='Information Hierarchy'></ImageWrap>
 				</ImageGrid>
 				<TextGrid>
-					<div className='text-stone-500 text-lg'>
-						<h1 className='text-black text-xl font-bold mb-4 mt-8'>
+					<div className='text-stone-500 dark:text-stone-300 text-lg'>
+						<h1 className='text-black dark:text-white text-xl font-bold mb-4 mt-8'>
 							Data Visualizations{' '}
 						</h1>
 						<p className='mb-4'>
-							<span className='text-black'>
+							<span className='text-black dark:text-white'>
 								Initial Challenge:{' '}
 							</span>
 							The existing visualizations failed to provide
@@ -241,8 +254,10 @@ export default function Home() {
 							needs.
 						</p>
 						<p>
-							<span className='text-black'>Solution: </span>I
-							meticulously researched and developed new
+							<span className='text-black dark:text-white'>
+								Solution:{' '}
+							</span>
+							I meticulously researched and developed new
 							visualizations that combined relevant statistics
 							into coherent, actionable insights. Despite time
 							constraints, I validated these designs with the
@@ -277,14 +292,14 @@ export default function Home() {
 					<Text title='Impact'>
 						The redesigned dashboard received overwhelmingly
 						positive feedback.{' '}
-						<span className='text-black'>
+						<span className='text-black dark:text-white'>
 							User complaints dropped to zero,
 						</span>{' '}
 						and users praised the improved usability and insights.
 						The sales engineering team noted that the new dashboard
 						played a significant role in attracting new customers
 						due to its effective summary of data backups,{' '}
-						<span className='text-black'>
+						<span className='text-black dark:text-white'>
 							providing a $10M+ revenue boost.
 						</span>
 					</Text>
@@ -293,49 +308,38 @@ export default function Home() {
 						experience, teaching me several key lessons:
 					</Text>
 
-					<ul className='mt-8 list-disc text-stone-500 font-light text-lg leading-7 list-outside'>
+					<ul className='mt-8 list-disc text-stone-500 dark:text-stone-300 font-light text-lg leading-7 list-outside'>
 						<li>
-							<span className='text-black'>Ownership:</span>{' '}
+							<span className='text-black dark:text-white'>
+								Ownership:
+							</span>{' '}
 							Designers must take initiative to push for better
 							UX.
 						</li>
 						<li>
-							<span className='text-black'>Trust:</span> It&apos;s
-							essential to trust one&apos;s design instincts,
-							especially when usability testing isn&apos;t
-							feasible.
+							<span className='text-black dark:text-white'>
+								Trust:
+							</span>{' '}
+							It&apos;s essential to trust one&apos;s design
+							instincts, especially when usability testing
+							isn&apos;t feasible.
 						</li>
 						<li>
-							<span className='text-black'>Intention:</span> Every
-							design element must serve a clear purpose,
+							<span className='text-black dark:text-white'>
+								Intention:
+							</span>{' '}
+							Every design element must serve a clear purpose,
 							contributing to the overall user experience.
 						</li>
 					</ul>
 				</TextGrid>
 				<ImageGrid>
-					<div className='flex justify-between mt-24 mb-24'>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-stone-500 text-right'>
-								Previous
-							</p>
-							<a className='max-w-fit' href='/boom'>
-								<span className='bg-right-bottom bg-gradient-to-l text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl'>
-									<ReverseArrow></ReverseArrow> CREDIT BOOST
-								</span>
-							</a>
-						</div>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-stone-500'>
-								Next
-							</p>
-							<a className='max-w-fit' href='/pay'>
-								<span className='bg-left-bottom bg-gradient-to-r text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl'>
-									THE ZEBRA CHECKOUT{' '}
-									<DiagonalArrow></DiagonalArrow>
-								</span>
-							</a>
-						</div>
-					</div>
+					<ProjectNav
+						previous='CREDIT BOOST'
+						prevlink={'/boom'}
+						next='THE ZEBRA CHECKOUT'
+						nextlink={'/pay'}
+					/>
 				</ImageGrid>
 			</MainGrid>
 			<Top></Top>
