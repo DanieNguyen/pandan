@@ -17,7 +17,7 @@ export default function Headline() {
 						</span>
 					</a>
 					<br></br>
-					<span className='text-white lg:text-4xl xl:text-5xl 2xl:text-6xl'>
+					<span className='text-stone-850 dark:text-white lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						Previously crafting data security tools at
 					</span>
 					<a

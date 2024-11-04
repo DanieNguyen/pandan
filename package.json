@@ -21,8 +21,8 @@
 		"tailwindcss-opentype": "^1.1.0"
 	},
 	"devDependencies": {
-		"@types/node": "latest",
-		"@types/react": "latest",
+		"@types/node": "22.8.7",
+		"@types/react": "18.3.12",
 		"@types/react-dom": "latest",
 		"autoprefixer": "^10.4.19",
 		"eslint": "latest",

@@ -151,51 +151,92 @@ const Page = () => {
 			: images.filter((image) => image.tags.includes(filter));
 
 	return (
-		<main className='text-white bg-stone-900'>
+		<main className='dark:text-white dark:bg-stone-900 text-stone-900 bg-white'>
 			<NavBar />
 			<Headline></Headline>
 			<div className='mx-12'>
-				<div className='work-title text-white mt-32 2xl:mt-64 mb-4 text-2xl 2xl:text-4xl font-sans leading-loose'>
+				<div className='work-title mt-32 2xl:mt-64 mb-4 text-2xl 2xl:text-4xl font-sans leading-loose'>
 					Work
 				</div>
 				<div className='flex space-x-4 mb-8'>
 					<button
 						onClick={() => handleFilterChange('all')}
-						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 active:bg-blue-600 active:border-blue-600 focus:bg-blue-600 focus:border-blue-600 ${
-							filter === 'all' ? 'bg-blue-600' : 'bg-stone-900'
-						}`}>
+						className={`px-3 py-1 rounded-3xl border button
+							bg-white 
+							hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600
+							focus:border-blue-600 focus:text-blue-600
+							dark:text-white 
+							dark:border-stone-500  
+							dark:hover:bg-stone-700 
+							dark:focus:bg-blue-600 dark:focus:text-white ${
+								filter === 'all'
+									? 'border-blue-600 text-blue-600 dark:bg-blue-600 dark:border-blue-600'
+									: 'border-stone-300 text-stone-600 dark:bg-stone-900'
+							}`}>
 						All
 					</button>
 					<button
 						onClick={() => handleFilterChange('consumer')}
-						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 active:bg-blue-600 active:border-blue-600 focus:bg-blue-600 focus:border-blue-600 ${
-							filter === 'consumer'
-								? 'bg-blue-600'
-								: 'bg-stone-900'
-						}`}>
+						className={`px-3 py-1 rounded-3xl border button
+							bg-white 
+							hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600
+							focus:border-blue-600 focus:text-blue-600
+							dark:text-white 
+							dark:border-stone-500  
+							dark:hover:bg-stone-700 
+							dark:focus:bg-blue-600 dark:focus:text-white ${
+								filter === 'consumer'
+									? 'border-blue-600 text-blue-600 dark:bg-blue-600 dark:border-blue-600'
+									: 'border-stone-300 text-stone-600 dark:bg-stone-900'
+							}`}>
 						Consumer
 					</button>
 					<button
 						onClick={() => handleFilterChange('enterprise')}
-						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 active:bg-blue-600 active:border-blue-600 focus:bg-blue-600 focus:border-blue-600 ${
-							filter === 'enterprise'
-								? 'bg-blue-600'
-								: 'bg-stone-900'
-						}`}>
+						className={`px-3 py-1 rounded-3xl border button
+							bg-white 
+							hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600
+							focus:border-blue-600 focus:text-blue-600
+							dark:text-white 
+							dark:border-stone-500  
+							dark:hover:bg-stone-700 
+							dark:focus:bg-blue-600 dark:focus:text-white ${
+								filter === 'enterprise'
+									? 'border-blue-600 text-blue-600 dark:bg-blue-600 dark:border-blue-600'
+									: 'border-stone-300 text-stone-600 dark:bg-stone-900'
+							}`}>
 						Enterprise
 					</button>
 					<button
 						onClick={() => handleFilterChange('web')}
-						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 active:bg-blue-600 active:border-blue-600 focus:bg-blue-600 focus:border-blue-600 ${
-							filter === 'web' ? 'bg-blue-600' : 'bg-stone-900'
-						}`}>
+						className={`px-3 py-1 rounded-3xl border button
+							bg-white 
+							hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600
+							focus:border-blue-600 focus:text-blue-600
+							dark:text-white 
+							dark:border-stone-500  
+							dark:hover:bg-stone-700 
+							dark:focus:bg-blue-600 dark:focus:text-white ${
+								filter === 'web'
+									? 'border-blue-600 text-blue-600 dark:bg-blue-600 dark:border-blue-600'
+									: 'border-stone-300 text-stone-600 dark:bg-stone-900'
+							}`}>
 						Website
 					</button>
 					<button
 						onClick={() => handleFilterChange('mobile')}
-						className={`text-white px-3 py-1 rounded-3xl border border-stone-500 button hover:bg-stone-700 active:bg-blue-600 active:border-blue-600 focus:bg-blue-600 focus:border-blue-600 ${
-							filter === 'mobile' ? 'bg-blue-600' : 'bg-stone-900'
-						}`}>
+						className={`px-3 py-1 rounded-3xl border button
+							bg-white 
+							hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600
+							focus:border-blue-600 focus:text-blue-600
+							dark:text-white 
+							dark:border-stone-500  
+							dark:hover:bg-stone-700 
+							dark:focus:bg-blue-600 dark:focus:text-white ${
+								filter === 'mobile'
+									? 'border-blue-600 text-blue-600 dark:bg-blue-600 dark:border-blue-600'
+									: 'border-stone-300 text-stone-600 dark:bg-stone-900'
+							}`}>
 						Mobile
 					</button>
 				</div>
