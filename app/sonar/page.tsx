@@ -47,8 +47,8 @@ export default function Home() {
 				alt='Sonar Hero'
 				headline='Sensitive Data Discovery'></Hero>
 			<MainGrid>
-				<div className='col-start-3 col-end-5 text-sm text-stone-500 dark:text-stone-300 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
-					<p className='font-medium text-black dark:text-white'>
+				<div className='col-start-3 col-end-5 text-sm dark:text-stone-400 text-stone-600 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
+					<p className='font-medium text-stone-900 dark:text-stone-50'>
 						Role
 					</p>
 					<p className='font-light'>Dashboard Redesign</p>
@@ -56,7 +56,7 @@ export default function Home() {
 					<p className='font-light'>Data Visualization</p>
 					<p className='font-light'>Design System</p>
 					<p className='font-light'>Responsive Design</p>
-					<p className='mt-8 font-medium text-black dark:text-white'>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
 						Team
 					</p>
 					<p className='font-light'>1 Product Manager</p>
@@ -64,20 +64,20 @@ export default function Home() {
 					<p className='font-light'>1 UX Researcher</p>
 					<p className='font-light'>1 Sales Engineer</p>
 
-					<p className='mt-8 font-medium text-black dark:text-white'>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
 						Timeline
 					</p>
 					<p className='font-light'>Feb 2022 - April 2022</p>
 
 					<a
-						className='mt-8 block font-medium text-black dark:text-white'
+						className='mt-8 block font-medium text-stone-900 dark:text-stone-50'
 						href='#final'>
 						<DownArrow></DownArrow> Final Designs{' '}
 						<DownArrow></DownArrow>
 					</a>
 				</div>
 				<TextGrid>
-					<p className='text-stone-500 dark:text-stone-300 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
+					<p className='dark:text-stone-400 text-stone-600 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
 						Redesigning the <Span>Sensitive Data Monitoring</Span>
 						dashboard to provide actionable insights{' '}
 					</p>
@@ -122,7 +122,7 @@ export default function Home() {
 						challenges in their roles. We then created a
 						Jobs-to-be-Done framework to determine the ideal user
 						flow. The key findings were clear:{' '}
-						<span className='text-black dark:text-white'>
+						<span className='text-stone-900 dark:text-stone-50'>
 							users focused on managing sensitive data risks found
 							the existing dashboard information irrelevant and
 							non-actionable.
@@ -164,19 +164,19 @@ export default function Home() {
 					src={newLayout}
 					alt='new dashboard layout'></RightImage>
 				<TextGrid>
-					<div className='text-stone-500 dark:text-stone-300 text-lg'>
-						<h1 className='text-black dark:text-white text-xl font-bold mb-4 mt-8'>
+					<div className='dark:text-stone-400 text-stone-600 text-lg'>
+						<h1 className='text-stone-900 dark:text-stone-50 text-xl font-bold mb-4 mt-8'>
 							Layout Redesign
 						</h1>
 						<p className='mb-4'>
-							<span className='text-black dark:text-white'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Initial Challenge:{' '}
 							</span>
 							The old dashboard layout was outdated and not
 							optimized for responsiveness.
 						</p>
 						<p>
-							<span className='text-black dark:text-white'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Solution:{' '}
 							</span>
 							I migrated to a new modular grid system, enabling
@@ -185,12 +185,12 @@ export default function Home() {
 							adaptability.
 						</p>
 					</div>
-					<div className='text-stone-500 dark:text-stone-300 text-lg'>
-						<h1 className='text-black dark:text-white text-xl font-bold mb-4 mt-8'>
+					<div className='dark:text-stone-400 text-stone-600 text-lg'>
+						<h1 className='text-stone-900 dark:text-stone-50 text-xl font-bold mb-4 mt-8'>
 							Terminology Clarification
 						</h1>
 						<p className='mb-4'>
-							<span className='text-black dark:text-white'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Initial Challenge:{' '}
 							</span>
 							Users found terms like &apos;hits&apos; confusing
@@ -198,7 +198,7 @@ export default function Home() {
 							standard terms.
 						</p>
 						<p>
-							<span className='text-black dark:text-white'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Solution:{' '}
 							</span>
 							Collaborating with the PM and technical writing
@@ -212,12 +212,12 @@ export default function Home() {
 					<ImageWrap src={Terms} alt='terminology'></ImageWrap>
 				</ImageGrid>
 				<TextGrid>
-					<div className='text-stone-500 dark:text-stone-300  text-lg'>
-						<h1 className='text-black dark:text-white text-xl font-bold mb-4 mt-8'>
+					<div className='dark:text-stone-400 text-stone-600  text-lg'>
+						<h1 className='text-stone-900 dark:text-stone-50 text-xl font-bold mb-4 mt-8'>
 							Information Hierarchy
 						</h1>
 						<p className='mb-4'>
-							<span className='text-black dark:text-white'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Initial Challenge:{' '}
 							</span>
 							The dashboard did not align with users&apos;
@@ -226,7 +226,7 @@ export default function Home() {
 							first visualization did not give a broad picture.
 						</p>
 						<p>
-							<span className='text-black dark:text-white'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Solution:{' '}
 							</span>
 							By focusing on the users&apos; mental model, I
@@ -240,12 +240,12 @@ export default function Home() {
 					<ImageWrap src={ih} alt='Information Hierarchy'></ImageWrap>
 				</ImageGrid>
 				<TextGrid>
-					<div className='text-stone-500 dark:text-stone-300 text-lg'>
-						<h1 className='text-black dark:text-white text-xl font-bold mb-4 mt-8'>
+					<div className='dark:text-stone-400 text-stone-600 text-lg'>
+						<h1 className='text-stone-900 dark:text-stone-50 text-xl font-bold mb-4 mt-8'>
 							Data Visualizations{' '}
 						</h1>
 						<p className='mb-4'>
-							<span className='text-black dark:text-white'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Initial Challenge:{' '}
 							</span>
 							The existing visualizations failed to provide
@@ -254,7 +254,7 @@ export default function Home() {
 							needs.
 						</p>
 						<p>
-							<span className='text-black dark:text-white'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Solution:{' '}
 							</span>
 							I meticulously researched and developed new
@@ -292,14 +292,14 @@ export default function Home() {
 					<Text title='Impact'>
 						The redesigned dashboard received overwhelmingly
 						positive feedback.{' '}
-						<span className='text-black dark:text-white'>
+						<span className='text-stone-900 dark:text-stone-50'>
 							User complaints dropped to zero,
 						</span>{' '}
 						and users praised the improved usability and insights.
 						The sales engineering team noted that the new dashboard
 						played a significant role in attracting new customers
 						due to its effective summary of data backups,{' '}
-						<span className='text-black dark:text-white'>
+						<span className='text-stone-900 dark:text-stone-50'>
 							providing a $10M+ revenue boost.
 						</span>
 					</Text>
@@ -308,16 +308,16 @@ export default function Home() {
 						experience, teaching me several key lessons:
 					</Text>
 
-					<ul className='mt-8 list-disc text-stone-500 dark:text-stone-300 font-light text-lg leading-7 list-outside'>
+					<ul className='mt-8 list-disc dark:text-stone-400 text-stone-600 font-light text-lg leading-7 list-outside'>
 						<li>
-							<span className='text-black dark:text-white'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Ownership:
 							</span>{' '}
 							Designers must take initiative to push for better
 							UX.
 						</li>
 						<li>
-							<span className='text-black dark:text-white'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Trust:
 							</span>{' '}
 							It&apos;s essential to trust one&apos;s design
@@ -325,7 +325,7 @@ export default function Home() {
 							isn&apos;t feasible.
 						</li>
 						<li>
-							<span className='text-black dark:text-white'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Intention:
 							</span>{' '}
 							Every design element must serve a clear purpose,
@@ -335,10 +335,10 @@ export default function Home() {
 				</TextGrid>
 				<ImageGrid>
 					<ProjectNav
-						previous='CREDIT BOOST'
-						prevlink={'/boom'}
-						next='THE ZEBRA CHECKOUT'
-						nextlink={'/pay'}
+						previous='INSURANCE CHECKOUT'
+						prevlink={'/pay'}
+						next='RENT REPORTING'
+						nextlink={'/boom'}
 					/>
 				</ImageGrid>
 			</MainGrid>

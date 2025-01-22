@@ -30,6 +30,7 @@ import {
 	Goal,
 	Span,
 } from '../components/CaseStudy';
+import ProjectNav from '../components/ProjectNav';
 
 export default function Home() {
 	return (
@@ -46,24 +47,30 @@ export default function Home() {
 				alt='Checkout Hero'
 				headline='Insurance Checkout Redesign'></Hero>
 			<MainGrid>
-				<div className='col-start-3 col-end-5 text-sm text-neutral-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
-					<p className='font-medium text-black'>Role</p>
+				<div className='col-start-3 col-end-5 text-sm dark:text-stone-400 text-stone-600 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
+					<p className='font-medium text-stone-900 dark:text-stone-50'>
+						Role
+					</p>
 					<p className='font-light'>Competitive Analysis</p>
 					<p className='font-light'>User Research</p>
 					<p className='font-light'>A/B Testing</p>
 					<p className='font-light'>Prototyping</p>
 					<p className='font-light'>Iterative Designs</p>
 					<p className='font-light'>Responsive Design</p>
-					<p className='mt-8 font-medium text-black'>Team</p>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
+						Team
+					</p>
 					<p className='font-light'>1 Product Manager</p>
 					<p className='font-light'>2 Front-End Engineers</p>
 					<p className='font-light'>4 Backend-End Engineers</p>
 
-					<p className='mt-8 font-medium text-black'>Timeline</p>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
+						Timeline
+					</p>
 					<p className='font-light'>April 2024 - July 2024</p>
 				</div>
 				<TextGrid>
-					<p className='text-neutral-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
+					<p className='text-stone-600 dark:text-stone-400 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
 						Redesigning the insurance checkout experience to{' '}
 						<Span>be simple and trustworthy</Span>
 					</p>
@@ -97,9 +104,9 @@ export default function Home() {
 						competitive analysis and audit of our purchasing flow.
 					</Text>
 					<br></br>
-					<div className='text-stone-500 text-lg'>
+					<div className='text-stone-600 dark:text-stone-400 text-lg'>
 						<p className='mb-4'>
-							<span className='text-black'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Competitive Analysis:{' '}
 							</span>
 							Examined insurance checkout experiences from
@@ -108,9 +115,11 @@ export default function Home() {
 							Shopify.
 						</p>
 						<p>
-							<span className='text-black'>Findings: </span>
+							<span className='text-stone-900 dark:text-stone-50'>
+								Findings:{' '}
+							</span>
 						</p>
-						<ul className='mt-4 list-disc text-stone-500 font-light text-lg leading-7 list-outside'>
+						<ul className='mt-4 list-disc text-stone-600 dark:text-stone-400 font-light text-lg leading-7 list-outside'>
 							<li>
 								The existing terminology was confusing and did
 								not match industry standard terminology.
@@ -183,7 +192,7 @@ export default function Home() {
 					<Text title='A/B Testing'>
 						I created interactive prototypes and conducted usability
 						testing via usertesting.com with 10 users.{' '}
-						<span className='text-black'>
+						<span className='text-stone-900 dark:text-stone-50'>
 							8 out of 10 users preferred the new designs,
 							appreciating the detailed breakdown and review page.{' '}
 						</span>
@@ -193,9 +202,11 @@ export default function Home() {
 					</Text>
 					<br></br>
 					<p>
-						<span className='text-black text-lg'>Findings: </span>
+						<span className='text-stone-900 dark:text-stone-50 text-lg'>
+							Findings:{' '}
+						</span>
 					</p>
-					<ul className='mt-4 list-disc text-stone-500 font-light text-lg leading-7 list-outside'>
+					<ul className='mt-4 list-disc text-stone-600 dark:text-stone-400 font-light text-lg leading-7 list-outside'>
 						<li>
 							Users want a breakdown of pricing with savings and
 							discount
@@ -222,11 +233,11 @@ export default function Home() {
 					</Text>
 					<br></br>
 					<p>
-						<span className='text-black text-lg'>
+						<span className='text-stone-900 dark:text-stone-50 text-lg'>
 							Design Improvements:{' '}
 						</span>
 					</p>
-					<ul className='mt-4 list-disc text-stone-500 font-light text-lg leading-7 list-outside'>
+					<ul className='mt-4 list-disc text-stone-600 dark:text-stone-400 font-light text-lg leading-7 list-outside'>
 						<li>Clearly label savings in pricing card</li>
 						<li>
 							Separate the credit card to new page and provide
@@ -256,7 +267,7 @@ export default function Home() {
 						I worked closely with the dev team to make responsive
 						designs, error states, edge cases. We successfully
 						shipped the redesign in July.{' '}
-						<span className='text-black'>
+						<span className='text-stone-900 dark:text-stone-50'>
 							With the newly launched designs, our payment
 							conversions went up by 4%.
 						</span>{' '}
@@ -269,21 +280,23 @@ export default function Home() {
 						this was my first project at the Zebra:
 					</Text>
 
-					<ul className='mt-8 list-disc text-stone-500 font-light text-lg leading-7 list-outside'>
+					<ul className='mt-8 list-disc text-stone-600 dark:text-stone-400 font-light text-lg leading-7 list-outside'>
 						<li>
-							<span className='text-black'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								Attention to detail:
 							</span>{' '}
 							Small adjustments like a simple toggle can have a
 							big impact on user experience.
 						</li>
 						<li>
-							<span className='text-black'>Comfort:</span>{' '}
+							<span className='text-stone-900 dark:text-stone-50'>
+								Comfort:
+							</span>{' '}
 							Considering how users feel and their trust towards
 							the product is essential for complex flows
 						</li>
 						<li>
-							<span className='text-black'>
+							<span className='text-stone-900 dark:text-stone-50'>
 								User-centered design:{' '}
 							</span>
 							Focusing on user needs and feedback will always be
@@ -292,28 +305,12 @@ export default function Home() {
 					</ul>
 				</TextGrid>
 				<ImageGrid>
-					<div className='flex justify-between mt-24 mb-24'>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500 text-right'>
-								Previous
-							</p>
-							<a className='max-w-fit' href='/sonar'>
-								<span className='bg-right-bottom bg-gradient-to-l text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl'>
-									<ReverseArrow></ReverseArrow> SONAR
-								</span>
-							</a>
-						</div>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500'>
-								Next
-							</p>
-							<a className='max-w-fit' href='/poof'>
-								<span className='bg-left-bottom bg-gradient-to-r text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl'>
-									POOF.CASH <DiagonalArrow></DiagonalArrow>
-								</span>
-							</a>
-						</div>
-					</div>
+					<ProjectNav
+						previous='SPOTIFY PODCASTS'
+						prevlink={'/spotify'}
+						next='SENSITIVE DATA'
+						nextlink={'/sonar'}
+					/>
 				</ImageGrid>
 			</MainGrid>
 			<Top></Top>

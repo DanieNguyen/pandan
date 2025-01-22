@@ -27,6 +27,7 @@ import {
 	Goal,
 	Span,
 } from '../components/CaseStudy';
+import ProjectNav from '../components/ProjectNav';
 
 export default function Home() {
 	return (
@@ -43,27 +44,33 @@ export default function Home() {
 				alt='Threat Hero'
 				headline='Threat Hunting'></Hero>
 			<MainGrid>
-				<div className='col-start-3 col-end-5 text-sm text-neutral-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
-					<p className='font-medium text-black'>Role</p>
+				<div className='col-start-3 col-end-5 text-sm dark:text-stone-400 text-stone-600 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
+					<p className='font-medium text-stone-900 dark:text-stone-50'>
+						Role
+					</p>
 					<p className='font-light'>App Design</p>
 					<p className='font-light'>User Research</p>
 					<p className='font-light'>FTUX Design</p>
-					<p className='mt-8 font-medium text-black'>Team</p>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
+						Team
+					</p>
 					<p className='font-light'>1 Product Manager</p>
 					<p className='font-light'>2 Frontend Engineers</p>
 
-					<p className='mt-8 font-medium text-black'>Timeline</p>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
+						Timeline
+					</p>
 					<p className='font-light'>April 2022 - Aug 2022</p>
 
 					<a
-						className='mt-8 block font-medium text-black'
+						className='mt-8 block font-medium text-stone-900 dark:text-stone-50'
 						href='#final'>
 						<DownArrow></DownArrow> Final Designs{' '}
 						<DownArrow></DownArrow>
 					</a>
 				</div>
 				<TextGrid>
-					<p className='font-inter font-light text-neutral-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight tracking-tighter'>
+					<p className='font-inter font-light dark:text-stone-400 text-stone-600 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight tracking-tighter'>
 						Searching for <Span>cyber threats</Span> inside company
 						backup data with ease
 					</p>
@@ -143,7 +150,7 @@ export default function Home() {
 						feature due to its complexity.
 					</Text>
 					<h3 className='mt-8'>Key Findings</h3>
-					<ul className='list-disc text-neutral-500 font-light leading-7 list-inside'>
+					<ul className='list-disc dark:text-stone-400 text-stone-600 font-light leading-7 list-inside'>
 						<li>
 							Users would like to have a guide throughout the
 							workflow since it is complex.
@@ -214,7 +221,7 @@ export default function Home() {
 						takeways:
 					</Text>
 
-					<ul className='mt-8 list-disc text-neutral-500 font-light leading-7 list-outside'>
+					<ul className='mt-8 list-disc dark:text-stone-400 text-stone-600 font-light leading-7 list-outside'>
 						<li>
 							It&apos;s up to the designer to push for research. I
 							had to advocate and lead the usability testing
@@ -229,28 +236,12 @@ export default function Home() {
 					</ul>
 				</TextGrid>
 				<ImageGrid>
-					<div className='flex justify-between mt-24 mb-24'>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500 text-right'>
-								Previous
-							</p>
-							<a className='max-w-fit' href='/poof'>
-								<span className='bg-right-bottom bg-gradient-to-l text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
-									<ReverseArrow></ReverseArrow> POOF.CASH
-								</span>
-							</a>
-						</div>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500'>
-								Next
-							</p>
-							<a className='max-w-fit' href='/spotify'>
-								<span className='bg-left-bottom bg-gradient-to-r text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
-									SPOTIFY <DiagonalArrow></DiagonalArrow>
-								</span>
-							</a>
-						</div>
-					</div>
+					<ProjectNav
+						previous='POOF.CASH'
+						prevlink={'/poof'}
+						next='SPOTIFY PODCASTS'
+						nextlink={'/spotify'}
+					/>
 				</ImageGrid>
 			</MainGrid>
 			<Top></Top>

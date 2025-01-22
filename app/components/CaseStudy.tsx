@@ -35,10 +35,10 @@ function Hero(props: any) {
 function Text(props: any) {
 	return (
 		<div>
-			<div className='text-2xl mt-16 mb-6 text-black dark:text-white min-[1920px]:text-[28px]'>
+			<div className='text-2xl mt-16 mb-6 text-stone-900 dark:text-stone-50 min-[1920px]:text-[28px]'>
 				{props.title}
 			</div>
-			<div className='text-stone-500 dark:text-stone-300 leading-7 text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
+			<div className='text-stone-600 dark:text-stone-300 leading-7 text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
 				{props.children}
 			</div>
 		</div>
@@ -122,10 +122,10 @@ function RightImage(props: any) {
 function Goal(props: any) {
 	return (
 		<div>
-			<h1 className='text-2xl text-black dark:text-white text-center mb-4 mt-24'>
+			<h1 className='text-2xl text-stone-900 dark:text-white text-center mb-4 mt-24'>
 				{props.title}
 			</h1>
-			<div className='w-full text-center text-black dark:text-white text-5xl font-normal font-sfital2 leading-normal min-[1920px]:text-6xl min-[1920px]:leading-relaxed md:max-xl:text-4xl md:max-xl:leading-relaxed'>
+			<div className='w-full text-center text-stone-900 dark:text-white text-5xl font-normal font-sfital2 leading-normal min-[1920px]:text-6xl min-[1920px]:leading-relaxed md:max-xl:text-4xl md:max-xl:leading-relaxed'>
 				{props.children}
 			</div>
 		</div>
@@ -134,7 +134,7 @@ function Goal(props: any) {
 
 function Span(props: any) {
 	return (
-		<span className='text-black dark:text-white font-normal'>
+		<span className='text-stone-900 dark:text-stone-50 font-normal'>
 			{' '}
 			{props.children}{' '}
 		</span>
@@ -143,8 +143,10 @@ function Span(props: any) {
 
 const InfoSection = ({ title, items, link }) => {
 	return (
-		<div className='col-start-3 col-end-5 text-sm text-stone-500 dark:text-stone-300 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
-			<p className='font-medium text-black dark:text-white'>{title}</p>
+		<div className='col-start-3 col-end-5 text-sm text-stone-600 dark:text-stone-600 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
+			<p className='font-medium text-stone-900 dark:text-white'>
+				{title}
+			</p>
 			{items.map((item, index) => (
 				<p key={index} className='font-light'>
 					{item}
@@ -153,7 +155,7 @@ const InfoSection = ({ title, items, link }) => {
 			{link && (
 				<a
 					href={link.href}
-					className='mt-8 block font-medium text-black dark:text-white'>
+					className='mt-8 block font-medium text-stone-900 dark:text-stone-50'>
 					<DownArrow /> {link.label} <DownArrow />
 				</a>
 			)}

@@ -35,6 +35,7 @@ import {
 	Goal,
 	Span,
 } from '../components/CaseStudy';
+import ProjectNav from '../components/ProjectNav';
 
 export default function Home() {
 	return (
@@ -51,27 +52,33 @@ export default function Home() {
 				alt='Spotify Hero'
 				headline='Spotify Podcasts'></Hero>
 			<MainGrid>
-				<div className='col-start-3 col-end-5 text-sm text-neutral-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
-					<p className='font-medium text-black'>Role</p>
+				<div className='col-start-3 col-end-5 text-sm dark:text-stone-400 text-stone-600 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
+					<p className='font-medium text-stone-900 dark:text-stone-50'>
+						Role
+					</p>
 					<p className='font-light'>App Redesign</p>
 					<p className='font-light'>User Research</p>
 					<p className='font-light'>Competitive Analysis</p>
 					<p className='font-light'>Ideation</p>
-					<p className='mt-8 font-medium text-black'>Team</p>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
+						Team
+					</p>
 					<p className='font-light'>Solo Project</p>
 
-					<p className='mt-8 font-medium text-black'>Timeline</p>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
+						Timeline
+					</p>
 					<p className='font-light'>Jul 2020 - Aug 2020</p>
 
 					<a
-						className='mt-8 block font-medium text-black'
+						className='mt-8 block font-medium text-stone-900 dark:text-stone-50'
 						href='#final'>
 						<DownArrow></DownArrow> Final Designs{' '}
 						<DownArrow></DownArrow>
 					</a>
 				</div>
 				<TextGrid>
-					<p className='text-neutral-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
+					<p className='dark:text-stone-400 text-stone-600 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
 						Imagining a better way to{' '}
 						<Span>discover Spotify Podcasts</Span>
 					</p>
@@ -122,8 +129,10 @@ export default function Home() {
 						listening experience. Their main pain point was
 						discovering new podcasts.
 					</Text>
-					<h3 className='mt-8 text-black'>Key Findings</h3>
-					<ul className='list-disc text-neutral-500 font-light leading-7 list-inside'>
+					<h3 className='mt-8 text-stone-900 dark:text-stone-50'>
+						Key Findings
+					</h3>
+					<ul className='list-disc dark:text-stone-400 text-stone-600 font-light leading-7 list-inside'>
 						<li>
 							Users struggle to find podcasts on their own and
 							rely on social recommendations
@@ -280,7 +289,7 @@ export default function Home() {
 						Some of my takeways:
 					</Text>
 
-					<ul className='mt-8 list-disc text-neutral-500 font-light leading-7 list-outside'>
+					<ul className='mt-8 list-disc dark:text-stone-400 text-stone-600 font-light leading-7 list-outside'>
 						<li>
 							Take time to focus on thinking of ideas instead of
 							choosing your first solution. I felt that the early
@@ -295,28 +304,12 @@ export default function Home() {
 					</ul>
 				</TextGrid>
 				<ImageGrid>
-					<div className='flex justify-between mt-24 mb-24'>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500 text-right'>
-								Previous
-							</p>
-							<a className='max-w-fit' href='/threat'>
-								<span className='bg-right-bottom bg-gradient-to-l text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
-									<ReverseArrow></ReverseArrow> THREAT
-								</span>
-							</a>
-						</div>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500'>
-								Next
-							</p>
-							<a className='max-w-fit' href='/boom'>
-								<span className='bg-left-bottom bg-gradient-to-r text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl tracking-tight'>
-									CREDIT BOOST <DiagonalArrow></DiagonalArrow>
-								</span>
-							</a>
-						</div>
-					</div>
+					<ProjectNav
+						previous='THREAT HUNTING'
+						prevlink={'/threat'}
+						next='INSURANCE CHECKOUT'
+						nextlink={'/pay'}
+					/>
 				</ImageGrid>
 			</MainGrid>
 			<Top></Top>

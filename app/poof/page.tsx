@@ -34,6 +34,7 @@ import {
 	Span,
 } from '../components/CaseStudy';
 import Link from 'next/link';
+import ProjectNav from '../components/ProjectNav';
 
 export default function Home() {
 	return (
@@ -47,28 +48,34 @@ export default function Home() {
 			</div>
 			<Hero src={PoofDash} alt='Sonar Hero' headline='Poof.Cash'></Hero>
 			<MainGrid>
-				<div className='col-start-3 col-end-5 text-sm text-neutral-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
-					<p className='font-medium text-black'>Role</p>
+				<div className='col-start-3 col-end-5 text-sm dark:text-stone-400 text-stone-600 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
+					<p className='font-medium text-stone-900 dark:text-stone-50'>
+						Role
+					</p>
 					<p className='font-light'>Mobile App Design</p>
 					<p className='font-light'>Website Design</p>
 					<p className='font-light'>Branding</p>
 					<p className='font-light'>Design System</p>
 					<p className='font-light'>Illustrations</p>
-					<p className='mt-8 font-medium text-black'>Team</p>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
+						Team
+					</p>
 					<p className='font-light'>1 Founder/Engineer</p>
 
-					<p className='mt-8 font-medium text-black'>Timeline</p>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
+						Timeline
+					</p>
 					<p className='font-light'>March 2021 - June 2021</p>
 
 					<a
-						className='mt-8 block font-medium text-black'
+						className='mt-8 block font-medium text-stone-900 dark:text-stone-50'
 						href='#final'>
 						<DownArrow></DownArrow> Final Designs{' '}
 						<DownArrow></DownArrow>
 					</a>
 				</div>
 				<TextGrid>
-					<p className='text-neutral-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
+					<p className='dark:text-stone-400 text-stone-600 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
 						Working as the <Span>founding designer</Span>
 						at a tiny <Span>cryptocurrency wallet</Span>startup{' '}
 					</p>
@@ -170,7 +177,7 @@ export default function Home() {
 						</Span>
 					</Text>
 					<h3 className='mt-8'>Key Findings</h3>
-					<ul className='list-disc text-neutral-500 font-light leading-7 list-inside'>
+					<ul className='list-disc dark:text-stone-400 text-stone-600 font-light leading-7 list-inside'>
 						<li>
 							Users desire transparency and confirmation since
 							crypto transactions cannot be reversed
@@ -218,7 +225,7 @@ export default function Home() {
 						illustrations, and marketing website.
 					</Text>
 					<h3 className='mt-8'>Values</h3>
-					<ul className='list-disc text-neutral-500 font-light leading-7 list-inside'>
+					<ul className='list-disc dark:text-stone-400 text-stone-600 font-light leading-7 list-inside'>
 						<li>Magical</li>
 						<li>Trustworthy</li>
 						<li>Secure</li>
@@ -280,7 +287,7 @@ export default function Home() {
 						experience and had a lot of fun. Some of my takeways:
 					</Text>
 
-					<ul className='mt-8 list-disc text-neutral-500 font-light leading-7 list-outside'>
+					<ul className='mt-8 list-disc dark:text-stone-400 text-stone-600 font-light leading-7 list-outside'>
 						<li>
 							Cohesiveness is important in design. Bringing
 							together different elements, features, and even
@@ -304,30 +311,12 @@ export default function Home() {
 					</ul>
 				</TextGrid>
 				<ImageGrid>
-					<div className='flex justify-between mt-24 mb-24'>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500 text-right'>
-								Previous
-							</p>
-							<a className='max-w-fit' href='/pay'>
-								<span className='bg-right-bottom bg-gradient-to-l text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl'>
-									<ReverseArrow></ReverseArrow> THE ZEBRA
-									CHECKOUT
-								</span>
-							</a>
-						</div>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-neutral-500'>
-								Next
-							</p>
-							<a className='max-w-fit' href='/threat'>
-								<span className='bg-left-bottom bg-gradient-to-r text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl'>
-									THREAT HUNTING{' '}
-									<DiagonalArrow></DiagonalArrow>
-								</span>
-							</a>
-						</div>
-					</div>
+					<ProjectNav
+						previous='RENT REPORTING'
+						prevlink={'/boom'}
+						next='THREAT HUNTING'
+						nextlink={'/threat'}
+					/>
 				</ImageGrid>
 			</MainGrid>
 			<Top></Top>

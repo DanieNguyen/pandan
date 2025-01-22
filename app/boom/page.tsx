@@ -22,6 +22,7 @@ import {
 	Goal,
 	Span,
 } from '../components/CaseStudy';
+import ProjectNav from '../components/ProjectNav';
 
 export default function Home() {
 	return (
@@ -36,10 +37,12 @@ export default function Home() {
 			<Hero
 				src={BoomHero}
 				alt='Boompay Hero'
-				headline='Credit Boost'></Hero>
+				headline='Rent Reporting'></Hero>
 			<MainGrid>
-				<div className='col-start-3 col-end-5 text-sm text-stone-500 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
-					<p className='font-medium text-black'>Role</p>
+				<div className='col-start-3 col-end-5 text-sm dark:text-stone-400 text-stone-600 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
+					<p className='font-medium text-stone-900 dark:text-stone-50'>
+						Role
+					</p>
 					<p className='font-light'>Visual Design</p>
 					<p className='font-light'>Responsive Design</p>
 					<p className='font-light'>Sign-up and Waitlist</p>
@@ -47,15 +50,19 @@ export default function Home() {
 					<p className='font-light'>Brand Partnership</p>
 					<p className='font-light'>User Research</p>
 					<p className='font-light'>A/B Testing</p>
-					<p className='mt-8 font-medium text-black'>Team</p>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
+						Team
+					</p>
 					<p className='font-light'>1 Product Manager</p>
 					<p className='font-light'>2 Front-End Engineers</p>
 					<p className='font-light'>4 Backend-End Engineers</p>
-					<p className='mt-8 font-medium text-black'>Timeline</p>
+					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
+						Timeline
+					</p>
 					<p className='font-light'>June 2024 - Aug 2024</p>
 				</div>
 				<TextGrid>
-					<p className='text-stone-500 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
+					<p className='dark:text-stone-400 text-stone-600 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
 						Launching a new product to help{' '}
 						<Span>people build their credit</Span>
 					</p>
@@ -98,28 +105,12 @@ export default function Home() {
 					Waitlist CTA while waiting fo insurance quotes
 				</RightCaption>
 				<ImageGrid>
-					<div className='flex justify-between mt-24 mb-24'>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-stone-500 text-right'>
-								Previous
-							</p>
-							<a className='max-w-fit' href='/spotify'>
-								<span className='bg-right-bottom bg-gradient-to-l text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl'>
-									<ReverseArrow></ReverseArrow> SPOTIFY
-								</span>
-							</a>
-						</div>
-						<div className=''>
-							<p className='font-sfital2 text-xl mb-4 text-stone-500'>
-								Next
-							</p>
-							<a className='max-w-fit' href='/sonar'>
-								<span className='bg-left-bottom bg-gradient-to-r text-black from-black to-black bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-500 ease-out text-3xl'>
-									SONAR <DiagonalArrow></DiagonalArrow>
-								</span>
-							</a>
-						</div>
-					</div>
+					<ProjectNav
+						previous='SENSITIVE DATA'
+						prevlink={'/sonar'}
+						next='POOF.CASH'
+						nextlink={'/poof'}
+					/>
 				</ImageGrid>
 			</MainGrid>
 			<Top></Top>

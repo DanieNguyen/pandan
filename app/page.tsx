@@ -219,14 +219,14 @@ const Page = () => {
 									<div className='12:text-xl lg:text xl:text-2xl 2xl:text-3xl font-normal'>
 										{image.title}
 									</div>
-									<div className='12:text-xl lg:text xl:text-2xl 2xl:text-3xl'>
+									<div className='12:text-xl lg:text xl:text-2xl 2xl:text-3xl text-stone-200 dark:text-stone-600'>
 										|
 									</div>
 									<div className='12:text-[18px] lg:text xl:text-[22px] 2xl:text-[26px] font-normal font-serif italic leading-tight'>
 										{image.description}
 									</div>
 								</div>
-								<div className='text 2xl:text-xl mt-1 text-stone-400'>
+								<div className='text 2xl:text-xl mt-1 dark:text-stone-400 text-stone-600'>
 									{image.subtitle}
 								</div>
 							</div>
