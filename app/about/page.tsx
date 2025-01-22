@@ -28,7 +28,7 @@ const Page = () => {
 					</h1>
 					<p className='mt-4 text-xl'>
 						I&apos;m Daniel, a product designer based in Seattle,
-						WA. <br></br>I&apos;ve been working for 4 years on
+						WA. <br></br>I&apos;ve been working for 4+ years on
 						consumer and enterprise projects<br></br> ranging from 0
 						to 1 product launches and redesigning key user flows.
 					</p>
@@ -46,9 +46,8 @@ const Page = () => {
 							being asked)
 						</li>
 						<li>sports - trade rumors, memes, and all</li>
-						<li>foodie spots</li>
+						<li>latest restaurants and desserts</li>
 						<li>Tiktok trends</li>
-						<li>silly random questions I find online</li>
 					</ol>
 				</div>
 				<Image

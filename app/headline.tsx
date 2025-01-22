@@ -3,8 +3,11 @@ export default function Headline() {
 		<div className='main-content text-stone-900 dark:text-white'>
 			<div className='mx-12'>
 				<div className='w-full mt-36 2xl:mt-64 lg:leading-[48px] xl:leading-[64px]'>
+					<div className='text-xl mb-5 text-blue-600'>
+						Product Designer
+					</div>
 					<span className='lg:text-4xl xl:text-5xl 2xl:text-6xl'>
-						Currently helping people save money at
+						Previously saving people money at
 					</span>
 					<a
 						href='https://www.thezebra.com'
@@ -13,12 +16,12 @@ export default function Headline() {
 						className='cursor-zebra'>
 						<span className='text-[#574CFA] lg:text-[32px] xl:text-[44px] 2xl:text-[56px] font-serif italic'>
 							{' '}
-							The Zebra.{' '}
+							The Zebra,{' '}
 						</span>
 					</a>
 					<br></br>
 					<span className='lg:text-4xl xl:text-5xl 2xl:text-6xl'>
-						Previously crafting data security tools at
+						crafting data security tools at
 					</span>
 					<a
 						href='https://www.rubrik.com'
@@ -27,12 +30,12 @@ export default function Headline() {
 						className='cursor-rubrik'>
 						<span className='bg-gradient-to-r from-[#00B28B] via-[#00A9BD] to-[#00A3DF] text-transparent bg-clip-text lg:text-[32px] xl:text-[44px] 2xl:text-[56px] font-serif italic'>
 							{' '}
-							Rubrik{' '}
+							Rubrik,{' '}
 						</span>
 					</a>
 					<br></br>
 					<span className='lg:text-4xl xl:text-5xl 2xl:text-6xl'>
-						and a Web3 crypto app at
+						& building a Web3 wallet at
 					</span>
 					<span className='text-[#5352FC] lg:text-[32px] xl:text-[44px] 2xl:text-[56px] font-serif italic hover:cursor-poof'>
 						{' '}
