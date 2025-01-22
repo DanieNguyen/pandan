@@ -1,9 +1,9 @@
 export default function Headline() {
 	return (
-		<div className='main-content text-stone-900 dark:text-white'>
+		<div className='main-content text-stone-800 dark:text-white'>
 			<div className='mx-12'>
 				<div className='w-full mt-36 2xl:mt-64 lg:leading-[48px] xl:leading-[64px]'>
-					<div className='text-xl mb-5 text-blue-600'>
+					<div className='text-xl mb-5 text-blue-600 dark:text-blue-500'>
 						Product Designer
 					</div>
 					<span className='lg:text-4xl xl:text-5xl 2xl:text-6xl'>

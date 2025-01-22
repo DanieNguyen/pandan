@@ -21,7 +21,10 @@ const NavBar = () => {
 	return (
 		<div className='navbar flex justify-between p-12'>
 			<div className='text-xl leading-normal'>
-				<Link href='/' passHref className='hover:text-blue-600'>
+				<Link
+					href='/'
+					passHref
+					className='hover:text-blue-600 dark:hover:text-blue-500'>
 					Daniel Nguyen
 				</Link>
 			</div>
@@ -29,7 +32,7 @@ const NavBar = () => {
 				<div className='text-base leading-normal'>
 					<a
 						href='/images/Daniel-Res.pdf'
-						className='hover:text-blue-600'
+						className='hover:text-blue-500 dark:hover:text-blue-500'
 						target='_blank'
 						rel='noopener noreferrer'>
 						Resume
@@ -43,7 +46,7 @@ const NavBar = () => {
 						About
 					</Link>
 				</div>
-				<div className='text-base leading-normal hover:text-blue-600'>
+				<div className='text-base leading-normal hover:text-blue-600 dark:hover:text-blue-500'>
 					<Link href='/#contact'>Contact</Link>
 				</div>
 			</div>

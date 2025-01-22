@@ -25,7 +25,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
-			className='font-sans dark:text-white dark:bg-stone-900 text-stone-900 bg-white'>
+			className='font-sans dark:text-white dark:bg-stone-900 text-stone-800 bg-white'>
 			<body>
 				{children}
 				<SpeedInsights></SpeedInsights>
