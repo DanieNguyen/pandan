@@ -1,22 +1,36 @@
 @import 'tailwindcss';
 
+@theme {
+	--font-sans: 'Neue Montreal', system-ui;
+	--font-serif: 'Editorial', ui-serif;
+	--cursor-poof: url('/images/homepage/poof.svg') 24 24, pointer;
+	--cursor-rubrik: url('/images/homepage/rubrik.svg') 24 24, pointer;
+	--cursor-zebra: url('/images/homepage/zebra.svg') 24 24, pointer;
+	--breakpoint-xl: '1400px';
+	--breakpoint-2xl: '1700px';
+	--breakpoint-12: '1280px';
+}
+
 @font-face {
 	font-family: 'Neue Montreal';
 	font-style: normal;
-	src: url('../public/fonts/PPNeueMontreal-Regular.woff') format('woff'),
+	src:
+		url('../public/fonts/PPNeueMontreal-Regular.woff') format('woff'),
 		url('../public/fonts/PPNeueMontreal-Regular.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'Editorial';
 	font-style: italic;
-	src: url('../public/fonts/PPEditorialNew-Italic.woff') format('woff'),
+	src:
+		url('../public/fonts/PPEditorialNew-Italic.woff') format('woff'),
 		url('../public/fonts/PPEditorialNew-Italic.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'Editorial';
 	font-style: normal;
-	src: url('../public/fonts/PPEditorialNew-Regular.woff') format('woff'),
+	src:
+		url('../public/fonts/PPEditorialNew-Regular.woff') format('woff'),
 		url('../public/fonts/PPEditorialNew-Regular.woff') format('woff2');
 }

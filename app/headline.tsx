@@ -4,7 +4,7 @@ export default function Headline() {
 			<div className='mx-12'>
 				<div className='w-full mt-36 2xl:mt-64 lg:leading-[48px] xl:leading-[64px]'>
 					<div className='text-xl mb-5 text-blue-600 dark:text-blue-500'>
-						Product Designer
+						Senior Product Designer
 					</div>
 					<span className='lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						Previously saving people money at
