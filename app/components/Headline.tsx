@@ -1,7 +1,7 @@
 export default function Headline() {
 	return (
 		<div className='main-content text-stone-800 dark:text-white'>
-			<div className='mx-12'>
+			<div className=''>
 				<div className='w-full mt-12 lg:mt-36 2xl:mt-64 lg:leading-[48px] xl:leading-[64px]'>
 					<div className='text-xl mb-5 text-blue-600 dark:text-blue-500'>
 						Senior Product Designer
@@ -19,7 +19,7 @@ export default function Headline() {
 							The Zebra,{' '}
 						</span>
 					</a>
-					<br className="hidden md:flex"></br>
+					<br className='hidden md:flex'></br>
 					<span className='text-xl lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						crafting data security tools at
 					</span>
@@ -33,7 +33,7 @@ export default function Headline() {
 							Rubrik,{' '}
 						</span>
 					</a>
-					<br className="hidden md:flex"></br>
+					<br className='hidden md:flex'></br>
 					<span className='text-xl lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						& building a Web3 wallet at
 					</span>

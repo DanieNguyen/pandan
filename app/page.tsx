@@ -6,7 +6,7 @@ import NavBar from './components/NavBar';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Contact from './components/Contact';
-import Headline from './headline';
+import Headline from './components/Headline';
 import FilterButton from './components/FilterButton';
 import Top from './components/Top';
 
@@ -156,7 +156,7 @@ const Page = () => {
 		<main className='e'>
 			<NavBar />
 			<Headline></Headline>
-			<div className='mx-12'>
+			<div className=''>
 				<div className='work-title mt-16 lg:mt-32 2xl:mt-64 mb-4 text-xl lg:text-2xl 2xl:text-4xl font-sans leading-loose'>
 					Work
 				</div>

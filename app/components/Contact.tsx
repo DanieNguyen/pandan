@@ -22,7 +22,7 @@ const Contact = () => {
 		<div>
 			<div
 				id='contact'
-				className='relative px-12 mt-4 lg:mt-20 text-stone-800 dark:text-white'>
+				className='relative mt-4 lg:mt-20 text-stone-800 dark:text-white'>
 				<div className='pt-12 text-4xl lg:text-6xl leading-relaxed start'>
 					<div className='pb-24'>
 						<span>Let&apos;s work</span>
@@ -61,7 +61,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<div className='text-xs lg:text-base bottom-0 w-screen border-t-[1px] py-4 px-12 flex flex-row justify-between'>
+			<div className='text-xs lg:text-base bottom-0 border-t-[1px] py-4 flex flex-row justify-between'>
 				<div className=''>
 					designed and developed by daniel with tears
 				</div>

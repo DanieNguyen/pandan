@@ -19,7 +19,7 @@ const NavBar = () => {
 	}, []);
 
 	return (
-		<div className='navbar flex justify-between p-12'>
+		<div className='navbar flex justify-between pt-12'>
 			<div className='md:text-xl leading-normal'>
 				<Link
 					href='/'
