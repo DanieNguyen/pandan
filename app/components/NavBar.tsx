@@ -20,7 +20,7 @@ const NavBar = () => {
 
 	return (
 		<div className='navbar flex justify-between p-12'>
-			<div className='text-xl leading-normal'>
+			<div className='md:text-xl leading-normal'>
 				<Link
 					href='/'
 					passHref
@@ -28,7 +28,7 @@ const NavBar = () => {
 					Daniel Nguyen
 				</Link>
 			</div>
-			<div className='justify-start items-center gap-16 flex'>
+			<div className='justify-start items-center gap-4 md:gap-16 flex'>
 				<div className='text-base leading-normal'>
 					<a
 						href='/images/Daniel-Res.pdf'

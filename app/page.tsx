@@ -8,6 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Contact from './components/Contact';
 import Headline from './headline';
 import FilterButton from './components/FilterButton';
+import Top from './components/Top';
 
 // Image data with tags, background colors, and class types
 const images = [
@@ -156,15 +157,27 @@ const Page = () => {
 			<NavBar />
 			<Headline></Headline>
 			<div className='mx-12'>
-				<div className='work-title mt-32 2xl:mt-64 mb-4 text-2xl 2xl:text-4xl font-sans leading-loose'>
+				<div className='work-title mt-16 lg:mt-32 2xl:mt-64 mb-4 text-xl lg:text-2xl 2xl:text-4xl font-sans leading-loose'>
 					Work
 				</div>
-				<div className='flex space-x-4 mb-8'>
+				<div className='flex flex-wrap lg:space-x-4 mb-8 gap-3 md:gap-0'>
 					<FilterButton
 						handleFilterChange={handleFilterChange}
 						filter='all'
 						currentFilter={filter}
 						label='All'
+					/>
+					<FilterButton
+						handleFilterChange={handleFilterChange}
+						filter='mobile'
+						currentFilter={filter}
+						label='Mobile'
+					/>
+					<FilterButton
+						handleFilterChange={handleFilterChange}
+						filter='web'
+						currentFilter={filter}
+						label='Web'
 					/>
 					<FilterButton
 						handleFilterChange={handleFilterChange}
@@ -178,20 +191,8 @@ const Page = () => {
 						currentFilter={filter}
 						label='Enterprise'
 					/>
-					<FilterButton
-						handleFilterChange={handleFilterChange}
-						filter='web'
-						currentFilter={filter}
-						label='Web'
-					/>
-					<FilterButton
-						handleFilterChange={handleFilterChange}
-						filter='mobile'
-						currentFilter={filter}
-						label='Mobile'
-					/>
 				</div>
-				<div className='grid grid-cols-3 gap-8 pb-20'>
+				<div className='grid md:grid-cols-3 gap-8'>
 					{filteredImages.map((image, index) => (
 						<div key={index}>
 							<div className='relative overflow-hidden rounded-sm work-item'>
@@ -234,6 +235,7 @@ const Page = () => {
 					))}
 				</div>
 			</div>
+			<Top></Top>
 			<Contact></Contact>
 		</main>
 	);

@@ -8,7 +8,7 @@
   --cursor-rubrik: url(/images/homepage/rubrik.svg) 24 24, pointer;
   --cursor-poof: url(/images/homepage/poof.svg) 24 24, pointer;
 
-  --breakpoint-12: 1280px;
+  --breakpoint-lg: 1280px;
   --breakpoint-xl: 1400px;
   --breakpoint-2xl: 1700px;
 }
