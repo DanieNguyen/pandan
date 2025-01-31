@@ -24,6 +24,5 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [require('tailwindcss-opentype')],
 };
 export default config;
