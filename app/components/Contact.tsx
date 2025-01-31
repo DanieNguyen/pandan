@@ -35,26 +35,26 @@ const Contact = () => {
 						<a
 							className='max-w-fit'
 							href='mailto:danyen125@gmail.com'>
-							<span className='font-serif italic bg-left-bottom bg-gradient-to-r dark:from-white from-stone-800 dark:to-white to-stone-900  bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+							<span className='font-serif italic bg-left-bottom bg-linear-to-r dark:from-white from-stone-800 dark:to-white to-stone-900  bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
 								Email <DiagonalArrow></DiagonalArrow>
 							</span>
 						</a>
 						<a
 							className='max-w-fit'
 							href='https://www.linkedin.com/in/pandang/'>
-							<span className='font-serif italic bg-left-bottom bg-gradient-to-r dark:from-white from-stone-800 dark:to-white to-stone-900  bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+							<span className='font-serif italic bg-left-bottom bg-linear-to-r dark:from-white from-stone-800 dark:to-white to-stone-900  bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
 								Linkedin <DiagonalArrow></DiagonalArrow>
 							</span>
 						</a>
 						<a className='max-w-fit' href='/images/Daniel-Res.pdf'>
-							<span className='font-serif italic bg-left-bottom bg-gradient-to-r dark:from-white from-stone-800 dark:to-white to-stone-900  bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+							<span className='font-serif italic bg-left-bottom bg-linear-to-r dark:from-white from-stone-800 dark:to-white to-stone-900  bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
 								Resume <DiagonalArrow></DiagonalArrow>
 							</span>
 						</a>
 						<a
 							className='max-w-fit'
 							href='https://dribbble.com/dangux'>
-							<span className='font-serif italic bg-left-bottom bg-gradient-to-r dark:from-white from-stone-800 dark:to-white to-stone-900  bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+							<span className='font-serif italic bg-left-bottom bg-linear-to-r dark:from-white from-stone-800 dark:to-white to-stone-900  bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
 								Dribbble <DiagonalArrow></DiagonalArrow>
 							</span>
 						</a>

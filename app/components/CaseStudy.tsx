@@ -25,7 +25,7 @@ function Hero(props: any) {
 				className='h-full w-full object-contain bg-zinc-100'
 				src={props.src}
 				quality={100}
-				placeholder='blur'
+				placeholder='blur-sm'
 				priority
 				alt={props.alt}></Image>
 		</motion.div>
@@ -68,7 +68,7 @@ function ImageWrap(props: any) {
 				className='h-full w-full object-contain'
 				src={props.src}
 				quality={100}
-				placeholder='blur'
+				placeholder='blur-sm'
 				priority
 				alt={props.alt}></Image>
 		</div>
@@ -98,7 +98,7 @@ function LeftImage(props: any) {
 				className='h-full w-full object-contain'
 				src={props.src}
 				quality={100}
-				placeholder='blur'
+				placeholder='blur-sm'
 				priority
 				alt={props.alt}></Image>
 		</div>
@@ -112,7 +112,7 @@ function RightImage(props: any) {
 				className='h-full w-full object-contain'
 				src={props.src}
 				quality={100}
-				placeholder='blur'
+				placeholder='blur-sm'
 				priority
 				alt={props.alt}></Image>
 		</div>

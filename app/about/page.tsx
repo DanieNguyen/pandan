@@ -55,7 +55,7 @@ const Page = () => {
 					width={360}
 					height={500}
 					alt='me'
-					className='rounded object-contain'></Image>
+					className='rounded-sm object-contain'></Image>
 			</div>
 		</main>
 	);

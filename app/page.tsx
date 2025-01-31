@@ -194,7 +194,7 @@ const Page = () => {
 				<div className='grid grid-cols-3 gap-8 pb-20'>
 					{filteredImages.map((image, index) => (
 						<div key={index}>
-							<div className='relative overflow-hidden rounded work-item'>
+							<div className='relative overflow-hidden rounded-sm work-item'>
 								<div
 									className={`w-full h-full absolute z-10 ${image.classType}`}
 									style={{

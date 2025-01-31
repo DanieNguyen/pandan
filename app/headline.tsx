@@ -28,7 +28,7 @@ export default function Headline() {
 						target='_blank'
 						rel='noopener noreferrer'
 						className='cursor-rubrik'>
-						<span className='bg-gradient-to-r from-[#00B28B] via-[#00A9BD] to-[#00A3DF] text-transparent bg-clip-text lg:text-[32px] xl:text-[44px] 2xl:text-[56px] font-serif italic'>
+						<span className='bg-linear-to-r from-[#00B28B] via-[#00A9BD] to-[#00A3DF] text-transparent bg-clip-text lg:text-[32px] xl:text-[44px] 2xl:text-[56px] font-serif italic'>
 							{' '}
 							Rubrik,{' '}
 						</span>
