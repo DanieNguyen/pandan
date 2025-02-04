@@ -28,11 +28,12 @@ export default function Headline() {
 						target='_blank'
 						rel='noopener noreferrer'
 						className='cursor-rubrik'>
-						<span className='bg-linear-to-r from-[#00B28B] via-[#00A9BD] to-[#00A3DF] text-transparent bg-clip-text text-[18px] lg:text-[32px] xl:text-[44px] 2xl:text-[56px] font-serif italic'>
+						<span className='text-[#00A9BD] text-[18px] lg:text-[32px] xl:text-[44px] 2xl:text-[56px] font-serif italic'>
 							{' '}
 							Rubrik,{' '}
 						</span>
 					</a>
+
 					<br className='hidden md:flex'></br>
 					<span className='text-xl lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						& building a Web3 wallet at
