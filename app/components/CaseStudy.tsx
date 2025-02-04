@@ -69,7 +69,6 @@ function ImageWrap(props: any) {
 				src={props.src}
 				quality={100}
 				placeholder='blur'
-				priority
 				alt={props.alt}></Image>
 		</div>
 	);
@@ -99,7 +98,6 @@ function LeftImage(props: any) {
 				src={props.src}
 				quality={100}
 				placeholder='blur'
-				priority
 				alt={props.alt}></Image>
 		</div>
 	);
@@ -113,7 +111,6 @@ function RightImage(props: any) {
 				src={props.src}
 				quality={100}
 				placeholder='blur'
-				priority
 				alt={props.alt}></Image>
 		</div>
 	);

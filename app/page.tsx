@@ -6,7 +6,7 @@ import NavBar from './components/NavBar';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Contact from './components/Contact';
-import Headline from './headline';
+import Headline from './components/Headline';
 import FilterButton from './components/FilterButton';
 
 // Image data with tags, background colors, and class types

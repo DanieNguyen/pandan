@@ -9,8 +9,8 @@ const config: Config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Neue Montreal', 'system-ui'],
-				serif: ['Editorial', 'ui-serif'],
+				sans: ['var(--font-neue)', 'system-ui'],
+				serif: ['var(--font-editorial)', 'ui-serif'],
 			},
 			cursor: {
 				zebra: 'url(/images/homepage/zebra.svg) 24 24, pointer',
@@ -24,6 +24,5 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [require('tailwindcss-opentype')],
 };
 export default config;

@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
 	font-family: 'Neue Montreal';
 	font-style: normal;
 	src: url('../public/fonts/PPNeueMontreal-Regular.woff') format('woff'),
 		url('../public/fonts/PPNeueMontreal-Regular.woff2') format('woff2');
+	font-display: swap;
 }
 
 @font-face {
@@ -14,11 +15,13 @@
 	font-style: italic;
 	src: url('../public/fonts/PPEditorialNew-Italic.woff') format('woff'),
 		url('../public/fonts/PPEditorialNew-Italic.woff2') format('woff2');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Editorial';
 	font-style: normal;
 	src: url('../public/fonts/PPEditorialNew-Regular.woff') format('woff'),
-		url('../public/fonts/PPEditorialNew-Regular.woff') format('woff2');
-}
+		url('../public/fonts/PPEditorialNew-Regular.woff2') format('woff2');
+	font-display: swap;
+} */
