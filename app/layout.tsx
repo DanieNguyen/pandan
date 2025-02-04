@@ -47,7 +47,7 @@ export default function RootLayout({
 		<html
 			lang='en'
 			className={`${sans.variable} ${serif.variable} font-sans dark:text-stone-50 dark:bg-stone-900 text-stone-800 bg-white`}>
-			<body>
+			<body className='px-6 md:px-12'>
 				{children}
 				<SpeedInsights></SpeedInsights>
 				<Analytics></Analytics>

@@ -19,10 +19,10 @@ const Page = () => {
 	}, []);
 
 	return (
-		<main className='pb-24 h-[100vh]'>
+		<main className=''>
 			<NavBar />
-			<div className='flex justify-center main-content pt-12 mx-12'>
-				<div className='mr-32 2xl:mr-64'>
+			<div className='flex flex-col md:flex-row md:justify-center gap-16 md:gap-32 pt-24'>
+				<div className=''>
 					<h1 className='font-serif italic text-4xl 2xl:text-6xl'>
 						hey there~
 					</h1>
@@ -40,7 +40,7 @@ const Page = () => {
 					<h3 className='font-serif italic text-2xl mt-12'>
 						coffee chat topics I can contribute
 					</h3>
-					<ol className='mt-4 text-xl list-disc'>
+					<ol className='mt-4 text-xl list-disc list-inside'>
 						<li>
 							my golden retriever, Nala (will share pics without
 							being asked)

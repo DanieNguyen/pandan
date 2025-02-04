@@ -152,19 +152,32 @@ const Page = () => {
 			: images.filter((image) => image.tags.includes(filter));
 
 	return (
-		<main className='e'>
+		<main className=''>
 			<NavBar />
 			<Headline></Headline>
-			<div className='mx-12'>
-				<div className='work-title mt-32 2xl:mt-64 mb-4 text-2xl 2xl:text-4xl font-sans leading-loose'>
+			<div className=''>
+				<div className='work-title mt-16 lg:mt-32 2xl:mt-64 mb-4 lg:text-2xl 2xl:text-4xl font-sans leading-loose'>
 					Work
 				</div>
-				<div className='flex space-x-4 mb-8'>
+				<div className='flex mb-6 md:mb-8 flex-wrap gap-2 md:gap-4'>
 					<FilterButton
 						handleFilterChange={handleFilterChange}
 						filter='all'
 						currentFilter={filter}
 						label='All'
+					/>
+					<FilterButton
+						handleFilterChange={handleFilterChange}
+						filter='mobile'
+						currentFilter={filter}
+						label='Mobile'
+					/>
+
+					<FilterButton
+						handleFilterChange={handleFilterChange}
+						filter='web'
+						currentFilter={filter}
+						label='Web'
 					/>
 					<FilterButton
 						handleFilterChange={handleFilterChange}
@@ -178,20 +191,8 @@ const Page = () => {
 						currentFilter={filter}
 						label='Enterprise'
 					/>
-					<FilterButton
-						handleFilterChange={handleFilterChange}
-						filter='web'
-						currentFilter={filter}
-						label='Web'
-					/>
-					<FilterButton
-						handleFilterChange={handleFilterChange}
-						filter='mobile'
-						currentFilter={filter}
-						label='Mobile'
-					/>
 				</div>
-				<div className='grid grid-cols-3 gap-8 pb-20'>
+				<div className='grid md:grid-cols-3 gap-8 pb-16'>
 					{filteredImages.map((image, index) => (
 						<div key={index}>
 							<div className='relative overflow-hidden rounded work-item'>

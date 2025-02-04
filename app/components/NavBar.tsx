@@ -19,8 +19,8 @@ const NavBar = () => {
 	}, []);
 
 	return (
-		<div className='navbar flex justify-between p-12'>
-			<div className='text-xl leading-normal'>
+		<div className='navbar flex justify-between my-6 md:my-12'>
+			<div className='md:text-xl leading-normal'>
 				<Link
 					href='/'
 					passHref
@@ -28,7 +28,7 @@ const NavBar = () => {
 					Daniel Nguyen
 				</Link>
 			</div>
-			<div className='justify-start items-center gap-16 flex'>
+			<div className='justify-between items-center gap-6 md:gap-16 flex'>
 				<div className='text-base leading-normal'>
 					<a
 						href='/images/Daniel-Res.pdf'

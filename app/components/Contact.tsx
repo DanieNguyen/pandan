@@ -22,12 +22,12 @@ const Contact = () => {
 		<div>
 			<div
 				id='contact'
-				className='relative px-12 text-stone-800 dark:text-white'>
-				<div className='pt-12 text-6xl leading-relaxed start'>
-					<div className='pb-24'>
+				className='relative text-stone-800 dark:text-white'>
+				<div className='pt-12 text-4xl md:text-6xl leading-relaxed start'>
+					<div className='pb-12 md:pb-24'>
 						<span>Let&apos;s work</span>
 						<span className='font-serif italic'> together</span>
-						<p className='text-2xl trig'>
+						<p className='text-xl trig'>
 							We can round some rectangles
 						</p>
 					</div>
@@ -61,7 +61,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<div className='bottom-0 w-screen border-t-[1px] py-4 px-12 flex flex-row justify-between'>
+			<div className='bottom-0 border-t-[1px] py-4 flex flex-row justify-between text-xs md:text-base'>
 				<div className=''>
 					designed and developed by daniel with tears
 				</div>
