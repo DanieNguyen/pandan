@@ -14,7 +14,7 @@ const FilterButton = ({ handleFilterChange, filter, currentFilter, label }) => {
                 dark:focus:border-blue-500 dark:focus:text-white dark:focus:bg-blue-500
                 ${
 					currentFilter === filter
-						? 'border-blue-600 text-blue-600 dark:border-blue-600 dark:bg-blue-500'
+						? '!border-blue-600 !text-blue-600 dark:!border-blue-600 dark:!bg-blue-500 dark:!text-white'
 						: 'border-stone-300 text-stone-600 dark:bg-stone-800'
 				}`}>
 			{label}

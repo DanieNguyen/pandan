@@ -4,11 +4,7 @@ import { easeInOut, motion } from 'framer-motion';
 import { DownArrow } from './Arrow';
 
 function MainGrid({ children }: any) {
-	return (
-		<div className='p-16 grid grid-cols-12 gap-6 w-full mt-36 min-[1920px]:grid-cols-8 md:max-xl:grid-cols-10'>
-			{children}
-		</div>
-	);
+	return <div className='md:mt-24'>{children}</div>;
 }
 
 function Hero(props: any) {
@@ -19,8 +15,8 @@ function Hero(props: any) {
 			transition={{
 				duration: 0.6,
 			}}
-			className='mt-32 mx-12'>
-			<h1 className='text-7xl mb-6'>{props.headline}</h1>
+			className='mt-16 lg:mt-32'>
+			<h1 className='text-4xl lg:text-7xl mb-6'>{props.headline}</h1>
 			<Image
 				className='h-full w-full object-contain bg-zinc-100'
 				src={props.src}
@@ -35,10 +31,10 @@ function Hero(props: any) {
 function Text(props: any) {
 	return (
 		<div>
-			<div className='text-2xl mt-16 mb-6 text-stone-900 dark:text-stone-50 min-[1920px]:text-[28px]'>
+			<div className='text-xl md:text-2xl mt-8 md:mt-12 mb-2 md:mb-4 text-stone-900 dark:text-stone-50 min-[1920px]:text-[28px]'>
 				{props.title}
 			</div>
-			<div className='text-stone-600 dark:text-stone-300 leading-7 text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
+			<div className='text-stone-600 dark:text-stone-300 leading-7 text-lg md:text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
 				{props.children}
 			</div>
 		</div>
@@ -46,19 +42,11 @@ function Text(props: any) {
 }
 
 function TextGrid({ children }: any) {
-	return (
-		<div className='mb-8 col-start-5 col-end-9 w-full min-[1920px]:col-start-4 min-[1920px]:col-end-6 md:max-xl:col-start-4 md:max-xl:col-end-8'>
-			{children}
-		</div>
-	);
+	return <div className='mx-auto md:w-2/5'>{children}</div>;
 }
 
 function ImageGrid({ children }: any) {
-	return (
-		<div className='col-start-3 col-end-11 w-full min-[1920px]:col-start-2 min-[1920px]:col-end-8 md:max-xl:col-start-3 md:max-xl:col-end-9'>
-			{children}
-		</div>
-	);
+	return <div className='mt-8 md:mt-16'>{children}</div>;
 }
 
 function ImageWrap(props: any) {
@@ -92,7 +80,7 @@ function RightCaption({ children }: any) {
 
 function LeftImage(props: any) {
 	return (
-		<div className='col-start-3 col-end-7 bg-zinc-100 min-[1920px]:col-start-2 min-[1920px]:col-end-5 md:max-xl:col-start-3 md:max-xl:col-end-6'>
+		<div className='bg-zinc-100'>
 			<Image
 				className='h-full w-full object-contain'
 				src={props.src}
@@ -105,7 +93,7 @@ function LeftImage(props: any) {
 
 function RightImage(props: any) {
 	return (
-		<div className='col-start-7 col-end-11 bg-zinc-100 min-[1920px]:col-start-5 min-[1920px]:col-end-8 md:max-xl:col-start-6 md:max-xl:col-end-9'>
+		<div className='bg-zinc-100 min-[1920px]:col-start-5 min-[1920px]:col-end-8 md:max-xl:col-start-6 md:max-xl:col-end-9'>
 			<Image
 				className='h-full w-full object-contain'
 				src={props.src}
@@ -119,10 +107,10 @@ function RightImage(props: any) {
 function Goal(props: any) {
 	return (
 		<div>
-			<h1 className='text-2xl text-stone-900 dark:text-white text-center mb-4 mt-24'>
+			<h1 className='text-xl md:text-2xl text-stone-900 dark:text-white md:text-center mb-4 mt-16 md:mt-24'>
 				{props.title}
 			</h1>
-			<div className='w-full text-center text-stone-900 dark:text-white text-5xl font-normal font-sfital2 leading-normal min-[1920px]:text-6xl min-[1920px]:leading-relaxed md:max-xl:text-4xl md:max-xl:leading-relaxed'>
+			<div className='md:text-center text-stone-900 dark:text-white text-3xl md:text-5xl font-light font-serif italic leading-normal min-[1920px]:text-6xl min-[1920px]:leading-relaxed md:max-xl:text-4xl md:max-xl:leading-relaxed'>
 				{props.children}
 			</div>
 		</div>

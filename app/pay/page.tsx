@@ -31,43 +31,39 @@ import {
 	Span,
 } from '../components/CaseStudy';
 import ProjectNav from '../components/ProjectNav';
+import Roles from '../components/Roles';
 
 export default function Home() {
+	const roles = [
+		'Competitive Analysis',
+		'User Research',
+		'A/B Testing',
+		'Prototyping',
+		'Iterative Designs',
+		'Responsive Design',
+	];
+
+	const team = [
+		'1 Product Manager',
+		'2 Front-End Engineers',
+		'4 Backend-End Engineers',
+	];
+
+	const timeline = ['April 2024 - July 2024'];
+
 	return (
 		<main className='' id='home'>
-			<div className='p-8 text-2xl md:hidden'>
-				Please view on web for now. Mobile coming soon.
-			</div>
-			<div className='hidden md:block'>
-				<NavBar />
-				<ScrollBar></ScrollBar>
-			</div>
+			<NavBar />
+			<ScrollBar></ScrollBar>
 			<Hero
 				src={FinalRate}
 				alt='Checkout Hero'
 				headline='Insurance Checkout Redesign'></Hero>
 			<MainGrid>
-				<div className='col-start-3 col-end-5 text-sm dark:text-stone-400 text-stone-600 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
-					<p className='font-medium text-stone-900 dark:text-stone-50'>
-						Role
-					</p>
-					<p className='font-light'>Competitive Analysis</p>
-					<p className='font-light'>User Research</p>
-					<p className='font-light'>A/B Testing</p>
-					<p className='font-light'>Prototyping</p>
-					<p className='font-light'>Iterative Designs</p>
-					<p className='font-light'>Responsive Design</p>
-					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
-						Team
-					</p>
-					<p className='font-light'>1 Product Manager</p>
-					<p className='font-light'>2 Front-End Engineers</p>
-					<p className='font-light'>4 Backend-End Engineers</p>
-
-					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
-						Timeline
-					</p>
-					<p className='font-light'>April 2024 - July 2024</p>
+				<div className='md:absolute md:ml-24 mb-12'>
+					<Roles title='Role' items={roles} />
+					<Roles title='Team' items={team} />
+					<Roles title='Timeline' items={timeline} />
 				</div>
 				<TextGrid>
 					<p className='text-stone-600 dark:text-stone-400 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
@@ -94,10 +90,12 @@ export default function Home() {
 						directly on the Zebra.
 					</Text>
 				</TextGrid>
-				<LeftImage src={Zebra} alt='Zebra home page'></LeftImage>
-				<RightImage
-					src={Concierge}
-					alt='Choosing how to pay on the Zebra'></RightImage>
+				<div className='mt-8 md:mt-16 grid md:grid-cols-2 gap-4'>
+					<ImageWrap src={Zebra} alt='Zebra home page'></ImageWrap>
+					<ImageWrap
+						src={Concierge}
+						alt='Choosing how to pay on the Zebra'></ImageWrap>
+				</div>
 				<TextGrid>
 					<Text title='Research'>
 						To kickstart the redesign, I conducted a thorough
@@ -158,10 +156,12 @@ export default function Home() {
 						process.
 					</Text>
 				</TextGrid>
-				<LeftImage src={Inspo} alt='Zebra home page'></LeftImage>
-				<RightImage
-					src={Iteration}
-					alt='Choosing how to pay on the Zebra'></RightImage>
+				<div className='mt-8 md:mt-16 grid md:grid-cols-2 gap-4'>
+					<LeftImage src={Inspo} alt='Zebra home page'></LeftImage>
+					<RightImage
+						src={Iteration}
+						alt='Choosing how to pay on the Zebra'></RightImage>
+				</div>
 				<TextGrid>
 					<Text title='Design'>
 						I developed multiple design iterations, including

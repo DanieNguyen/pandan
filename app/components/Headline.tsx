@@ -1,3 +1,5 @@
+'use client';
+
 export default function Headline() {
 	return (
 		<div className='main-content text-stone-800 dark:text-white'>
@@ -9,6 +11,7 @@ export default function Headline() {
 					<span className='text-xl lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						Previously saving people money at
 					</span>
+					<br className='md:hidden'></br>
 					<a
 						href='https://www.thezebra.com'
 						target='_blank'
@@ -19,7 +22,7 @@ export default function Headline() {
 							The Zebra,{' '}
 						</span>
 					</a>
-					<br className=''></br>
+					<br className='hidden md:flex'></br>
 					<span className='text-xl lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						crafting data security tools at
 					</span>
@@ -33,7 +36,7 @@ export default function Headline() {
 							Rubrik,{' '}
 						</span>
 					</a>
-					<br className=''></br>
+					<br className='hidden md:flex'></br>
 					<span className='text-xl lg:text-4xl xl:text-5xl 2xl:text-6xl'>
 						& building a Web3 wallet at
 					</span>
