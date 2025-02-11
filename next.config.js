@@ -1,8 +1,12 @@
-// @ts-check
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	/* config options here */
+	images: {
+		formats: ['image/avif', 'image/webp'],
+		minimumCacheTTL: 60,
+	},
+	experimental: {
+		optimizeCss: true,
+	},
 };
 
 module.exports = nextConfig;

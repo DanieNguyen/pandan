@@ -98,10 +98,7 @@ export default function Home() {
 				<Text title='Research'>
 					To kickstart the redesign, I conducted a thorough
 					competitive analysis and audit of our purchasing flow.
-				</Text>
-				<br></br>
-				<div className='text-stone-600 dark:text-stone-400 text-lg'>
-					<p className='mb-4'>
+					<p className='my-4'>
 						<span className='text-stone-900 dark:text-stone-50'>
 							Competitive Analysis:{' '}
 						</span>
@@ -133,7 +130,7 @@ export default function Home() {
 							purchase.
 						</li>
 					</ul>
-				</div>
+				</Text>
 				<ImageWrap src={Pain} alt='pain points'></ImageWrap>
 				<Goal title='Design Goal'>
 					How can we make the checkout experience streamlined and
@@ -178,56 +175,56 @@ export default function Home() {
 					</span>
 					The other two users liked the new features proposed in the
 					new design but preferred the old layout/visual style.
+					<br></br>
+					<p>
+						<span className='text-stone-900 dark:text-stone-50 text-lg'>
+							Findings:{' '}
+						</span>
+					</p>
+					<ul className='mt-4 list-disc text-stone-600 dark:text-stone-400 font-light text-lg leading-7 list-outside'>
+						<li>
+							Users want a breakdown of pricing with savings and
+							discount
+						</li>
+						<li>
+							Users liked the pay in full and emphasized pricing
+							was the most important to them
+						</li>
+						<li>
+							Users want to review and confirm their policy before
+							purchasing
+						</li>
+						<li>
+							Users did not understand why they had to use a
+							credit card when paying with bank account
+						</li>
+						<li>Users expect secure payment methods</li>
+					</ul>
 				</Text>
-				<br></br>
-				<p>
-					<span className='text-stone-900 dark:text-stone-50 text-lg'>
-						Findings:{' '}
-					</span>
-				</p>
-				<ul className='mt-4 list-disc text-stone-600 dark:text-stone-400 font-light text-lg leading-7 list-outside'>
-					<li>
-						Users want a breakdown of pricing with savings and
-						discount
-					</li>
-					<li>
-						Users liked the pay in full and emphasized pricing was
-						the most important to them
-					</li>
-					<li>
-						Users want to review and confirm their policy before
-						purchasing
-					</li>
-					<li>
-						Users did not understand why they had to use a credit
-						card when paying with bank account
-					</li>
-					<li>Users expect secure payment methods</li>
-				</ul>
 				<Text title='Final Designs'>
 					After our testing and sharing the feedback to stakeholders,
 					I worked with the team to determine areas of improvement in
 					the flow. I then updated the designs, and created responsive
 					designs.
+					<br></br>
+					<p>
+						<span className='text-stone-900 dark:text-stone-50 text-lg'>
+							Design Improvements:{' '}
+						</span>
+					</p>
+					<ul className='mt-4 list-disc text-stone-600 dark:text-stone-400 font-light text-lg leading-7 list-outside'>
+						<li>Clearly label savings in pricing card</li>
+						<li>
+							Separate the credit card to new page and provide
+							more information and explain in review page
+						</li>
+						<li>Update visual elements</li>
+						<li>
+							Highlight the payment methods and schedule better
+							for comfort and security
+						</li>
+					</ul>
 				</Text>
-				<br></br>
-				<p>
-					<span className='text-stone-900 dark:text-stone-50 text-lg'>
-						Design Improvements:{' '}
-					</span>
-				</p>
-				<ul className='mt-4 list-disc text-stone-600 dark:text-stone-400 font-light text-lg leading-7 list-outside'>
-					<li>Clearly label savings in pricing card</li>
-					<li>
-						Separate the credit card to new page and provide more
-						information and explain in review page
-					</li>
-					<li>Update visual elements</li>
-					<li>
-						Highlight the payment methods and schedule better for
-						comfort and security
-					</li>
-				</ul>
 				<ImageWrap src={FinalRate} alt='final rate page'></ImageWrap>
 				<ImageWrap src={Checkout} alt='final checkout page'></ImageWrap>
 				<ImageWrap src={Today} alt='due today page'></ImageWrap>
@@ -249,36 +246,35 @@ export default function Home() {
 					Diving right into the checkout redesign in my first 30 days
 					was exciting. I learned a lot of things considering this was
 					my first project at the Zebra:
+					<ul className='mt-8 list-disc text-stone-600 dark:text-stone-400 font-light text-lg leading-7 list-outside'>
+						<li>
+							<span className='text-stone-900 dark:text-stone-50'>
+								Attention to detail:
+							</span>{' '}
+							Small adjustments like a simple toggle can have a
+							big impact on user experience.
+						</li>
+						<li>
+							<span className='text-stone-900 dark:text-stone-50'>
+								Comfort:
+							</span>{' '}
+							Considering how users feel and their trust towards
+							the product is essential for complex flows
+						</li>
+						<li>
+							<span className='text-stone-900 dark:text-stone-50'>
+								User-centered design:{' '}
+							</span>
+							Focusing on user needs and feedback will always be
+							the way to go :)
+						</li>
+					</ul>
 				</Text>
-
-				<ul className='mt-8 list-disc text-stone-600 dark:text-stone-400 font-light text-lg leading-7 list-outside'>
-					<li>
-						<span className='text-stone-900 dark:text-stone-50'>
-							Attention to detail:
-						</span>{' '}
-						Small adjustments like a simple toggle can have a big
-						impact on user experience.
-					</li>
-					<li>
-						<span className='text-stone-900 dark:text-stone-50'>
-							Comfort:
-						</span>{' '}
-						Considering how users feel and their trust towards the
-						product is essential for complex flows
-					</li>
-					<li>
-						<span className='text-stone-900 dark:text-stone-50'>
-							User-centered design:{' '}
-						</span>
-						Focusing on user needs and feedback will always be the
-						way to go :)
-					</li>
-				</ul>
 				<ProjectNav
-					previous='SPOTIFY PODCASTS'
-					prevlink={'/spotify'}
-					next='SENSITIVE DATA'
-					nextlink={'/sonar'}
+					previous='SENSITIVE DATA'
+					prevlink={'/sonar'}
+					next='RENT REPORTING'
+					nextlink={'/boom'}
 				/>
 			</MainGrid>
 			<Top></Top>

@@ -12,8 +12,6 @@ import {
 	MainGrid,
 	Hero,
 	Text,
-	TextGrid,
-	ImageGrid,
 	ImageWrap,
 	LeftCaption,
 	RightCaption,
@@ -21,10 +19,38 @@ import {
 	RightImage,
 	Goal,
 	Span,
+	Title,
 } from '../components/CaseStudy';
+import Roles from '../components/Roles';
 import ProjectNav from '../components/ProjectNav';
 
 export default function Home() {
+	const sections = [
+		{
+			title: 'Role',
+			items: [
+				'Visual Design',
+				'Responsive Design',
+				'User Research',
+				'A/B Testing',
+				'Brand Partnership',
+				'Landing Pages',
+			],
+		},
+		{
+			title: 'Team',
+			items: [
+				'1 Product Manager',
+				'2 Front-End Engineers',
+				'4 Backend-End Engineers',
+			],
+		},
+		{
+			title: 'Timeline',
+			items: ['June 2024 - Aug 2024'],
+		},
+	];
+
 	return (
 		<main className='' id='home'>
 			<div className='p-8 text-2xl md:hidden'>
@@ -37,35 +63,16 @@ export default function Home() {
 			<Hero
 				src={BoomHero}
 				alt='Boompay Hero'
-				headline='Rent Reporting'></Hero>
+				headline='Rent Reporting'
+				priority={true}
+				loading='eager'></Hero>
 			<MainGrid>
-				<div className='col-start-3 col-end-5 text-sm dark:text-stone-400 text-stone-600 min-[1920px]:col-start-3 min-[1920px]:col-end-4 min-[1920px]:text-base md:max-xl:col-start-2 md:max-xl:col-end-4'>
-					<p className='font-medium text-stone-900 dark:text-stone-50'>
-						Role
-					</p>
-					<p className='font-light'>Visual Design</p>
-					<p className='font-light'>Responsive Design</p>
-					<p className='font-light'>Sign-up and Waitlist</p>
-					<p className='font-light'>Landing Pages</p>
-					<p className='font-light'>Brand Partnership</p>
-					<p className='font-light'>User Research</p>
-					<p className='font-light'>A/B Testing</p>
-					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
-						Team
-					</p>
-					<p className='font-light'>1 Product Manager</p>
-					<p className='font-light'>2 Front-End Engineers</p>
-					<p className='font-light'>4 Backend-End Engineers</p>
-					<p className='mt-8 font-medium text-stone-900 dark:text-stone-50'>
-						Timeline
-					</p>
-					<p className='font-light'>June 2024 - Aug 2024</p>
-				</div>
-				<TextGrid>
-					<p className='dark:text-stone-400 text-stone-600 text-2xl min-[1920px]:text-3xl min-[1920px]:leading-tight'>
-						Launching a new product to help{' '}
-						<Span>people build their credit</Span>
-					</p>
+				<Roles sections={sections} />
+				<Title>
+					Launching a new product to help{' '}
+					<Span>people build their credit</Span>
+				</Title>{' '}
+				<div className='md:mb-64'>
 					<Text title='Case study coming soon!'>
 						At the Zebra, I&apos;m currently working on a new
 						product to help our users build credit. We are launching
@@ -75,43 +82,29 @@ export default function Home() {
 						versions to see how we can optimize sign-ups and have
 						smooth onboarding.
 					</Text>
-				</TextGrid>
-				<ImageGrid>
-					<ImageWrap
-						src={BoomIllustration}
-						alt='Alt landing page exploration'></ImageWrap>
-				</ImageGrid>
+				</div>
+				<ImageWrap
+					src={BoomIllustration}
+					alt='Alt landing page exploration'></ImageWrap>
 				<RightCaption>
 					Alternative landing page being A/B tested
 				</RightCaption>
-				<ImageGrid>
-					<ImageWrap src={Zcard} alt='Waitlist Signup'></ImageWrap>
-				</ImageGrid>
+				<ImageWrap src={Zcard} alt='Waitlist Signup'></ImageWrap>
 				<RightCaption>Coming soon card on the front page</RightCaption>
-				<ImageGrid>
-					<ImageWrap
-						src={Zheader}
-						alt='Ad for Credit Boost'></ImageWrap>
-				</ImageGrid>
+				<ImageWrap src={Zheader} alt='Ad for Credit Boost'></ImageWrap>
 				<RightCaption>
 					Learn more banner and modal explorations
 				</RightCaption>
-				<ImageGrid>
-					<ImageWrap
-						src={Zpricing}
-						alt='Ad for Credit Boost'></ImageWrap>
-				</ImageGrid>
+				<ImageWrap src={Zpricing} alt='Ad for Credit Boost'></ImageWrap>
 				<RightCaption>
 					Waitlist CTA while waiting fo insurance quotes
 				</RightCaption>
-				<ImageGrid>
-					<ProjectNav
-						previous='SENSITIVE DATA'
-						prevlink={'/sonar'}
-						next='POOF.CASH'
-						nextlink={'/poof'}
-					/>
-				</ImageGrid>
+				<ProjectNav
+					previous='INSURANCE CHECKOUT'
+					prevlink={'/pay'}
+					next='POOF.CASH'
+					nextlink={'/poof'}
+				/>
 			</MainGrid>
 			<Top></Top>
 		</main>

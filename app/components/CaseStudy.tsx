@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { ImageProps } from 'next/image';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { DownArrow } from './Arrow';
@@ -16,7 +16,19 @@ function TwoImages({ children }: any) {
 	);
 }
 
-function Hero(props: any) {
+const Hero = ({
+	src,
+	alt,
+	headline,
+	priority = false,
+	loading = 'lazy',
+}: {
+	src: ImageProps['src'];
+	alt: string;
+	headline: string;
+	priority?: boolean;
+	loading?: 'lazy' | 'eager';
+}) => {
 	const heroRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
@@ -40,17 +52,18 @@ function Hero(props: any) {
 
 	return (
 		<div ref={heroRef} className='mt-16 lg:mt-32'>
-			<h1 className='text-4xl lg:text-7xl mb-6'>{props.headline}</h1>
+			<h1 className='text-4xl lg:text-7xl mb-6'>{headline}</h1>
 			<Image
 				className='h-full w-full object-contain bg-zinc-100'
-				src={props.src}
-				quality={100}
+				src={src}
+				quality={75}
 				placeholder='blur'
-				priority
-				alt={props.alt}></Image>
+				priority={priority}
+				loading={loading}
+				alt={alt}></Image>
 		</div>
 	);
-}
+};
 
 function Text(props: any) {
 	return (
@@ -58,7 +71,7 @@ function Text(props: any) {
 			<div className='text-xl md:text-2xl mt-8 md:mt-12 mb-2 md:mb-4 text-stone-900 dark:text-stone-50 min-[1920px]:text-[28px]'>
 				{props.title}
 			</div>
-			<div className='text-stone-600 dark:text-stone-300 leading-7 text-lg md:text-justify min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
+			<div className='text-stone-600 dark:text-stone-300 leading-7 text-lg min-[1920px]:text-lg min-[1920px]:leading-relaxed'>
 				{props.children}
 			</div>
 		</div>
