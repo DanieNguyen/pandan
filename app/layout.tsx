@@ -46,11 +46,11 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
-			className={`${sans.variable} ${serif.variable} font-sans dark:text-stone-50 dark:bg-stone-900 text-stone-800 bg-white`}>
-			<body className='px-6 md:px-12'>
+			className={`${sans.variable} ${serif.variable} dark font-sans `}>
+			<body className='px-6 md:px-12 dark:text-stone-50 dark:bg-stone-900 text-stone-800 bg-white'>
 				{children}
-				<SpeedInsights></SpeedInsights>
-				<Analytics></Analytics>
+				<SpeedInsights />
+				<Analytics />
 			</body>
 		</html>
 	);
