@@ -9,17 +9,6 @@ import FilterButton from './FilterButton';
 // Image data with tags, background colors, and class types
 const images = [
 	{
-		src: '/images/homepage/zpay.png',
-		tags: ['consumer', 'mobile', 'web'],
-		bgColor: '#574CFA',
-		classType: 'work-item-bg',
-		alt: 'Phone payments',
-		title: 'The Zebra',
-		description: 'Insurance Checkout',
-		subtitle: 'Easing customer worries when buying insurance',
-		link: '/pay',
-	},
-	{
 		src: '/images/homepage/sonar.svg',
 		tags: ['enterprise', 'web'],
 		bgColor: '#00B28B',
@@ -29,6 +18,17 @@ const images = [
 		description: 'Data Discovery App',
 		subtitle: 'Revamping a data security feature to drive user growth',
 		link: '/sonar',
+	},
+	{
+		src: '/images/homepage/zpay.png',
+		tags: ['consumer', 'mobile', 'web'],
+		bgColor: '#574CFA',
+		classType: 'work-item-bg',
+		alt: 'Phone payments',
+		title: 'The Zebra',
+		description: 'Insurance Checkout',
+		subtitle: 'Easing customer worries when buying insurance',
+		link: '/pay',
 	},
 	{
 		src: '/images/homepage/zboom.jpg',
