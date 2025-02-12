@@ -61,13 +61,8 @@ export default function Home() {
 
 	return (
 		<main className='' id='home'>
-			<div className='p-8 text-2xl md:hidden'>
-				Please view on web for now. Mobile coming soon.
-			</div>
-			<div className='hidden md:block'>
-				<NavBar />
-				<ScrollBar />
-			</div>
+			<NavBar />
+			<ScrollBar></ScrollBar>
 			<Hero
 				src={SpotDash}
 				alt='Spotify Hero'
