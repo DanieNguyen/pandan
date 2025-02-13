@@ -14,7 +14,6 @@ import Layout from '../../public/images/pay/Layout.png';
 import Flow from '../../public/images/pay/flow.png';
 import test from '../../public/images/pay/test.png';
 import Today from '../../public/images/pay/today.png';
-import { DiagonalArrow, ReverseArrow, DownArrow } from '../components/Arrow';
 import Top from '../components/Top';
 import {
 	MainGrid,

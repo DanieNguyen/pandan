@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import Link from 'next/link';
 import { gsap } from 'gsap';
 import { Sunglasses, MoonStars } from '@phosphor-icons/react';
@@ -7,7 +7,7 @@ import { Sunglasses, MoonStars } from '@phosphor-icons/react';
 const NavBar = () => {
 	const [theme, setTheme] = useState('dark');
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const savedTheme = localStorage.getItem('theme');
 		if (savedTheme) {
 			setTheme(savedTheme);
@@ -30,7 +30,7 @@ const NavBar = () => {
 		console.log('Theme toggled to:', newTheme);
 	};
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		gsap.fromTo(
 			'.navbar',
 			{ y: '-25%', opacity: 0 },

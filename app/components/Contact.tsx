@@ -2,10 +2,10 @@
 import { DiagonalArrow } from '../components/Arrow';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 
 const Contact = () => {
-	useEffect(() => {
+	useLayoutEffect(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
 		gsap.to('.start', {

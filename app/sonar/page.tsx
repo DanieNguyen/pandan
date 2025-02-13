@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
 import { ImageProps } from 'next/image';
-import SonarDash from '../../public/images/sonar/hero.png';
+import SonarDash from '../../public/images/sonar/sonarHero.png';
 import OldDash from '../../public/images/sonar/prevDash.png';
 import Stats from '../../public/images/sonar/stats.png';
 import oldLayout from '../../public/images/sonar/oldLayout.png';
@@ -17,7 +17,6 @@ import ih from '../../public/images/sonar/ih.png';
 import inspo from '../../public/images/sonar/visuals.png';
 import viz from '../../public/images/sonar/widgets.png';
 import final from '../../public/images/sonar/final.png';
-import { DiagonalArrow, ReverseArrow, DownArrow } from '../components/Arrow';
 import {
 	MainGrid,
 	Hero,
@@ -25,10 +24,6 @@ import {
 	Title,
 	TwoImages,
 	ImageWrap,
-	LeftCaption,
-	RightCaption,
-	LeftImage,
-	RightImage,
 	Goal,
 	Span,
 } from '../components/CaseStudy';
@@ -42,13 +37,6 @@ const ProjectNav = dynamic(() => import('../components/ProjectNav'), {
 const Top = dynamic(() => import('../components/Top'), {
 	loading: () => null,
 });
-
-// Optimize image imports with priority for hero image
-const otherImages = {
-	OldDash: () => import('../../public/images/sonar/prevDash.png'),
-	Stats: () => import('../../public/images/sonar/stats.png'),
-	// ... other image imports
-};
 
 export default function Home() {
 	const sections = [
@@ -84,9 +72,7 @@ export default function Home() {
 			<Hero
 				src={SonarDash}
 				alt='Sonar Hero'
-				headline='Sensitive Data Discovery'
-				priority={true}
-				loading='eager'></Hero>
+				headline='Sensitive Data Discovery'></Hero>
 			<MainGrid>
 				<div className=''>
 					<Roles sections={sections} />

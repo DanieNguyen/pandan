@@ -19,17 +19,13 @@ import final from '../../public/images/spotify/final.png';
 import finalCards from '../../public/images/spotify/cardsFinal.png';
 import article from '../../public/images/spotify/articles.png';
 import women from '../../public/images/spotify/women.png';
-import { DiagonalArrow, ReverseArrow, DownArrow } from '../components/Arrow';
 import Top from '../components/Top';
 import {
 	MainGrid,
 	Hero,
 	Text,
 	ImageWrap,
-	LeftCaption,
 	RightCaption,
-	LeftImage,
-	RightImage,
 	Goal,
 	Span,
 	Title,
@@ -67,8 +63,6 @@ export default function Home() {
 				src={SpotDash}
 				alt='Spotify Hero'
 				headline='Spotify Podcasts'
-				priority={true}
-				loading='eager'
 			/>
 			<MainGrid>
 				<div className=''>

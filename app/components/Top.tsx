@@ -1,5 +1,5 @@
 import { UpArrow } from './Arrow';
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -13,7 +13,7 @@ function scrollToTop() {
 export default function Top() {
 	const buttonRef = useRef<HTMLButtonElement>(null);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
 		const button = buttonRef.current;

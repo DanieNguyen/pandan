@@ -11,7 +11,6 @@ import usability from '../../public/images/threat/usability.png';
 import complete from '../../public/images/threat/complete.png';
 import final from '../../public/images/threat/final.png';
 import persona from '../../public/images/threat/persona.png';
-import { DiagonalArrow, ReverseArrow, DownArrow } from '../components/Arrow';
 import {
 	MainGrid,
 	Hero,
@@ -53,13 +52,7 @@ export default function Home() {
 		<main className='' id='home'>
 			<NavBar />
 			<ScrollBar></ScrollBar>
-			<Hero
-				src={threat}
-				alt='Threat Hero'
-				headline='Threat Hunting'
-				priority={true}
-				loading='eager'
-			/>
+			<Hero src={threat} alt='Threat Hero' headline='Threat Hunting' />
 			<MainGrid>
 				<div className=''>
 					<Roles sections={sections} />

@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { gsap } from 'gsap';
@@ -80,7 +80,7 @@ const Work = () => {
 	const [filter, setFilter] = useState('all');
 	const [hideBackground, setHideBackground] = useState(false);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
 		gsap.fromTo(

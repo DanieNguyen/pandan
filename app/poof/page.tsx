@@ -64,13 +64,7 @@ export default function Home() {
 		<main className='' id='home'>
 			<NavBar />
 			<ScrollBar></ScrollBar>
-			<Hero
-				src={PoofDash}
-				alt='Poof Hero'
-				headline='Poof.Cash'
-				priority={true}
-				loading='eager'
-			/>
+			<Hero src={PoofDash} alt='Poof Hero' headline='Poof.Cash' />
 			<MainGrid>
 				<div className=''>
 					<Roles sections={sections} />

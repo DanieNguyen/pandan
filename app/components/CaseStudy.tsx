@@ -1,6 +1,6 @@
 import React from 'react';
 import Image, { ImageProps } from 'next/image';
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { DownArrow } from './Arrow';
 
@@ -20,18 +20,14 @@ const Hero = ({
 	src,
 	alt,
 	headline,
-	priority = false,
-	loading = 'lazy',
 }: {
 	src: ImageProps['src'];
 	alt: string;
 	headline: string;
-	priority?: boolean;
-	loading?: 'lazy' | 'eager';
 }) => {
 	const heroRef = useRef<HTMLDivElement>(null);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const hero = heroRef.current;
 		if (!hero) return;
 
@@ -56,10 +52,10 @@ const Hero = ({
 			<Image
 				className='h-full w-full object-contain bg-zinc-100'
 				src={src}
-				quality={75}
+				quality={100}
 				placeholder='blur'
-				priority={priority}
-				loading={loading}
+				priority={true}
+				loading='eager'
 				alt={alt}></Image>
 		</div>
 	);

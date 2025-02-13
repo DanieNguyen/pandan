@@ -6,7 +6,6 @@ import BoomIllustration from '../../public/images/boom/boomillustration.png';
 import Zcard from '../../public/images/boom/zcard.png';
 import Zpricing from '../../public/images/boom/zpricing.png';
 import Zheader from '../../public/images/boom/zheader.png';
-import { DiagonalArrow, ReverseArrow, DownArrow } from '../components/Arrow';
 import Top from '../components/Top';
 import {
 	MainGrid,
@@ -58,9 +57,7 @@ export default function Home() {
 			<Hero
 				src={BoomHero}
 				alt='Boompay Hero'
-				headline='Rent Reporting'
-				priority={true}
-				loading='eager'></Hero>
+				headline='Rent Reporting'></Hero>
 			<MainGrid>
 				<Roles sections={sections} />
 				<Title>
